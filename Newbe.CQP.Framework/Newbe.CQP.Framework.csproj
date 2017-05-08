@@ -60,7 +60,9 @@
     <Compile Include="IAutofacContainerBuilder.cs" />
     <Compile Include="IPluginBase.cs" />
     <Compile Include="NewbeInstanceManager.cs" />
+    <Compile Include="NewbePluginDirectoryNotFoundException.cs" />
     <Compile Include="PluginBase.cs" />
+    <Compile Include="PluginLoadException.cs" />
     <Compile Include="T4NuSpec.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

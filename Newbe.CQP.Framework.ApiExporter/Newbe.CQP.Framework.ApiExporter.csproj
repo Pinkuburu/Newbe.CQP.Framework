@@ -57,11 +57,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Packages\LibLog.4.2\LibLog.cs" />
-    <Compile Include="NewbePluginDirectoryNotFoundException.cs" />
     <Compile Include="PluginApiExporter.cs" />
     <Compile Include="PluginInfo.cs" />
     <Compile Include="PluginInstanceManager.cs" />
-    <Compile Include="PluginLoadException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
