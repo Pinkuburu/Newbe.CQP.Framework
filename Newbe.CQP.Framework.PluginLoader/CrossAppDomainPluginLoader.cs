@@ -34,8 +34,7 @@ namespace Newbe.CQP.Framework.PluginLoader
         {
             Logger.Debug(msg);
 #if CrossDomainLog
-
-            File.AppendAllLines("d:/Newbe.CQP.Framework.log", new[] {msg});
+            File.AppendAllLines(Path.Combine(Path.GetTempPath(), "Newbe.CQP.Framework.log"), new[] {msg});
 #endif
         }
 

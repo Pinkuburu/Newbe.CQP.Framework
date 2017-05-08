@@ -9,7 +9,7 @@
     // General
     string projectTitle = "Newbe.CQP.Framework";
     string projectName = "Newbe.CQP.Framework";
-    string projectDescription = "ø·Q(CoolQ) .net SDK from Newbe ∞Ô÷˙Œƒµµ http://yks.oschina.io/newbe.cqp.framework/?file=%E9%A6%96%E9%A1%B5";
+    string projectDescription = "ø·Q(CoolQ) .net SDK from Newbe ∞Ô÷˙Œƒµµ http://yks.oschina.io/newbe.cqp.framework/";
     string author = "Newbe";
 
     // ============ NuSpec
@@ -25,7 +25,7 @@
     // see http://www.codeproject.com/Articles/328977/The-Right-Way-to-Version-Your-Assemblies
 
     string assemblyVersion = "1.1.0";
-    string nugetVersion = assemblyVersion + "-alpha02";
+    string nugetVersion = assemblyVersion + "-alpha03";
     string assemblyFileVersion = assemblyVersion;
 
     string assemblyGuid = "88c3bb70-a79a-4e90-b994-a96766c2a4ac";

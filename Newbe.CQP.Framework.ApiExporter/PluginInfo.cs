@@ -3,6 +3,9 @@ using Newbe.CQP.Framework.Logging;
 
 namespace Newbe.CQP.Framework
 {
+    /// <summary>
+    /// ²å¼þÐÅÏ¢
+    /// </summary>
     public class PluginInfo
     {
         private static readonly ILog Logger = LogProvider.For<PluginInfo>();
