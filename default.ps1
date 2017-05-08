@@ -23,4 +23,6 @@ Task DocFx -depends CopySrc{
     Remove-Item "docfx_project\src" -Force -Recurse 
     Remove-Item apidoc -Force -Recurse -ErrorAction SilentlyContinue
     Copy-Item "docfx_project\_site" apidoc -Recurse -Force
+    Remove-Item "Newbe.CQP.Framework.Docs\Newbe.CQP.Framework.Docs\Content" -Force -Recurse -ErrorAction SilentlyContinue
+    Copy-Item "docfx_project\_site" "Newbe.CQP.Framework.Docs\Newbe.CQP.Framework.Docs\Content" -Recurse -Force
 }

@@ -1159,6 +1159,48 @@ references:
   commentId: Overload:Newbe.CQP.Framework.NewbeInstanceManager.CoolQApi
   fullName: Newbe.CQP.Framework.NewbeInstanceManager.CoolQApi
   nameWithType: NewbeInstanceManager.CoolQApi
+- uid: Newbe.CQP.Framework.NewbePluginDirectoryNotFoundException
+  name: NewbePluginDirectoryNotFoundException
+  href: api/Newbe.CQP.Framework.NewbePluginDirectoryNotFoundException.html
+  commentId: T:Newbe.CQP.Framework.NewbePluginDirectoryNotFoundException
+  fullName: Newbe.CQP.Framework.NewbePluginDirectoryNotFoundException
+  nameWithType: NewbePluginDirectoryNotFoundException
+- uid: Newbe.CQP.Framework.NewbePluginDirectoryNotFoundException.#ctor(System.String)
+  name: NewbePluginDirectoryNotFoundException(String)
+  href: api/Newbe.CQP.Framework.NewbePluginDirectoryNotFoundException.html#Newbe_CQP_Framework_NewbePluginDirectoryNotFoundException__ctor_System_String_
+  commentId: M:Newbe.CQP.Framework.NewbePluginDirectoryNotFoundException.#ctor(System.String)
+  fullName: Newbe.CQP.Framework.NewbePluginDirectoryNotFoundException.NewbePluginDirectoryNotFoundException(System.String)
+  nameWithType: NewbePluginDirectoryNotFoundException.NewbePluginDirectoryNotFoundException(String)
+- uid: Newbe.CQP.Framework.NewbePluginDirectoryNotFoundException.#ctor*
+  name: NewbePluginDirectoryNotFoundException
+  href: api/Newbe.CQP.Framework.NewbePluginDirectoryNotFoundException.html#Newbe_CQP_Framework_NewbePluginDirectoryNotFoundException__ctor_
+  commentId: Overload:Newbe.CQP.Framework.NewbePluginDirectoryNotFoundException.#ctor
+  fullName: Newbe.CQP.Framework.NewbePluginDirectoryNotFoundException.NewbePluginDirectoryNotFoundException
+  nameWithType: NewbePluginDirectoryNotFoundException.NewbePluginDirectoryNotFoundException
+- uid: Newbe.CQP.Framework.NewbePluginDirectoryNotFoundException.Message
+  name: Message
+  href: api/Newbe.CQP.Framework.NewbePluginDirectoryNotFoundException.html#Newbe_CQP_Framework_NewbePluginDirectoryNotFoundException_Message
+  commentId: P:Newbe.CQP.Framework.NewbePluginDirectoryNotFoundException.Message
+  fullName: Newbe.CQP.Framework.NewbePluginDirectoryNotFoundException.Message
+  nameWithType: NewbePluginDirectoryNotFoundException.Message
+- uid: Newbe.CQP.Framework.NewbePluginDirectoryNotFoundException.Message*
+  name: Message
+  href: api/Newbe.CQP.Framework.NewbePluginDirectoryNotFoundException.html#Newbe_CQP_Framework_NewbePluginDirectoryNotFoundException_Message_
+  commentId: Overload:Newbe.CQP.Framework.NewbePluginDirectoryNotFoundException.Message
+  fullName: Newbe.CQP.Framework.NewbePluginDirectoryNotFoundException.Message
+  nameWithType: NewbePluginDirectoryNotFoundException.Message
+- uid: Newbe.CQP.Framework.NewbePluginDirectoryNotFoundException.PluginName
+  name: PluginName
+  href: api/Newbe.CQP.Framework.NewbePluginDirectoryNotFoundException.html#Newbe_CQP_Framework_NewbePluginDirectoryNotFoundException_PluginName
+  commentId: P:Newbe.CQP.Framework.NewbePluginDirectoryNotFoundException.PluginName
+  fullName: Newbe.CQP.Framework.NewbePluginDirectoryNotFoundException.PluginName
+  nameWithType: NewbePluginDirectoryNotFoundException.PluginName
+- uid: Newbe.CQP.Framework.NewbePluginDirectoryNotFoundException.PluginName*
+  name: PluginName
+  href: api/Newbe.CQP.Framework.NewbePluginDirectoryNotFoundException.html#Newbe_CQP_Framework_NewbePluginDirectoryNotFoundException_PluginName_
+  commentId: Overload:Newbe.CQP.Framework.NewbePluginDirectoryNotFoundException.PluginName
+  fullName: Newbe.CQP.Framework.NewbePluginDirectoryNotFoundException.PluginName
+  nameWithType: NewbePluginDirectoryNotFoundException.PluginName
 - uid: Newbe.CQP.Framework.PluginBase
   name: PluginBase
   href: api/Newbe.CQP.Framework.PluginBase.html
@@ -1495,3 +1537,57 @@ references:
   commentId: Overload:Newbe.CQP.Framework.PluginBase.ProcessPrivateMessage
   fullName: Newbe.CQP.Framework.PluginBase.ProcessPrivateMessage
   nameWithType: PluginBase.ProcessPrivateMessage
+- uid: Newbe.CQP.Framework.PluginLoadException
+  name: PluginLoadException
+  href: api/Newbe.CQP.Framework.PluginLoadException.html
+  commentId: T:Newbe.CQP.Framework.PluginLoadException
+  fullName: Newbe.CQP.Framework.PluginLoadException
+  nameWithType: PluginLoadException
+- uid: Newbe.CQP.Framework.PluginLoadException.#ctor(System.String,System.String)
+  name: PluginLoadException(String, String)
+  href: api/Newbe.CQP.Framework.PluginLoadException.html#Newbe_CQP_Framework_PluginLoadException__ctor_System_String_System_String_
+  commentId: M:Newbe.CQP.Framework.PluginLoadException.#ctor(System.String,System.String)
+  fullName: Newbe.CQP.Framework.PluginLoadException.PluginLoadException(System.String, System.String)
+  nameWithType: PluginLoadException.PluginLoadException(String, String)
+- uid: Newbe.CQP.Framework.PluginLoadException.#ctor*
+  name: PluginLoadException
+  href: api/Newbe.CQP.Framework.PluginLoadException.html#Newbe_CQP_Framework_PluginLoadException__ctor_
+  commentId: Overload:Newbe.CQP.Framework.PluginLoadException.#ctor
+  fullName: Newbe.CQP.Framework.PluginLoadException.PluginLoadException
+  nameWithType: PluginLoadException.PluginLoadException
+- uid: Newbe.CQP.Framework.PluginLoadException.Message
+  name: Message
+  href: api/Newbe.CQP.Framework.PluginLoadException.html#Newbe_CQP_Framework_PluginLoadException_Message
+  commentId: P:Newbe.CQP.Framework.PluginLoadException.Message
+  fullName: Newbe.CQP.Framework.PluginLoadException.Message
+  nameWithType: PluginLoadException.Message
+- uid: Newbe.CQP.Framework.PluginLoadException.Message*
+  name: Message
+  href: api/Newbe.CQP.Framework.PluginLoadException.html#Newbe_CQP_Framework_PluginLoadException_Message_
+  commentId: Overload:Newbe.CQP.Framework.PluginLoadException.Message
+  fullName: Newbe.CQP.Framework.PluginLoadException.Message
+  nameWithType: PluginLoadException.Message
+- uid: Newbe.CQP.Framework.PluginLoadException.PluginName
+  name: PluginName
+  href: api/Newbe.CQP.Framework.PluginLoadException.html#Newbe_CQP_Framework_PluginLoadException_PluginName
+  commentId: P:Newbe.CQP.Framework.PluginLoadException.PluginName
+  fullName: Newbe.CQP.Framework.PluginLoadException.PluginName
+  nameWithType: PluginLoadException.PluginName
+- uid: Newbe.CQP.Framework.PluginLoadException.PluginName*
+  name: PluginName
+  href: api/Newbe.CQP.Framework.PluginLoadException.html#Newbe_CQP_Framework_PluginLoadException_PluginName_
+  commentId: Overload:Newbe.CQP.Framework.PluginLoadException.PluginName
+  fullName: Newbe.CQP.Framework.PluginLoadException.PluginName
+  nameWithType: PluginLoadException.PluginName
+- uid: Newbe.CQP.Framework.PluginLoadException.Reason
+  name: Reason
+  href: api/Newbe.CQP.Framework.PluginLoadException.html#Newbe_CQP_Framework_PluginLoadException_Reason
+  commentId: P:Newbe.CQP.Framework.PluginLoadException.Reason
+  fullName: Newbe.CQP.Framework.PluginLoadException.Reason
+  nameWithType: PluginLoadException.Reason
+- uid: Newbe.CQP.Framework.PluginLoadException.Reason*
+  name: Reason
+  href: api/Newbe.CQP.Framework.PluginLoadException.html#Newbe_CQP_Framework_PluginLoadException_Reason_
+  commentId: Overload:Newbe.CQP.Framework.PluginLoadException.Reason
+  fullName: Newbe.CQP.Framework.PluginLoadException.Reason
+  nameWithType: PluginLoadException.Reason
