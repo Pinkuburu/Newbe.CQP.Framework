@@ -8,7 +8,7 @@ Task InstallDocFx {
 }
 
 Task Clean {
-    Remove-Item "docfx_project\src" -Force -Recurse 
+    Remove-Item "docfx_project\src" -Force -Recurse -ErrorAction SilentlyContinue
 }
 
 Task CopySrc -depends Clean{
@@ -21,4 +21,6 @@ Task DocFx -depends CopySrc{
         docfx serve "docfx_project\_site"
     }
     Remove-Item "docfx_project\src" -Force -Recurse 
+    Remove-Item apidoc -Force -Recurse -ErrorAction SilentlyContinue
+    Copy-Item "docfx_project\_site" apidoc -Recurse -Force
 }
