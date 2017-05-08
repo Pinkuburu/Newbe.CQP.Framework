@@ -29,7 +29,7 @@ namespace Newbe.CQP.Framework
                 var appDomainSetup = new AppDomainSetup
                 {
                     DisallowBindingRedirects = false,
-                    ApplicationBase = pluginInfo.PluginEntryPointDllFullFilename
+                    ApplicationBase = pluginInfo.PluginEntyPointDirectory
                 };
                 if (File.Exists(pluginInfo.PluginEntryPointConfigFullFilename))
                 {
