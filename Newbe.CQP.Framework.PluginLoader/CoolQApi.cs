@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Runtime.InteropServices;
-using System.Security;
 using System.Text;
 
 namespace Newbe.CQP.Framework.PluginLoader
@@ -9,90 +8,59 @@ namespace Newbe.CQP.Framework.PluginLoader
     {
         private int _cqauthcode;
 
-        /// <inheritdoc />
-        public string Cookies => NativeMethods.CQ_getCookies(_cqauthcode);
-
-
-        /// <inheritdoc />
-        public SecureString SafelyCookies
-        {
-            get
-            {
-                var sc = new SecureString();
-                foreach (var c in NativeMethods.CQ_getCookies(_cqauthcode))
-                {
-                    sc.AppendChar(c);
-                }
-                sc.MakeReadOnly();
-                return sc;
-            }
-        }
-
-
-        /// <inheritdoc />
-        public int CsrfToken => NativeMethods.CQ_getCsrfToken(_cqauthcode);
-
-
-        /// <inheritdoc />
-        public string AppDirectory => NativeMethods.CQ_getAppDirectory(_cqauthcode);
-
-
-        /// <inheritdoc />
-        public string NickName => NativeMethods.CQ_getLoginNick(_cqauthcode);
-
-
-        /// <inheritdoc />
-        public long Number => NativeMethods.CQ_getLoginQQ(_cqauthcode);
-
-
-        /// <inheritdoc />
         public void SetAuthCode(int authCode)
         {
             _cqauthcode = authCode;
         }
 
-
-        /// <inheritdoc />
-        public void SendPrivateMessage(long qq, string message)
+        public int SendDiscussMsg(long discussId, string content)
         {
-            NativeMethods.CQ_sendPrivateMsg(_cqauthcode, qq, message);
+            return NativeMethods.CQ_sendDiscussMsg(_cqauthcode,
+                discussId, content);
         }
 
-
-        /// <inheritdoc />
-        public void SendGroupMessage(long groupId, string message)
+        public int SendGroupMsg(long groupId, string content)
         {
-            NativeMethods.CQ_sendGroupMsg(_cqauthcode, groupId, message);
+            return NativeMethods.CQ_sendGroupMsg(_cqauthcode, groupId,
+                content);
         }
 
-
-        /// <inheritdoc />
-        public void SendDiscussGroupMessage(long dicussGroupId, string message)
+        public int SendLike(long qqId)
         {
-            NativeMethods.CQ_sendDiscussMsg(_cqauthcode, dicussGroupId, message);
+            return NativeMethods.CQ_sendLike(_cqauthcode, qqId);
         }
 
-
-        /// <inheritdoc />
-        public void Log(CoolQLogLevel level, string message)
+        public int SendLike2(long qqId, int times)
         {
-            NativeMethods.CQ_addLog(_cqauthcode, (int) level, level.ToString(), message);
+            return NativeMethods.CQ_sendLike2(_cqauthcode, qqId, times);
         }
 
-
-        /// <inheritdoc />
-        public void Log(CoolQLogLevel level, string message, string category)
+        public int SendPrivateMsg(long qqId, string content)
         {
-            NativeMethods.CQ_addLog(_cqauthcode, (int) level, category, message);
+            return NativeMethods.CQ_sendPrivateMsg(_cqauthcode, qqId,
+                content);
         }
 
+        public string GetAppDirectory()
+        {
+            return NativeMethods.CQ_getAppDirectory(_cqauthcode);
+        }
 
-        /// <inheritdoc />
-        public GroupMemberInfo GetGroupMemberInfo(long groupId, long qq)
+        public string GetCookies()
+        {
+            return NativeMethods.CQ_getCookies(_cqauthcode);
+        }
+
+        public int GetCsrfToken()
+        {
+            return NativeMethods.CQ_getCsrfToken(_cqauthcode);
+        }
+
+        public ModelWithSourceString<GroupMemberInfo> GetGroupMemberInfoV2(long groupId, long qqId, bool cache)
         {
             try
             {
-                var data = NativeMethods.CQ_getGroupMemberInfoV2(_cqauthcode, groupId, qq, 0);
+                var data = NativeMethods.CQ_getGroupMemberInfoV2(_cqauthcode, groupId, qqId, cache);
                 var memberBytes = Convert.FromBase64String(data);
                 var info = new GroupMemberInfo();
                 var groupNumberBytes = new byte[8];
@@ -178,7 +146,8 @@ namespace Newbe.CQP.Framework.PluginLoader
                 info.HasBadRecord = BitConverter.ToInt32(badBytes, 0) == 1;
 
                 var titleLengthBytes = new byte[2];
-                Array.Copy(memberBytes, 48 + nameLength + cardLength + areaLength + levelNameLength, titleLengthBytes, 0,
+                Array.Copy(memberBytes, 48 + nameLength + cardLength + areaLength + levelNameLength, titleLengthBytes,
+                    0,
                     2);
                 Array.Reverse(titleLengthBytes);
                 var titleLength = BitConverter.ToInt16(titleLengthBytes, 0);
@@ -199,7 +168,11 @@ namespace Newbe.CQP.Framework.PluginLoader
                     titleExpireBytes, 0, 4);
                 Array.Reverse(titleExpireBytes);
                 info.CanModifyInGroupName = BitConverter.ToInt32(modifyCardBytes, 0) == 1;
-                return info;
+                return new ModelWithSourceString<GroupMemberInfo>
+                {
+                    Model = info,
+                    SourceString = data
+                };
             }
             catch (Exception)
             {
@@ -208,235 +181,436 @@ namespace Newbe.CQP.Framework.PluginLoader
             }
         }
 
-
-        /// <inheritdoc />
-        public void SendGood(long qq)
+        public string GetGroupMemberInfo(long groupId, long qqId)
         {
-            NativeMethods.CQ_sendLike(_cqauthcode, qq);
+            return NativeMethods.CQ_getGroupMemberInfo(_cqauthcode, groupId, qqId);
         }
 
-
-        /// <inheritdoc />
-        public void ProcessAddFriendRequest(string responseMark, CoolQRequestResult result)
+        public string GetGroupMemberList(long groupId)
         {
-            NativeMethods.CQ_setFriendAddRequest(_cqauthcode, responseMark, (int) result, "");
+            return NativeMethods.CQ_getGroupMemberList(_cqauthcode, groupId);
         }
 
-
-        /// <inheritdoc />
-        public void ProcessAddFriendRequest(string responseMark, CoolQRequestResult result, string remark)
+        public string GetLoginNick()
         {
-            NativeMethods.CQ_setFriendAddRequest(_cqauthcode, responseMark, (int) result, remark);
+            return NativeMethods.CQ_getLoginNick(_cqauthcode);
         }
 
-
-        /// <inheritdoc />
-        public void KickFromGroup(long groupId, long qq, bool rejectAddGroupRequest)
+        // ReSharper disable once InconsistentNaming
+        public long GetLoginQQ()
         {
-            NativeMethods.CQ_setGroupKick(_cqauthcode, groupId, qq, rejectAddGroupRequest ? 1 : 0);
+            return NativeMethods.CQ_getLoginQQ(_cqauthcode);
         }
 
-
-        /// <inheritdoc />
-        public void Ban(long groupId, long qq, TimeSpan duration)
+        public string GetRecord(string file, string outformat)
         {
-            var totalsec = (long) Math.Floor(duration.TotalSeconds);
-            NativeMethods.CQ_setGroupBan(_cqauthcode, groupId, qq, totalsec);
+            return NativeMethods.CQ_getRecord(_cqauthcode, file,
+                outformat);
         }
 
-        /// <inheritdoc />
-        public void Ban(long groupId, long qq, int duration)
+        public string GetStrangerInfo(long qqId, bool ache)
         {
-            NativeMethods.CQ_setGroupBan(_cqauthcode, groupId, qq, duration);
+            return NativeMethods.CQ_getStrangerInfo(_cqauthcode, qqId, ache);
         }
 
-
-        /// <inheritdoc />
-        public void RemoveBanned(long groupId, long qq)
+        public int SetDiscussLeave(long discussId)
         {
-            Ban(groupId, qq, 0);
+            return NativeMethods.CQ_setDiscussLeave(_cqauthcode, discussId);
         }
 
-        /// <inheritdoc />
-        public void SetAsAdmin(long groupId, long qq)
+        public int SetFatal(string errorText)
         {
-            NativeMethods.CQ_setGroupAdmin(_cqauthcode, groupId, qq, 1);
+            return NativeMethods.CQ_setFatal(_cqauthcode, errorText);
         }
 
-
-        /// <inheritdoc />
-        public void RevokeAdmin(long groupId, long qq)
+        public int SetFriendAddRequest(string requestReturn, int returnType, string remark)
         {
-            NativeMethods.CQ_setGroupAdmin(_cqauthcode, groupId, qq, 0);
+            return NativeMethods
+                .CQ_setFriendAddRequest(_cqauthcode, requestReturn, returnType, remark);
         }
 
-        /// <inheritdoc />
-        public void BanAll(long groupId)
+        public int SetGroupAddRequest(string requestReturn, CoolQAddGroupRequestType requestType,
+            CoolQRequestResult returnType)
         {
-            NativeMethods.CQ_setGroupWholeBan(_cqauthcode, groupId, 1);
+            return NativeMethods
+                .CQ_setGroupAddRequest(_cqauthcode, requestReturn, (int) requestType, (int) returnType);
         }
 
-        /// <inheritdoc />
-        public void RemoveBannedAll(long groupId)
+        public int SetGroupAddRequest2(string requestReturn, CoolQAddGroupRequestType requestType,
+            CoolQRequestResult returnType, string reason)
         {
-            NativeMethods.CQ_setGroupWholeBan(_cqauthcode, groupId, 0);
+            return NativeMethods.CQ_setGroupAddRequest2(_cqauthcode, requestReturn, (int) requestType, (int) returnType,
+                reason);
         }
 
-        /// <inheritdoc />
-        public void BanAnonymous(long groupId, string anonymous, TimeSpan duration)
+        public int SetGroupAdmin(long groupId, long qqId, bool manager)
         {
-            NativeMethods.CQ_setGroupAnonymousBan(_cqauthcode, groupId, anonymous,
-                (long) Math.Floor(duration.TotalSeconds));
+            return NativeMethods.CQ_setGroupAdmin(_cqauthcode,
+                groupId, qqId, manager);
         }
 
-
-        /// <inheritdoc />
-        public void BanAnonymous(long groupId, string anonymous, long duration)
+        public int SetGroupAnonymous(long groupId, bool anonymous)
         {
-            NativeMethods.CQ_setGroupAnonymousBan(_cqauthcode, groupId, anonymous, duration);
+            return NativeMethods.CQ_setGroupAnonymous(_cqauthcode,
+                groupId, anonymous);
         }
 
-        /// <inheritdoc />
-        public void EnableAnonymousChat(long groupId)
+        public int SetGroupAnonymousBan(long groupId, string fromAnonymous, long time)
         {
-            NativeMethods.CQ_setGroupAnonymous(_cqauthcode, groupId, 1);
+            return NativeMethods
+                .CQ_setGroupAnonymousBan(_cqauthcode, groupId, fromAnonymous, time);
         }
 
-        /// <inheritdoc />
-        public void DisableAnonymousChat(long groupId)
+        public int SetGroupBan(long groupId, long qqId, long time)
         {
-            NativeMethods.CQ_setGroupAnonymous(_cqauthcode, groupId, 0);
+            return NativeMethods.CQ_setGroupBan(_cqauthcode, groupId,
+                qqId, time);
         }
 
-        /// <inheritdoc />
-        public void SetGroupCard(long groupId, long qq, string newCard)
+        public int SetGroupCard(long groupId, long qqId, string newCard)
         {
-            NativeMethods.CQ_setGroupCard(_cqauthcode, groupId, qq, newCard);
+            return NativeMethods.CQ_setGroupCard(_cqauthcode,
+                groupId, qqId, newCard);
         }
 
-        /// <inheritdoc />
-        public void QuitTheGroup(long groupId)
+        public int SetGroupKick(long groupId, long qqId, bool refused)
         {
-            NativeMethods.CQ_setGroupLeave(_cqauthcode, groupId, 0);
+            return NativeMethods.CQ_setGroupKick(_cqauthcode,
+                groupId, qqId, refused);
         }
 
-
-        /// <inheritdoc />
-        public void QuitAndDismissTheGroup(long groupId)
+        public int SetGroupLeave(long groupId, bool disband)
         {
-            NativeMethods.CQ_setGroupLeave(_cqauthcode, groupId, 1);
+            return NativeMethods.CQ_setGroupLeave(_cqauthcode, groupId,
+                disband);
         }
 
-
-        /// <inheritdoc />
-        public void SetGroupTitle(long groupId, long qq, string newTitle)
+        public int SetGroupSpecialTitle(long groupId, long qqId, string specialTitle, long time)
         {
-            NativeMethods.CQ_setGroupSpecialTitle(_cqauthcode, groupId, qq, newTitle, -1);
+            return NativeMethods
+                .CQ_setGroupSpecialTitle(_cqauthcode, groupId, qqId, specialTitle, time);
         }
 
-        /// <inheritdoc />
-        public void SetGroupTitle(long groupId, long qq, long newTitle, long duration)
+        public int SetGroupWholeBan(long groupId, bool open)
         {
-            NativeMethods.CQ_setGroupSpecialTitle(_cqauthcode, groupId, qq, newTitle.ToString(), duration);
+            return NativeMethods.CQ_setGroupWholeBan(_cqauthcode, groupId,
+                open);
         }
 
-
-        /// <inheritdoc />
-        public void QuitTheDiscussGroup(long discussGroupId)
+        public int AddLog(int priority, CoolQLogLevel logType, string content)
         {
-            NativeMethods.CQ_setDiscussLeave(_cqauthcode, discussGroupId);
+            return NativeMethods.CQ_addLog(_cqauthcode,
+                priority, logType.ToString(), content);
         }
 
-
-        public void ProcessAddGroupRequest(string responseMark, CoolQAddGroupRequestType resquestType,
-            CoolQRequestResult operation, string reason)
+        private static class NativeMethods
         {
-            NativeMethods.CQ_setGroupAddRequestV2(_cqauthcode, responseMark, (int) resquestType, (int) operation, reason);
-        }
+            /// <summary>
+            ///     添加运行日志
+            /// </summary>
+            /// <param name="authCode"></param>
+            /// <param name="priority">优先级#Log_开头常量</param>
+            /// <param name="logType">日志类型</param>
+            /// <param name="content">日志内容</param>
+            /// <returns></returns>
+            [DllImport("CQP.DLL")]
+            public static extern int CQ_addLog(int authCode, int priority, string logType, string content);
 
-        private abstract class NativeMethods
-        {
-            [DllImport("CQP.dll", CallingConvention = CallingConvention.StdCall, BestFitMapping = false)]
-            public static extern int CQ_sendPrivateMsg(int authCode, long QQid,
-                [MarshalAs(UnmanagedType.LPStr)] [In] string message);
 
-            [DllImport("CQP.dll", CallingConvention = CallingConvention.StdCall, BestFitMapping = false)]
-            public static extern int CQ_sendGroupMsg(int authCode, long groupId,
-                [MarshalAs(UnmanagedType.LPStr)] [In] string message);
+            /// <summary>
+            ///     发送讨论组消息
+            /// </summary>
+            /// <param name="authCode"></param>
+            /// <param name="discussId">目标讨论组号</param>
+            /// <param name="content">消息内容</param>
+            /// <returns></returns>
+            [DllImport("CQP.DLL")]
+            public static extern int CQ_sendDiscussMsg(int authCode, long discussId, string content);
 
-            [DllImport("CQP.dll", CallingConvention = CallingConvention.StdCall, BestFitMapping = false)]
-            public static extern int CQ_sendDiscussMsg(int authCode, long discussId,
-                [MarshalAs(UnmanagedType.LPStr)] [In] string message);
+            /// <summary>
+            ///     发送群消息
+            /// </summary>
+            /// <param name="authCode"></param>
+            /// <param name="groupId">目标群号</param>
+            /// <param name="content">消息内容</param>
+            /// <returns></returns>
+            [DllImport("CQP.DLL")]
+            public static extern int CQ_sendGroupMsg(int authCode, long groupId, string content);
 
-            [DllImport("CQP.dll", CallingConvention = CallingConvention.StdCall, BestFitMapping = false)]
-            public static extern int CQ_sendLike(int authCode, long QQid);
+            /// <summary>
+            ///     发送赞
+            /// </summary>
+            /// <param name="authCode"></param>
+            /// <param name="qqId">目标QQ号</param>
+            /// <returns></returns>
+            [DllImport("CQP.DLL")]
+            public static extern int CQ_sendLike(int authCode, long qqId);
 
-            [DllImport("CQP.dll", CallingConvention = CallingConvention.StdCall, BestFitMapping = false)]
-            public static extern int CQ_setGroupKick(int authCode, long groupId, long QQid, int rejectAddRequest);
+            /// <summary>
+            ///     发送赞
+            /// </summary>
+            /// <param name="authCode"></param>
+            /// <param name="qqId">目标QQ</param>
+            /// <param name="times">点赞次数</param>
+            /// <returns></returns>
+            [DllImport("CQP.DLL")]
+            public static extern int CQ_sendLike2(int authCode, long qqId, int times);
 
-            [DllImport("CQP.dll", CallingConvention = CallingConvention.StdCall, BestFitMapping = false)]
-            public static extern int CQ_setGroupBan(int authCode, long groupId, long QQid, long duration);
+            /// <summary>
+            ///     发送好友消息
+            /// </summary>
+            /// <param name="authCode"></param>
+            /// <param name="qqId">目标QQ号</param>
+            /// <param name="content">消息内容</param>
+            /// <returns></returns>
+            [DllImport("CQP.DLL")]
+            public static extern int CQ_sendPrivateMsg(int authCode, long qqId, string content);
 
-            //
-            [DllImport("CQP.dll", CallingConvention = CallingConvention.StdCall, BestFitMapping = false)]
-            public static extern int CQ_setGroupAdmin(int authCode, long groupId, long QQid, int setAdmin);
 
-            [DllImport("CQP.dll", CallingConvention = CallingConvention.StdCall, BestFitMapping = false)]
-            public static extern int CQ_setGroupWholeBan(int authCode, long groupId, int enableban);
+            /// <summary>
+            ///     取应用目录
+            /// </summary>
+            /// <param name="authCode"></param>
+            /// <returns></returns>
+            [DllImport("CQP.DLL")]
+            public static extern string CQ_getAppDirectory(int authCode);
 
-            [DllImport("CQP.dll", CallingConvention = CallingConvention.StdCall, BestFitMapping = false)]
-            public static extern int CQ_setGroupAnonymousBan(int authCode, long groupId,
-                [MarshalAs(UnmanagedType.LPStr)] [In] string anonymous, long duration);
-
-            [DllImport("CQP.dll", CallingConvention = CallingConvention.StdCall, BestFitMapping = false)]
-            public static extern int CQ_setGroupAnonymous(int authCode, long groupId, int enableAnomymous);
-
-            [DllImport("CQP.dll", CallingConvention = CallingConvention.StdCall, BestFitMapping = false)]
-            public static extern int CQ_setGroupCard(int authCode, long groupId, long QQid,
-                [MarshalAs(UnmanagedType.LPStr)] [In] string newCard);
-
-            [DllImport("CQP.dll", CallingConvention = CallingConvention.StdCall, BestFitMapping = false)]
-            public static extern int CQ_setGroupLeave(int authCode, long groupId, int isdismissed);
-
-            [DllImport("CQP.dll", CallingConvention = CallingConvention.StdCall, BestFitMapping = false)]
-            public static extern int CQ_setGroupSpecialTitle(int authCode, long groupId, long QQid,
-                [MarshalAs(UnmanagedType.LPStr)] [In] string newTitle, long duration);
-
-            [DllImport("CQP.dll", CallingConvention = CallingConvention.StdCall, BestFitMapping = false)]
-            public static extern int CQ_setDiscussLeave(int authCode, long discussGroupId);
-
-            [DllImport("CQP.dll", CallingConvention = CallingConvention.StdCall, BestFitMapping = false)]
-            public static extern int CQ_setFriendAddRequest(int authCode,
-                [MarshalAs(UnmanagedType.LPStr)] [In] string responseFlag, int responseOperation,
-                [MarshalAs(UnmanagedType.LPStr)] [In] string remark);
-
-            [DllImport("CQP.dll", CallingConvention = CallingConvention.StdCall, BestFitMapping = false)]
-            public static extern int CQ_setGroupAddRequestV2(int authCode,
-                [MarshalAs(UnmanagedType.LPStr)] [In] string responseFlag, int requestType, int responseOperation,
-                [MarshalAs(UnmanagedType.LPStr)] [In] string reason);
-
-            [DllImport("CQP.dll", CallingConvention = CallingConvention.StdCall, BestFitMapping = false)]
-            public static extern string CQ_getGroupMemberInfoV2(int authCode, long groupId, long QQid, int nocache);
-
-            [DllImport("CQP.dll", CallingConvention = CallingConvention.StdCall, BestFitMapping = false)]
-            public static extern int CQ_addLog(int authCode, int priority,
-                [MarshalAs(UnmanagedType.LPStr)] [In] string category,
-                [MarshalAs(UnmanagedType.LPStr)] [In] string content);
-
-            [DllImport("CQP.dll", CallingConvention = CallingConvention.StdCall, BestFitMapping = false)]
+            /// <summary>
+            ///     取Cookies(慎用,此接口需要严格授权)
+            /// </summary>
+            /// <param name="authCode"></param>
+            /// <returns></returns>
+            [DllImport("CQP.DLL")]
             public static extern string CQ_getCookies(int authCode);
 
-            [DllImport("CQP.dll", CallingConvention = CallingConvention.StdCall, BestFitMapping = false)]
+            /// <summary>
+            ///     取CsrfToken(慎用,此接口需要严格授权)
+            /// </summary>
+            /// <param name="authCode"></param>
+            /// <returns></returns>
+            [DllImport("CQP.DLL")]
             public static extern int CQ_getCsrfToken(int authCode);
 
-            [DllImport("CQP.dll", CallingConvention = CallingConvention.StdCall, BestFitMapping = false)]
-            public static extern long CQ_getLoginQQ(int authCode);
+            /// <summary>
+            ///     取群成员信息(旧版,请用CQ_getGroupMemberInfoV2)
+            /// </summary>
+            /// <param name="authCode"></param>
+            /// <param name="groupId">目标群</param>
+            /// <param name="qqId">目标QQ</param>
+            /// <returns></returns>
+            [DllImport("CQP.DLL")]
+            public static extern string CQ_getGroupMemberInfo(int authCode, long groupId, long qqId);
 
-            [DllImport("CQP.dll", CallingConvention = CallingConvention.StdCall, BestFitMapping = false)]
+            /// <summary>
+            ///     取群成员信息(支持缓存)
+            /// </summary>
+            /// <param name="authCode"></param>
+            /// <param name="groupId">目标群</param>
+            /// <param name="qqId">目标QQ</param>
+            /// <param name="cache">是否缓存</param>
+            /// <returns></returns>
+            [DllImport("CQP.DLL")]
+            public static extern string CQ_getGroupMemberInfoV2(int authCode, long groupId, long qqId, bool cache);
+
+            /// <summary>
+            ///     取群成员列表
+            /// </summary>
+            /// <param name="authCode"></param>
+            /// <param name="groupId">目标群</param>
+            /// <returns></returns>
+            [DllImport("CQP.DLL")]
+            public static extern string CQ_getGroupMemberList(int authCode, long groupId);
+
+            /// <summary>
+            ///     取登录昵称
+            /// </summary>
+            /// <param name="authCode"></param>
+            /// <returns></returns>
+            [DllImport("CQP.DLL")]
             public static extern string CQ_getLoginNick(int authCode);
 
-            [DllImport("CQP.dll", CallingConvention = CallingConvention.StdCall, BestFitMapping = false)]
-            public static extern string CQ_getAppDirectory(int authCode);
+            /// <summary>
+            ///     取登录QQ
+            /// </summary>
+            /// <param name="authCode"></param>
+            /// <returns></returns>
+            [DllImport("CQP.DLL")]
+            public static extern long CQ_getLoginQQ(int authCode);
+
+            /// <summary>
+            ///     接受语音消息
+            /// </summary>
+            /// <param name="authCode"></param>
+            /// <param name="file">收到消息中的语音文件名(file)</param>
+            /// <param name="outformat">应用所需的格式</param>
+            /// <returns></returns>
+            [DllImport("CQP.DLL")]
+            public static extern string CQ_getRecord(int authCode, string file, string outformat);
+
+            /// <summary>
+            ///     取陌生人(支持缓存)
+            /// </summary>
+            /// <param name="authCode"></param>
+            /// <param name="qqId">目标QQ</param>
+            /// <param name="ache">是否缓存</param>
+            /// <returns></returns>
+            [DllImport("CQP.DLL")]
+            public static extern string CQ_getStrangerInfo(int authCode, long qqId, bool ache);
+
+
+            /// <summary>
+            ///     退出讨论组
+            /// </summary>
+            /// <param name="authCode"></param>
+            /// <param name="discussId">目标讨论组</param>
+            /// <returns></returns>
+            [DllImport("CQP.DLL")]
+            public static extern int CQ_setDiscussLeave(int authCode, long discussId);
+
+            /// <summary>
+            ///     致命错误提示
+            /// </summary>
+            /// <param name="authCode"></param>
+            /// <param name="errorText">错误信息</param>
+            /// <returns></returns>
+            [DllImport("CQP.DLL")]
+            public static extern int CQ_setFatal(int authCode, string errorText);
+
+            /// <summary>
+            ///     好友添加请求
+            /// </summary>
+            /// <param name="authCode"></param>
+            /// <param name="requestReturn">请求事件收到的“反馈标识”参数</param>
+            /// <param name="returnType">#请求_通过 或 #请求_拒绝</param>
+            /// <param name="remark">添加后的好友备注</param>
+            /// <returns></returns>
+            [DllImport("CQP.DLL")]
+            public static extern int CQ_setFriendAddRequest(int authCode, string requestReturn, int returnType,
+                string remark);
+
+            /// <summary>
+            ///     群添加请求
+            /// </summary>
+            /// <param name="authCode"></param>
+            /// <param name="requestReturn">请求事件收到的“反馈标识”参数</param>
+            /// <param name="requestType">根据请求事件的子类型区分 #请求_群添加 或 #请求_群邀请</param>
+            /// <param name="returnType">#请求_通过 或 #请求_拒绝</param>
+            /// <returns></returns>
+            [DllImport("CQP.DLL")]
+            public static extern int CQ_setGroupAddRequest(int authCode, string requestReturn, int requestType,
+                int returnType);
+
+            /// <summary>
+            ///     群添加请求
+            /// </summary>
+            /// <param name="authCode"></param>
+            /// <param name="requestReturn">请求事件收到的“反馈标识”参数</param>
+            /// <param name="requestType">根据请求事件的子类型区分 #请求_群添加 或 #请求_群邀请</param>
+            /// <param name="returnType">#请求_通过 或 #请求_拒绝</param>
+            /// <param name="reason">操作理由，仅 #请求_群添加 且 #请求_拒绝 时可用</param>
+            /// <returns></returns>
+            [DllImport("CQP.DLL")]
+            public static extern int CQ_setGroupAddRequest2(int authCode, string requestReturn, int requestType,
+                int returnType, string reason);
+
+            /// <summary>
+            ///     设置群管理员
+            /// </summary>
+            /// <param name="authCode"></param>
+            /// <param name="groupId">目标群</param>
+            /// <param name="qqId">目标QQ</param>
+            /// <param name="manager">true/设置管理员 false/取消管理员</param>
+            /// <returns></returns>
+            [DllImport("CQP.DLL")]
+            public static extern int CQ_setGroupAdmin(int authCode, long groupId, long qqId, bool manager);
+
+            /// <summary>
+            ///     群匿名设置
+            /// </summary>
+            /// <param name="authCode"></param>
+            /// <param name="groupId">目标群</param>
+            /// <param name="anonymous">true开启.false关闭</param>
+            /// <returns></returns>
+            [DllImport("CQP.DLL")]
+            public static extern int CQ_setGroupAnonymous(int authCode, long groupId, bool anonymous);
+
+            /// <summary>
+            ///     禁言匿名群员
+            /// </summary>
+            /// <param name="authCode"></param>
+            /// <param name="groupId">目标群</param>
+            /// <param name="fromAnonymous">群消息事件收到的“fromAnonymous”参数</param>
+            /// <param name="time">禁言的时间，单位为秒。不支持解禁</param>
+            /// <returns></returns>
+            [DllImport("CQP.DLL")]
+            public static extern int CQ_setGroupAnonymousBan(int authCode, long groupId, string fromAnonymous,
+                long time);
+
+            /// <summary>
+            ///     禁言群员
+            /// </summary>
+            /// <param name="authCode"></param>
+            /// <param name="groupId">目标群</param>
+            /// <param name="qqId">目标QQ</param>
+            /// <param name="time">禁言的时间，单位为秒。如果要解禁，这里填写0</param>
+            /// <returns></returns>
+            [DllImport("CQP.DLL")]
+            public static extern int CQ_setGroupBan(int authCode, long groupId, long qqId, long time);
+
+            /// <summary>
+            ///     设置群成员名片
+            /// </summary>
+            /// <param name="authCode"></param>
+            /// <param name="groupId">目标群</param>
+            /// <param name="qqId">目标QQ</param>
+            /// <param name="newCard">新名片</param>
+            /// <returns></returns>
+            [DllImport("CQP.DLL")]
+            public static extern int CQ_setGroupCard(int authCode, long groupId, long qqId, string newCard);
+
+            /// <summary>
+            ///     踢出群员
+            /// </summary>
+            /// <param name="authCode"></param>
+            /// <param name="groupId">目标群</param>
+            /// <param name="qqId">目标QQ</param>
+            /// <param name="refused">如果为真，则“不再接收此人加群申请”</param>
+            /// <returns></returns>
+            [DllImport("CQP.DLL")]
+            public static extern int CQ_setGroupKick(int authCode, long groupId, long qqId, bool refused);
+
+            /// <summary>
+            ///     退出群
+            /// </summary>
+            /// <param name="authCode"></param>
+            /// <param name="groupId">目标群</param>
+            /// <param name="disband">true解散本群(群主),false退出本群(管理、群成员)</param>
+            /// <returns></returns>
+            [DllImport("CQP.DLL")]
+            public static extern int CQ_setGroupLeave(int authCode, long groupId, bool disband);
+
+            /// <summary>
+            ///     设置群成员专属头衔
+            /// </summary>
+            /// <param name="authCode"></param>
+            /// <param name="groupId">目标群</param>
+            /// <param name="qqId">目标QQ</param>
+            /// <param name="specialTitle">专属头衔,如果要删除，这里填空</param>
+            /// <param name="time">专属头衔有效期，单位为秒。如果永久有效，这里填写-1</param>
+            /// <returns></returns>
+            [DllImport("CQP.DLL")]
+            public static extern int CQ_setGroupSpecialTitle(int authCode, long groupId, long qqId, string specialTitle,
+                long time);
+
+            /// <summary>
+            ///     全群禁言
+            /// </summary>
+            /// <param name="authCode"></param>
+            /// <param name="groupId">目标群</param>
+            /// <param name="open">true开启,false关闭</param>
+            /// <returns></returns>
+            [DllImport("CQP.DLL")]
+            public static extern int CQ_setGroupWholeBan(int authCode, long groupId, bool open);
         }
     }
 }
