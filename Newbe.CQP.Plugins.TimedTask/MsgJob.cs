@@ -9,7 +9,7 @@ namespace Newbe.CQP.Plugins.TimedTask
         {
             var qq = (long) context.JobDetail.JobDataMap["qq"];
             var msg = (string) context.JobDetail.JobDataMap["msg"];
-            NewbeInstanceManager.CoolQApi.SendPrivateMessage(qq, msg);
+            NewbeInstanceManager.CoolQApi.SendPrivateMsg(qq, msg);
         }
     }
 }
