@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
 
@@ -12,6 +14,68 @@ namespace Newbe.CQP.Framework.PluginLoader
         {
             _cqauthcode = authCode;
         }
+
+        /// <summary>
+        /// 转换_ansihex到群成员信息
+        /// </summary>
+        /// <param name="source">源字节集</param>
+        /// <param name="gm">群成员</param>
+        /// <returns></returns>
+        private bool ConvertAnsiHexToGroupMemberInfo(byte[] source, ref GroupMemberInfo gm)
+        {
+            if (source == null || source.Length < 40)
+                return false;
+            var u = new Unpack(source);
+            gm.GroupId = (long) u.GetLong();
+            gm.Number = (long) u.GetLong();
+            gm.NickName = u.GetLenStr();
+            gm.InGroupName = u.GetLenStr();
+            gm.Gender = (int) u.GetInt() == 0 ? "男" : " 女";
+            gm.Age = (int) u.GetInt();
+            gm.Area = u.GetLenStr();
+            gm.JoinTime = new DateTime(1970, 1, 1, 0, 0, 0).ToLocalTime()
+                .AddSeconds((int) u.GetInt());
+            gm.LastSpeakingTime = new DateTime(1970, 1, 1, 0, 0, 0).ToLocalTime()
+                .AddSeconds((int) u.GetInt());
+            gm.Level = u.GetLenStr();
+            var manager = (int) u.GetInt();
+            gm.Authority = manager == 3 ? "群主" : (manager == 2 ? "管理员" : "成员");
+            gm.HasBadRecord = (u.GetInt() == 1);
+            gm.Title = u.GetLenStr();
+            gm.TitleExpirationTime = (int) u.GetInt();
+            gm.CanModifyInGroupName = (u.GetInt() == 1);
+            return true;
+        }
+
+        /// <summary>
+        /// 转换_文本到群成员列表信息
+        /// </summary>
+        /// <param name="source">源</param>
+        /// <param name="lsGm">群成员列表</param>
+        /// <returns></returns>
+        private bool ConvertStrToGroupMemberInfos(string source, ref List<GroupMemberInfo> lsGm)
+        {
+            if (source == string.Empty)
+                return false;
+            var data = source.DeBase64();
+            if (data == null || data.Length < 10)
+                return false;
+            var u = new Unpack(data);
+            var count = u.GetInt();
+            for (int i = 0; i < count; i++)
+            {
+                if (u.Len() <= 0)
+                    return false;
+                var gm = new GroupMemberInfo();
+                if (!ConvertAnsiHexToGroupMemberInfo(u.GetToken(), ref gm))
+                    return false;
+                lsGm.Add(gm);
+            }
+            return true;
+        }
+
+        #region Impl
+
 
         public int SendDiscussMsg(long discussId, string content)
         {
@@ -58,127 +122,18 @@ namespace Newbe.CQP.Framework.PluginLoader
 
         public ModelWithSourceString<GroupMemberInfo> GetGroupMemberInfoV2(long groupId, long qqId, bool cache)
         {
-            try
+            var data = NativeMethods.CQ_getGroupMemberInfoV2(_cqauthcode, groupId, qqId, cache);
+            var source = Convert.FromBase64String(data);
+            var re = new ModelWithSourceString<GroupMemberInfo>
             {
-                var data = NativeMethods.CQ_getGroupMemberInfoV2(_cqauthcode, groupId, qqId, cache);
-                var memberBytes = Convert.FromBase64String(data);
-                var info = new GroupMemberInfo();
-                var groupNumberBytes = new byte[8];
-
-                Array.Copy(memberBytes, 0, groupNumberBytes, 0, 8);
-                Array.Reverse(groupNumberBytes);
-                info.GroupId = BitConverter.ToInt64(groupNumberBytes, 0);
-
-                var qqNumberBytes = new byte[8];
-                Array.Copy(memberBytes, 8, qqNumberBytes, 0, 8);
-                Array.Reverse(qqNumberBytes);
-                info.Number = BitConverter.ToInt64(qqNumberBytes, 0);
-
-                var nameLengthBytes = new byte[2];
-                Array.Copy(memberBytes, 16, nameLengthBytes, 0, 2);
-                Array.Reverse(nameLengthBytes);
-                var nameLength = BitConverter.ToInt16(nameLengthBytes, 0);
-
-                var nameBytes = new byte[nameLength];
-                Array.Copy(memberBytes, 18, nameBytes, 0, nameLength);
-                info.NickName = Encoding.Default.GetString(nameBytes);
-
-                var cardLengthBytes = new byte[2];
-                Array.Copy(memberBytes, 18 + nameLength, cardLengthBytes, 0, 2);
-                Array.Reverse(cardLengthBytes);
-                var cardLength = BitConverter.ToInt16(cardLengthBytes, 0);
-
-                var cardBytes = new byte[cardLength];
-                Array.Copy(memberBytes, 20 + nameLength, cardBytes, 0, cardLength);
-                info.InGroupName = Encoding.Default.GetString(cardBytes);
-
-                var genderBytes = new byte[4];
-                Array.Copy(memberBytes, 20 + nameLength + cardLength, genderBytes, 0, 4);
-                Array.Reverse(genderBytes);
-                info.Gender = BitConverter.ToInt32(genderBytes, 0) == 0 ? "男" : " 女";
-
-                var ageBytes = new byte[4];
-                Array.Copy(memberBytes, 24 + nameLength + cardLength, ageBytes, 0, 4);
-                Array.Reverse(ageBytes);
-                info.Age = BitConverter.ToInt32(ageBytes, 0);
-
-                var areaLengthBytes = new byte[2];
-                Array.Copy(memberBytes, 28 + nameLength + cardLength, areaLengthBytes, 0, 2);
-                Array.Reverse(areaLengthBytes);
-                var areaLength = BitConverter.ToInt16(areaLengthBytes, 0);
-
-                var areaBytes = new byte[areaLength];
-                Array.Copy(memberBytes, 30 + nameLength + cardLength, areaBytes, 0, areaLength);
-                info.Area = Encoding.Default.GetString(areaBytes);
-
-                var addGroupTimesBytes = new byte[4];
-                Array.Copy(memberBytes, 30 + nameLength + cardLength + areaLength, addGroupTimesBytes, 0, 4);
-                Array.Reverse(addGroupTimesBytes);
-                info.JoinTime =
-                    new DateTime(1970, 1, 1, 0, 0, 0).ToLocalTime()
-                        .AddSeconds(BitConverter.ToInt32(addGroupTimesBytes, 0));
-
-                var lastSpeakTimesBytes = new byte[4];
-                Array.Copy(memberBytes, 34 + nameLength + cardLength + areaLength, lastSpeakTimesBytes, 0, 4);
-                Array.Reverse(lastSpeakTimesBytes);
-                info.LastSpeakingTime =
-                    new DateTime(1970, 1, 1, 0, 0, 0).ToLocalTime()
-                        .AddSeconds(BitConverter.ToInt32(lastSpeakTimesBytes, 0));
-
-                var levelNameLengthBytes = new byte[2];
-                Array.Copy(memberBytes, 38 + nameLength + cardLength + areaLength, levelNameLengthBytes, 0, 2);
-                Array.Reverse(levelNameLengthBytes);
-                var levelNameLength = BitConverter.ToInt16(levelNameLengthBytes, 0);
-
-                var levelNameBytes = new byte[levelNameLength];
-                Array.Copy(memberBytes, 40 + nameLength + cardLength + areaLength, levelNameBytes, 0, levelNameLength);
-                info.Level = Encoding.Default.GetString(levelNameBytes);
-
-                var authorBytes = new byte[4];
-                Array.Copy(memberBytes, 40 + nameLength + cardLength + areaLength + levelNameLength, authorBytes, 0, 4);
-                Array.Reverse(authorBytes);
-                var authority = BitConverter.ToInt32(authorBytes, 0);
-                info.Authority = authority == 3 ? "群主" : (authority == 2 ? "管理员" : "成员");
-
-                var badBytes = new byte[4];
-                Array.Copy(memberBytes, 44 + nameLength + cardLength + areaLength + levelNameLength, badBytes, 0, 4);
-                Array.Reverse(badBytes);
-                info.HasBadRecord = BitConverter.ToInt32(badBytes, 0) == 1;
-
-                var titleLengthBytes = new byte[2];
-                Array.Copy(memberBytes, 48 + nameLength + cardLength + areaLength + levelNameLength, titleLengthBytes,
-                    0,
-                    2);
-                Array.Reverse(titleLengthBytes);
-                var titleLength = BitConverter.ToInt16(titleLengthBytes, 0);
-
-                var titleBytes = new byte[titleLength];
-                Array.Copy(memberBytes, 50 + nameLength + cardLength + areaLength + levelNameLength, titleBytes, 0,
-                    titleLength);
-                info.Title = Encoding.Default.GetString(titleBytes);
-
-                var titleExpireBytes = new byte[4];
-                Array.Copy(memberBytes, 50 + nameLength + cardLength + areaLength + levelNameLength + titleLength,
-                    titleExpireBytes, 0, 4);
-                Array.Reverse(titleExpireBytes);
-                info.TitleExpirationTime = BitConverter.ToInt32(titleExpireBytes, 0);
-
-                var modifyCardBytes = new byte[4];
-                Array.Copy(memberBytes, 54 + nameLength + cardLength + areaLength + levelNameLength + titleLength,
-                    titleExpireBytes, 0, 4);
-                Array.Reverse(titleExpireBytes);
-                info.CanModifyInGroupName = BitConverter.ToInt32(modifyCardBytes, 0) == 1;
-                return new ModelWithSourceString<GroupMemberInfo>
-                {
-                    Model = info,
-                    SourceString = data
-                };
-            }
-            catch (Exception)
+                SourceString = data
+            };
+            GroupMemberInfo gm = new GroupMemberInfo();
+            if (ConvertAnsiHexToGroupMemberInfo(source, ref gm))
             {
-                //无法获取到群成员信息，直接返回null
-                return null;
+                re.Model = gm;
             }
+            return re;
         }
 
         public string GetGroupMemberInfo(long groupId, long qqId)
@@ -186,9 +141,21 @@ namespace Newbe.CQP.Framework.PluginLoader
             return NativeMethods.CQ_getGroupMemberInfo(_cqauthcode, groupId, qqId);
         }
 
-        public string GetGroupMemberList(long groupId)
+
+        public ModelWithSourceString<IEnumerable<GroupMemberInfo>> GetGroupMemberList(long groupId)
         {
-            return NativeMethods.CQ_getGroupMemberList(_cqauthcode, groupId);
+            var source = NativeMethods.CQ_getGroupMemberList(_cqauthcode, groupId);
+            var list = new List<GroupMemberInfo>();
+            var re = new ModelWithSourceString<IEnumerable<GroupMemberInfo>>
+            {
+                SourceString = source,
+                Model = Enumerable.Empty<GroupMemberInfo>()
+            };
+            if (ConvertStrToGroupMemberInfos(source, ref list))
+            {
+                re.Model = list;
+            }
+            return re;
         }
 
         public string GetLoginNick()
@@ -302,6 +269,8 @@ namespace Newbe.CQP.Framework.PluginLoader
             return NativeMethods.CQ_addLog(_cqauthcode,
                 priority, logType.ToString(), content);
         }
+
+        #endregion
 
         private static class NativeMethods
         {

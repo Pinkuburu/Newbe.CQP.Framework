@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel;
 
 namespace Newbe.CQP.Framework
@@ -58,7 +59,7 @@ namespace Newbe.CQP.Framework
         /// </summary>
         /// <param name="groupId">目标群</param>
         /// <returns></returns>
-        string GetGroupMemberList(long groupId);
+        ModelWithSourceString<IEnumerable<GroupMemberInfo>> GetGroupMemberList(long groupId);
 
         /// <summary>
         ///     取登录昵称
