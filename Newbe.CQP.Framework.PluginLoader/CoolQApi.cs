@@ -76,7 +76,6 @@ namespace Newbe.CQP.Framework.PluginLoader
 
         #region Impl
 
-
         public int SendDiscussMsg(long discussId, string content)
         {
             return NativeMethods.CQ_sendDiscussMsg(_cqauthcode,
