@@ -51,6 +51,7 @@
     <Compile Include="AssemblyInfo.cs">
       <DependentUpon>T4NuSpec.tt</DependentUpon>
     </Compile>
+    <Compile Include="CoolApiExtensions.cs" />
     <Compile Include="CoolQAddGroupRequestType.cs" />
     <Compile Include="CoolQCode.cs" />
     <Compile Include="CoolQLogLevel.cs" />
@@ -59,6 +60,7 @@
     <Compile Include="ICoolQApi.cs" />
     <Compile Include="IAutofacContainerBuilder.cs" />
     <Compile Include="IPluginBase.cs" />
+    <Compile Include="ModelWithSourceString.cs" />
     <Compile Include="NewbeInstanceManager.cs" />
     <Compile Include="NewbePluginDirectoryNotFoundException.cs" />
     <Compile Include="PluginBase.cs" />

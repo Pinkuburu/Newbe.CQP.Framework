@@ -36,12 +36,15 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Packages\LibLog.4.2\LibLog.cs" />
     <Compile Include="CoolQApi.cs" />
     <Compile Include="CrossAppDomainPluginLoader.cs" />
+    <Compile Include="DataConvert.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Unpack.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Newbe.CQP.Framework\Newbe.CQP.Framework.csproj">

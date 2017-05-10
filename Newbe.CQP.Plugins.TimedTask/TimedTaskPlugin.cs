@@ -23,11 +23,11 @@ namespace Newbe.CQP.Plugins.TimedTask
             {
                 case "1":
                     _timedMessageJob.AddJob(fromQq, "呵呵哒");
-                    CoolQApi.SendPrivateMessage(fromQq, "接下来将会每个3秒发送一条消息，发送2可以中断发送");
+                    CoolQApi.SendPrivateMsg(fromQq, "接下来将会每个3秒发送一条消息，发送2可以中断发送");
                     break;
                 case "2":
                     _timedMessageJob.RemoveJob(fromQq);
-                    CoolQApi.SendPrivateMessage(fromQq, "消息停止发送");
+                    CoolQApi.SendPrivateMsg(fromQq, "消息停止发送");
                     break;
             }
             return base.ProcessPrivateMessage(subType, sendTime, fromQq, msg, font);

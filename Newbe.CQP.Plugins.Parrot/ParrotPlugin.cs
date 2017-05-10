@@ -12,7 +12,7 @@ namespace Newbe.CQP.Plugins.Parrot
 
         public override int ProcessPrivateMessage(int subType, int sendTime, long fromQQ, string msg, int font)
         {
-            CoolQApi.SendPrivateMessage(fromQQ, msg);
+            CoolQApi.SendPrivateMsg(fromQQ, msg);
             return base.ProcessPrivateMessage(subType, sendTime, fromQQ, msg, font);
         }
     }
