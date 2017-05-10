@@ -72,7 +72,7 @@
   
   <h1 id="Newbe_CQP_Framework_ICoolQApi" data-uid="Newbe.CQP.Framework.ICoolQApi">Interface ICoolQApi
   </h1>
-  <div class="markdown level0 summary"><p>向酷Q.NET插件提供酷Q Api</p>
+  <div class="markdown level0 summary"><p>向酷Q.NET插件提供酷Q Api（与易语言170501对应）</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>:Newbe.CQP.Framework</h6>
@@ -81,182 +81,18 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public interface ICoolQApi</code></pre>
   </div>
-  <h3 id="properties">Properties
-  </h3>
-  
-  
-  <a id="Newbe_CQP_Framework_ICoolQApi_AppDirectory_" data-uid="Newbe.CQP.Framework.ICoolQApi.AppDirectory*"></a>
-  <h4 id="Newbe_CQP_Framework_ICoolQApi_AppDirectory" data-uid="Newbe.CQP.Framework.ICoolQApi.AppDirectory">AppDirectory</h4>
-  <div class="markdown level1 summary"><p>获取当前插件的数据存储目录。</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">string AppDirectory { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Newbe_CQP_Framework_ICoolQApi_Cookies_" data-uid="Newbe.CQP.Framework.ICoolQApi.Cookies*"></a>
-  <h4 id="Newbe_CQP_Framework_ICoolQApi_Cookies" data-uid="Newbe.CQP.Framework.ICoolQApi.Cookies">Cookies</h4>
-  <div class="markdown level1 summary"><p>获取酷Q当前登录用户的Cookies。</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">string Cookies { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Newbe_CQP_Framework_ICoolQApi_CsrfToken_" data-uid="Newbe.CQP.Framework.ICoolQApi.CsrfToken*"></a>
-  <h4 id="Newbe_CQP_Framework_ICoolQApi_CsrfToken" data-uid="Newbe.CQP.Framework.ICoolQApi.CsrfToken">CsrfToken</h4>
-  <div class="markdown level1 summary"><p>获取酷Q当前登录用户的CsrfToken。</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">int CsrfToken { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Newbe_CQP_Framework_ICoolQApi_NickName_" data-uid="Newbe.CQP.Framework.ICoolQApi.NickName*"></a>
-  <h4 id="Newbe_CQP_Framework_ICoolQApi_NickName" data-uid="Newbe.CQP.Framework.ICoolQApi.NickName">NickName</h4>
-  <div class="markdown level1 summary"><p>获取酷Q当前登录账户的昵称。</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">string NickName { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Newbe_CQP_Framework_ICoolQApi_Number_" data-uid="Newbe.CQP.Framework.ICoolQApi.Number*"></a>
-  <h4 id="Newbe_CQP_Framework_ICoolQApi_Number" data-uid="Newbe.CQP.Framework.ICoolQApi.Number">Number</h4>
-  <div class="markdown level1 summary"><p>获取酷Q当前登录账户的QQ号码。</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">long Number { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int64</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Newbe_CQP_Framework_ICoolQApi_SafelyCookies_" data-uid="Newbe.CQP.Framework.ICoolQApi.SafelyCookies*"></a>
-  <h4 id="Newbe_CQP_Framework_ICoolQApi_SafelyCookies" data-uid="Newbe.CQP.Framework.ICoolQApi.SafelyCookies">SafelyCookies</h4>
-  <div class="markdown level1 summary"><p>获取加密后的Cookies。</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">SecureString SafelyCookies { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Security.SecureString</span></td>
-        <td><p><span class="xref">System.Security.SecureString</span> 保存了Cookies的<span class="xref">System.Security.SecureString</span>对象。</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="Newbe_CQP_Framework_ICoolQApi_SafelyCookies_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>使用方法详见：
-<a href="https://msdn.microsoft.com/zh-cn/library/system.security.securestring.aspx">https://msdn.microsoft.com/zh-cn/library/system.security.securestring.aspx</a>
-此Api是酷Q非官方Api。</p>
-</div>
   <h3 id="methods">Methods
   </h3>
   
   
-  <a id="Newbe_CQP_Framework_ICoolQApi_Ban_" data-uid="Newbe.CQP.Framework.ICoolQApi.Ban*"></a>
-  <h4 id="Newbe_CQP_Framework_ICoolQApi_Ban_System_Int64_System_Int64_System_Int32_" data-uid="Newbe.CQP.Framework.ICoolQApi.Ban(System.Int64,System.Int64,System.Int32)">Ban(Int64, Int64, Int32)</h4>
-  <div class="markdown level1 summary"><p>对在指定群里的指定QQ进行禁言。</p>
+  <a id="Newbe_CQP_Framework_ICoolQApi_AddLog_" data-uid="Newbe.CQP.Framework.ICoolQApi.AddLog*"></a>
+  <h4 id="Newbe_CQP_Framework_ICoolQApi_AddLog_System_Int32_Newbe_CQP_Framework_CoolQLogLevel_System_String_" data-uid="Newbe.CQP.Framework.ICoolQApi.AddLog(System.Int32,Newbe.CQP.Framework.CoolQLogLevel,System.String)">AddLog(Int32, CoolQLogLevel, String)</h4>
+  <div class="markdown level1 summary"><p>添加运行日志</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void Ban(long groupId, long qq, int duration)</code></pre>
+    <pre><code class="lang-csharp hljs">int AddLog(int priority, CoolQLogLevel logType, string content)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -268,267 +104,22 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td><span class="xref">System.Int64</span></td>
-        <td><span class="parametername">groupId</span></td>
-        <td><p>要进行禁言操作的群。</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int64</span></td>
-        <td><span class="parametername">qq</span></td>
-        <td><p>要禁言的QQ。</p>
-</td>
-      </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">duration</span></td>
-        <td><p>禁言持续秒数。</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Newbe_CQP_Framework_ICoolQApi_Ban_" data-uid="Newbe.CQP.Framework.ICoolQApi.Ban*"></a>
-  <h4 id="Newbe_CQP_Framework_ICoolQApi_Ban_System_Int64_System_Int64_System_TimeSpan_" data-uid="Newbe.CQP.Framework.ICoolQApi.Ban(System.Int64,System.Int64,System.TimeSpan)">Ban(Int64, Int64, TimeSpan)</h4>
-  <div class="markdown level1 summary"><p>对在指定群里的指定QQ进行禁言。</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void Ban(long groupId, long qq, TimeSpan duration)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int64</span></td>
-        <td><span class="parametername">groupId</span></td>
-        <td><p>要进行禁言操作的群。</p>
+        <td><span class="parametername">priority</span></td>
+        <td><p>优先级#Log_开头常量</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Int64</span></td>
-        <td><span class="parametername">qq</span></td>
-        <td><p>要禁言的QQ。</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.TimeSpan</span></td>
-        <td><span class="parametername">duration</span></td>
-        <td><p>禁言持续时长。</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Newbe_CQP_Framework_ICoolQApi_BanAll_" data-uid="Newbe.CQP.Framework.ICoolQApi.BanAll*"></a>
-  <h4 id="Newbe_CQP_Framework_ICoolQApi_BanAll_System_Int64_" data-uid="Newbe.CQP.Framework.ICoolQApi.BanAll(System.Int64)">BanAll(Int64)</h4>
-  <div class="markdown level1 summary"><p>对指定群执行全体禁言操作。</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void BanAll(long groupId)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int64</span></td>
-        <td><span class="parametername">groupId</span></td>
-        <td><p>要进行全体禁言的群。</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Newbe_CQP_Framework_ICoolQApi_BanAnonymous_" data-uid="Newbe.CQP.Framework.ICoolQApi.BanAnonymous*"></a>
-  <h4 id="Newbe_CQP_Framework_ICoolQApi_BanAnonymous_System_Int64_System_String_System_Int64_" data-uid="Newbe.CQP.Framework.ICoolQApi.BanAnonymous(System.Int64,System.String,System.Int64)">BanAnonymous(Int64, String, Int64)</h4>
-  <div class="markdown level1 summary"><p>对在指定群里的指定匿名用户进行禁言。在对指定的匿名用户进行禁言后，不能解除匿名用户的禁言状态。</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void BanAnonymous(long groupId, string anonymous, long duration)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int64</span></td>
-        <td><span class="parametername">groupId</span></td>
-        <td><p>要进行禁言操作的群。</p>
+        <td><a class="xref" href="Newbe.CQP.Framework.CoolQLogLevel.html">CoolQLogLevel</a></td>
+        <td><span class="parametername">logType</span></td>
+        <td><p>日志类型</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">anonymous</span></td>
-        <td><p>要禁言的匿名用户。</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int64</span></td>
-        <td><span class="parametername">duration</span></td>
-        <td><p>禁言持续秒数。</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Newbe_CQP_Framework_ICoolQApi_BanAnonymous_" data-uid="Newbe.CQP.Framework.ICoolQApi.BanAnonymous*"></a>
-  <h4 id="Newbe_CQP_Framework_ICoolQApi_BanAnonymous_System_Int64_System_String_System_TimeSpan_" data-uid="Newbe.CQP.Framework.ICoolQApi.BanAnonymous(System.Int64,System.String,System.TimeSpan)">BanAnonymous(Int64, String, TimeSpan)</h4>
-  <div class="markdown level1 summary"><p>对在指定群里的指定匿名用户进行禁言。在对指定的匿名用户进行禁言后，不能解除匿名用户的禁言状态。</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void BanAnonymous(long groupId, string anonymous, TimeSpan duration)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int64</span></td>
-        <td><span class="parametername">groupId</span></td>
-        <td><p>要进行禁言操作的群。</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">anonymous</span></td>
-        <td><p>要禁言的匿名用户。</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.TimeSpan</span></td>
-        <td><span class="parametername">duration</span></td>
-        <td><p>禁言持续时长。</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Newbe_CQP_Framework_ICoolQApi_DisableAnonymousChat_" data-uid="Newbe.CQP.Framework.ICoolQApi.DisableAnonymousChat*"></a>
-  <h4 id="Newbe_CQP_Framework_ICoolQApi_DisableAnonymousChat_System_Int64_" data-uid="Newbe.CQP.Framework.ICoolQApi.DisableAnonymousChat(System.Int64)">DisableAnonymousChat(Int64)</h4>
-  <div class="markdown level1 summary"><p>关闭指定的群的匿名聊天。</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void DisableAnonymousChat(long groupId)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int64</span></td>
-        <td><span class="parametername">groupId</span></td>
-        <td><p>要关闭匿名聊天的群。</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Newbe_CQP_Framework_ICoolQApi_EnableAnonymousChat_" data-uid="Newbe.CQP.Framework.ICoolQApi.EnableAnonymousChat*"></a>
-  <h4 id="Newbe_CQP_Framework_ICoolQApi_EnableAnonymousChat_System_Int64_" data-uid="Newbe.CQP.Framework.ICoolQApi.EnableAnonymousChat(System.Int64)">EnableAnonymousChat(Int64)</h4>
-  <div class="markdown level1 summary"><p>打开指定的群的匿名聊天。</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void EnableAnonymousChat(long groupId)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int64</span></td>
-        <td><span class="parametername">groupId</span></td>
-        <td><p>要打开匿名聊天的群。</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Newbe_CQP_Framework_ICoolQApi_GetGroupMemberInfo_" data-uid="Newbe.CQP.Framework.ICoolQApi.GetGroupMemberInfo*"></a>
-  <h4 id="Newbe_CQP_Framework_ICoolQApi_GetGroupMemberInfo_System_Int64_System_Int64_" data-uid="Newbe.CQP.Framework.ICoolQApi.GetGroupMemberInfo(System.Int64,System.Int64)">GetGroupMemberInfo(Int64, Int64)</h4>
-  <div class="markdown level1 summary"><p>获取缓存的群成员信息。若无法获取信息则返回null</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">GroupMemberInfo GetGroupMemberInfo(long groupId, long qq)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int64</span></td>
-        <td><span class="parametername">groupId</span></td>
-        <td><p>要获取信息的群成员的所在群。</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int64</span></td>
-        <td><span class="parametername">qq</span></td>
-        <td><p>要获取信息的群成员QQ。</p>
+        <td><span class="parametername">content</span></td>
+        <td><p>日志内容</p>
 </td>
       </tr>
     </tbody>
@@ -543,25 +134,100 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Newbe.CQP.Framework.GroupMemberInfo.html">GroupMemberInfo</a></td>
-        <td><p><a class="xref" href="Newbe.CQP.Framework.GroupMemberInfo.html">GroupMemberInfo</a>若无法获取信息则返回null</p>
-</td>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 id="Newbe_CQP_Framework_ICoolQApi_GetGroupMemberInfo_System_Int64_System_Int64__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>此函数采用Flexlive的处理方法。</p>
-</div>
   
   
-  <a id="Newbe_CQP_Framework_ICoolQApi_KickFromGroup_" data-uid="Newbe.CQP.Framework.ICoolQApi.KickFromGroup*"></a>
-  <h4 id="Newbe_CQP_Framework_ICoolQApi_KickFromGroup_System_Int64_System_Int64_System_Boolean_" data-uid="Newbe.CQP.Framework.ICoolQApi.KickFromGroup(System.Int64,System.Int64,System.Boolean)">KickFromGroup(Int64, Int64, Boolean)</h4>
-  <div class="markdown level1 summary"><p>把指定QQ从指定群中踢出。</p>
+  <a id="Newbe_CQP_Framework_ICoolQApi_GetAppDirectory_" data-uid="Newbe.CQP.Framework.ICoolQApi.GetAppDirectory*"></a>
+  <h4 id="Newbe_CQP_Framework_ICoolQApi_GetAppDirectory" data-uid="Newbe.CQP.Framework.ICoolQApi.GetAppDirectory">GetAppDirectory()</h4>
+  <div class="markdown level1 summary"><p>取应用目录</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void KickFromGroup(long groupId, long qq, bool rejectAddGroupRequest)</code></pre>
+    <pre><code class="lang-csharp hljs">string GetAppDirectory()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Newbe_CQP_Framework_ICoolQApi_GetCookies_" data-uid="Newbe.CQP.Framework.ICoolQApi.GetCookies*"></a>
+  <h4 id="Newbe_CQP_Framework_ICoolQApi_GetCookies" data-uid="Newbe.CQP.Framework.ICoolQApi.GetCookies">GetCookies()</h4>
+  <div class="markdown level1 summary"><p>取Cookies(慎用,此接口需要严格授权)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetCookies()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Newbe_CQP_Framework_ICoolQApi_GetCsrfToken_" data-uid="Newbe.CQP.Framework.ICoolQApi.GetCsrfToken*"></a>
+  <h4 id="Newbe_CQP_Framework_ICoolQApi_GetCsrfToken" data-uid="Newbe.CQP.Framework.ICoolQApi.GetCsrfToken">GetCsrfToken()</h4>
+  <div class="markdown level1 summary"><p>取CsrfToken(慎用,此接口需要严格授权)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int GetCsrfToken()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Newbe_CQP_Framework_ICoolQApi_GetGroupMemberInfo_" data-uid="Newbe.CQP.Framework.ICoolQApi.GetGroupMemberInfo*"></a>
+  <h4 id="Newbe_CQP_Framework_ICoolQApi_GetGroupMemberInfo_System_Int64_System_Int64_" data-uid="Newbe.CQP.Framework.ICoolQApi.GetGroupMemberInfo(System.Int64,System.Int64)">GetGroupMemberInfo(Int64, Int64)</h4>
+  <div class="markdown level1 summary"><p>取群成员信息(旧版,请用CQ_getGroupMemberInfoV2)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;&#26087;&#29256;,&#35831;&#29992;CQ_getGroupMemberInfoV2&quot;)]
+string GetGroupMemberInfo(long groupId, long qqId)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -576,33 +242,98 @@
       <tr>
         <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">groupId</span></td>
-        <td><p>要踢出QQ的群。</p>
+        <td><p>目标群</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.Int64</span></td>
-        <td><span class="parametername">qq</span></td>
-        <td><p>要踢出的QQ。</p>
+        <td><span class="parametername">qqId</span></td>
+        <td><p>目标QQ</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Newbe_CQP_Framework_ICoolQApi_GetGroupMemberInfoV2_" data-uid="Newbe.CQP.Framework.ICoolQApi.GetGroupMemberInfoV2*"></a>
+  <h4 id="Newbe_CQP_Framework_ICoolQApi_GetGroupMemberInfoV2_System_Int64_System_Int64_System_Boolean_" data-uid="Newbe.CQP.Framework.ICoolQApi.GetGroupMemberInfoV2(System.Int64,System.Int64,System.Boolean)">GetGroupMemberInfoV2(Int64, Int64, Boolean)</h4>
+  <div class="markdown level1 summary"><p>取群成员信息(支持缓存)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ModelWithSourceString&lt;GroupMemberInfo&gt; GetGroupMemberInfoV2(long groupId, long qqId, bool cache)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">groupId</span></td>
+        <td><p>目标群</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">qqId</span></td>
+        <td><p>目标QQ</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">rejectAddGroupRequest</span></td>
-        <td><p>指示是否不再处理此人的加群申请。</p>
+        <td><span class="parametername">cache</span></td>
+        <td><p>是否缓存</p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Newbe.CQP.Framework.ModelWithSourceString-1.html">ModelWithSourceString</a>&lt;<a class="xref" href="Newbe.CQP.Framework.GroupMemberInfo.html">GroupMemberInfo</a>&gt;</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="Newbe_CQP_Framework_ICoolQApi_Log_" data-uid="Newbe.CQP.Framework.ICoolQApi.Log*"></a>
-  <h4 id="Newbe_CQP_Framework_ICoolQApi_Log_Newbe_CQP_Framework_CoolQLogLevel_System_String_" data-uid="Newbe.CQP.Framework.ICoolQApi.Log(Newbe.CQP.Framework.CoolQLogLevel,System.String)">Log(CoolQLogLevel, String)</h4>
-  <div class="markdown level1 summary"><p>把日志写入到酷Q运行日志中。</p>
+  <a id="Newbe_CQP_Framework_ICoolQApi_GetGroupMemberList_" data-uid="Newbe.CQP.Framework.ICoolQApi.GetGroupMemberList*"></a>
+  <h4 id="Newbe_CQP_Framework_ICoolQApi_GetGroupMemberList_System_Int64_" data-uid="Newbe.CQP.Framework.ICoolQApi.GetGroupMemberList(System.Int64)">GetGroupMemberList(Int64)</h4>
+  <div class="markdown level1 summary"><p>取群成员列表</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void Log(CoolQLogLevel level, string message)</code></pre>
+    <pre><code class="lang-csharp hljs">ModelWithSourceString&lt;IEnumerable&lt;GroupMemberInfo&gt;&gt; GetGroupMemberList(long groupId)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -615,105 +346,90 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Newbe.CQP.Framework.CoolQLogLevel.html">CoolQLogLevel</a></td>
-        <td><span class="parametername">level</span></td>
-        <td><p>日志等级。</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">message</span></td>
-        <td><p>日志内容。</p>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">groupId</span></td>
+        <td><p>目标群</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
-  <a id="Newbe_CQP_Framework_ICoolQApi_Log_" data-uid="Newbe.CQP.Framework.ICoolQApi.Log*"></a>
-  <h4 id="Newbe_CQP_Framework_ICoolQApi_Log_Newbe_CQP_Framework_CoolQLogLevel_System_String_System_String_" data-uid="Newbe.CQP.Framework.ICoolQApi.Log(Newbe.CQP.Framework.CoolQLogLevel,System.String,System.String)">Log(CoolQLogLevel, String, String)</h4>
-  <div class="markdown level1 summary"><p>把日志写入到酷Q运行日志中。</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void Log(CoolQLogLevel level, string message, string category)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
-        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Newbe.CQP.Framework.CoolQLogLevel.html">CoolQLogLevel</a></td>
-        <td><span class="parametername">level</span></td>
-        <td><p>日志等级。</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">message</span></td>
-        <td><p>日志内容。</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">category</span></td>
-        <td><p>日志类别。</p>
-</td>
+        <td><a class="xref" href="Newbe.CQP.Framework.ModelWithSourceString-1.html">ModelWithSourceString</a>&lt;<span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Newbe.CQP.Framework.GroupMemberInfo.html">GroupMemberInfo</a>&gt;&gt;</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="Newbe_CQP_Framework_ICoolQApi_ProcessAddFriendRequest_" data-uid="Newbe.CQP.Framework.ICoolQApi.ProcessAddFriendRequest*"></a>
-  <h4 id="Newbe_CQP_Framework_ICoolQApi_ProcessAddFriendRequest_System_String_Newbe_CQP_Framework_CoolQRequestResult_" data-uid="Newbe.CQP.Framework.ICoolQApi.ProcessAddFriendRequest(System.String,Newbe.CQP.Framework.CoolQRequestResult)">ProcessAddFriendRequest(String, CoolQRequestResult)</h4>
-  <div class="markdown level1 summary"><p>处理好友请求。</p>
+  <a id="Newbe_CQP_Framework_ICoolQApi_GetLoginNick_" data-uid="Newbe.CQP.Framework.ICoolQApi.GetLoginNick*"></a>
+  <h4 id="Newbe_CQP_Framework_ICoolQApi_GetLoginNick" data-uid="Newbe.CQP.Framework.ICoolQApi.GetLoginNick">GetLoginNick()</h4>
+  <div class="markdown level1 summary"><p>取登录昵称</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ProcessAddFriendRequest(string responseMark, CoolQRequestResult result)</code></pre>
+    <pre><code class="lang-csharp hljs">string GetLoginNick()</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
-        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">responseMark</span></td>
-        <td><p>用于处理此好友请求的反馈标识。</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Newbe.CQP.Framework.CoolQRequestResult.html">CoolQRequestResult</a></td>
-        <td><span class="parametername">result</span></td>
-        <td><p>是否通过此请求。</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="Newbe_CQP_Framework_ICoolQApi_ProcessAddFriendRequest_" data-uid="Newbe.CQP.Framework.ICoolQApi.ProcessAddFriendRequest*"></a>
-  <h4 id="Newbe_CQP_Framework_ICoolQApi_ProcessAddFriendRequest_System_String_Newbe_CQP_Framework_CoolQRequestResult_System_String_" data-uid="Newbe.CQP.Framework.ICoolQApi.ProcessAddFriendRequest(System.String,Newbe.CQP.Framework.CoolQRequestResult,System.String)">ProcessAddFriendRequest(String, CoolQRequestResult, String)</h4>
-  <div class="markdown level1 summary"><p>处理好友请求。</p>
+  <a id="Newbe_CQP_Framework_ICoolQApi_GetLoginQQ_" data-uid="Newbe.CQP.Framework.ICoolQApi.GetLoginQQ*"></a>
+  <h4 id="Newbe_CQP_Framework_ICoolQApi_GetLoginQQ" data-uid="Newbe.CQP.Framework.ICoolQApi.GetLoginQQ">GetLoginQQ()</h4>
+  <div class="markdown level1 summary"><p>取登录QQ</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ProcessAddFriendRequest(string responseMark, CoolQRequestResult result, string remark)</code></pre>
+    <pre><code class="lang-csharp hljs">long GetLoginQQ()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Newbe_CQP_Framework_ICoolQApi_GetRecord_" data-uid="Newbe.CQP.Framework.ICoolQApi.GetRecord*"></a>
+  <h4 id="Newbe_CQP_Framework_ICoolQApi_GetRecord_System_String_System_String_" data-uid="Newbe.CQP.Framework.ICoolQApi.GetRecord(System.String,System.String)">GetRecord(String, String)</h4>
+  <div class="markdown level1 summary"><p>接受语音消息</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetRecord(string file, string outformat)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -727,34 +443,481 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">responseMark</span></td>
-        <td><p>用于处理此好友请求的反馈标识。</p>
+        <td><span class="parametername">file</span></td>
+        <td><p>收到消息中的语音文件名(file)</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="Newbe.CQP.Framework.CoolQRequestResult.html">CoolQRequestResult</a></td>
-        <td><span class="parametername">result</span></td>
-        <td><p>是否通过此请求。</p>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">outformat</span></td>
+        <td><p>应用所需的格式</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Newbe_CQP_Framework_ICoolQApi_GetStrangerInfo_" data-uid="Newbe.CQP.Framework.ICoolQApi.GetStrangerInfo*"></a>
+  <h4 id="Newbe_CQP_Framework_ICoolQApi_GetStrangerInfo_System_Int64_System_Boolean_" data-uid="Newbe.CQP.Framework.ICoolQApi.GetStrangerInfo(System.Int64,System.Boolean)">GetStrangerInfo(Int64, Boolean)</h4>
+  <div class="markdown level1 summary"><p>取陌生人(支持缓存)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetStrangerInfo(long qqId, bool ache)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">qqId</span></td>
+        <td><p>目标QQ</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">ache</span></td>
+        <td><p>是否缓存</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Newbe_CQP_Framework_ICoolQApi_SendDiscussMsg_" data-uid="Newbe.CQP.Framework.ICoolQApi.SendDiscussMsg*"></a>
+  <h4 id="Newbe_CQP_Framework_ICoolQApi_SendDiscussMsg_System_Int64_System_String_" data-uid="Newbe.CQP.Framework.ICoolQApi.SendDiscussMsg(System.Int64,System.String)">SendDiscussMsg(Int64, String)</h4>
+  <div class="markdown level1 summary"><p>发送讨论组消息</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int SendDiscussMsg(long discussId, string content)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">discussId</span></td>
+        <td><p>目标讨论组号</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">content</span></td>
+        <td><p>消息内容</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Newbe_CQP_Framework_ICoolQApi_SendGroupMsg_" data-uid="Newbe.CQP.Framework.ICoolQApi.SendGroupMsg*"></a>
+  <h4 id="Newbe_CQP_Framework_ICoolQApi_SendGroupMsg_System_Int64_System_String_" data-uid="Newbe.CQP.Framework.ICoolQApi.SendGroupMsg(System.Int64,System.String)">SendGroupMsg(Int64, String)</h4>
+  <div class="markdown level1 summary"><p>发送群消息</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int SendGroupMsg(long groupId, string content)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">groupId</span></td>
+        <td><p>目标群号</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">content</span></td>
+        <td><p>消息内容</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Newbe_CQP_Framework_ICoolQApi_SendLike_" data-uid="Newbe.CQP.Framework.ICoolQApi.SendLike*"></a>
+  <h4 id="Newbe_CQP_Framework_ICoolQApi_SendLike_System_Int64_" data-uid="Newbe.CQP.Framework.ICoolQApi.SendLike(System.Int64)">SendLike(Int64)</h4>
+  <div class="markdown level1 summary"><p>发送赞</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int SendLike(long qqId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">qqId</span></td>
+        <td><p>目标QQ号</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Newbe_CQP_Framework_ICoolQApi_SendLike2_" data-uid="Newbe.CQP.Framework.ICoolQApi.SendLike2*"></a>
+  <h4 id="Newbe_CQP_Framework_ICoolQApi_SendLike2_System_Int64_System_Int32_" data-uid="Newbe.CQP.Framework.ICoolQApi.SendLike2(System.Int64,System.Int32)">SendLike2(Int64, Int32)</h4>
+  <div class="markdown level1 summary"><p>发送赞</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int SendLike2(long qqId, int times)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">qqId</span></td>
+        <td><p>目标QQ</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">times</span></td>
+        <td><p>点赞次数</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Newbe_CQP_Framework_ICoolQApi_SendPrivateMsg_" data-uid="Newbe.CQP.Framework.ICoolQApi.SendPrivateMsg*"></a>
+  <h4 id="Newbe_CQP_Framework_ICoolQApi_SendPrivateMsg_System_Int64_System_String_" data-uid="Newbe.CQP.Framework.ICoolQApi.SendPrivateMsg(System.Int64,System.String)">SendPrivateMsg(Int64, String)</h4>
+  <div class="markdown level1 summary"><p>发送好友消息</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int SendPrivateMsg(long qqId, string content)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">qqId</span></td>
+        <td><p>目标QQ号</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">content</span></td>
+        <td><p>消息内容</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Newbe_CQP_Framework_ICoolQApi_SetDiscussLeave_" data-uid="Newbe.CQP.Framework.ICoolQApi.SetDiscussLeave*"></a>
+  <h4 id="Newbe_CQP_Framework_ICoolQApi_SetDiscussLeave_System_Int64_" data-uid="Newbe.CQP.Framework.ICoolQApi.SetDiscussLeave(System.Int64)">SetDiscussLeave(Int64)</h4>
+  <div class="markdown level1 summary"><p>退出讨论组</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int SetDiscussLeave(long discussId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">discussId</span></td>
+        <td><p>目标讨论组</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Newbe_CQP_Framework_ICoolQApi_SetFatal_" data-uid="Newbe.CQP.Framework.ICoolQApi.SetFatal*"></a>
+  <h4 id="Newbe_CQP_Framework_ICoolQApi_SetFatal_System_String_" data-uid="Newbe.CQP.Framework.ICoolQApi.SetFatal(System.String)">SetFatal(String)</h4>
+  <div class="markdown level1 summary"><p>致命错误提示</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int SetFatal(string errorText)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">errorText</span></td>
+        <td><p>错误信息</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Newbe_CQP_Framework_ICoolQApi_SetFriendAddRequest_" data-uid="Newbe.CQP.Framework.ICoolQApi.SetFriendAddRequest*"></a>
+  <h4 id="Newbe_CQP_Framework_ICoolQApi_SetFriendAddRequest_System_String_System_Int32_System_String_" data-uid="Newbe.CQP.Framework.ICoolQApi.SetFriendAddRequest(System.String,System.Int32,System.String)">SetFriendAddRequest(String, Int32, String)</h4>
+  <div class="markdown level1 summary"><p>好友添加请求</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int SetFriendAddRequest(string requestReturn, int returnType, string remark)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">requestReturn</span></td>
+        <td><p>请求事件收到的“反馈标识”参数</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">returnType</span></td>
+        <td><h1 id="请求通过-或-请求拒绝">请求_通过 或 #请求_拒绝</h1>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">remark</span></td>
-        <td><p>对此好友的备注名。</p>
+        <td><p>添加后的好友备注</p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="Newbe_CQP_Framework_ICoolQApi_ProcessAddGroupRequest_" data-uid="Newbe.CQP.Framework.ICoolQApi.ProcessAddGroupRequest*"></a>
-  <h4 id="Newbe_CQP_Framework_ICoolQApi_ProcessAddGroupRequest_System_String_Newbe_CQP_Framework_CoolQAddGroupRequestType_Newbe_CQP_Framework_CoolQRequestResult_System_String_" data-uid="Newbe.CQP.Framework.ICoolQApi.ProcessAddGroupRequest(System.String,Newbe.CQP.Framework.CoolQAddGroupRequestType,Newbe.CQP.Framework.CoolQRequestResult,System.String)">ProcessAddGroupRequest(String, CoolQAddGroupRequestType, CoolQRequestResult, String)</h4>
-  <div class="markdown level1 summary"><p>处理加群请求。</p>
+  <a id="Newbe_CQP_Framework_ICoolQApi_SetGroupAddRequest_" data-uid="Newbe.CQP.Framework.ICoolQApi.SetGroupAddRequest*"></a>
+  <h4 id="Newbe_CQP_Framework_ICoolQApi_SetGroupAddRequest_System_String_Newbe_CQP_Framework_CoolQAddGroupRequestType_Newbe_CQP_Framework_CoolQRequestResult_" data-uid="Newbe.CQP.Framework.ICoolQApi.SetGroupAddRequest(System.String,Newbe.CQP.Framework.CoolQAddGroupRequestType,Newbe.CQP.Framework.CoolQRequestResult)">SetGroupAddRequest(String, CoolQAddGroupRequestType, CoolQRequestResult)</h4>
+  <div class="markdown level1 summary"><p>群添加请求</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ProcessAddGroupRequest(string responseMark, CoolQAddGroupRequestType resquestType, CoolQRequestResult operation, string reason)</code></pre>
+    <pre><code class="lang-csharp hljs">int SetGroupAddRequest(string requestReturn, CoolQAddGroupRequestType requestType, CoolQRequestResult returnType)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -768,40 +931,111 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">responseMark</span></td>
-        <td><p>用于处理请求的反馈标识。</p>
+        <td><span class="parametername">requestReturn</span></td>
+        <td><p>请求事件收到的“反馈标识”参数</p>
 </td>
       </tr>
       <tr>
         <td><a class="xref" href="Newbe.CQP.Framework.CoolQAddGroupRequestType.html">CoolQAddGroupRequestType</a></td>
-        <td><span class="parametername">resquestType</span></td>
-        <td><p>请求类型。</p>
+        <td><span class="parametername">requestType</span></td>
+        <td><p>根据请求事件的子类型区分 #请求_群添加 或 #请求_群邀请</p>
 </td>
       </tr>
       <tr>
         <td><a class="xref" href="Newbe.CQP.Framework.CoolQRequestResult.html">CoolQRequestResult</a></td>
-        <td><span class="parametername">operation</span></td>
-        <td><p>请求处理结果。</p>
+        <td><span class="parametername">returnType</span></td>
+        <td><h1 id="请求通过-或-请求拒绝">请求_通过 或 #请求_拒绝</h1>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Newbe_CQP_Framework_ICoolQApi_SetGroupAddRequest2_" data-uid="Newbe.CQP.Framework.ICoolQApi.SetGroupAddRequest2*"></a>
+  <h4 id="Newbe_CQP_Framework_ICoolQApi_SetGroupAddRequest2_System_String_Newbe_CQP_Framework_CoolQAddGroupRequestType_Newbe_CQP_Framework_CoolQRequestResult_System_String_" data-uid="Newbe.CQP.Framework.ICoolQApi.SetGroupAddRequest2(System.String,Newbe.CQP.Framework.CoolQAddGroupRequestType,Newbe.CQP.Framework.CoolQRequestResult,System.String)">SetGroupAddRequest2(String, CoolQAddGroupRequestType, CoolQRequestResult, String)</h4>
+  <div class="markdown level1 summary"><p>群添加请求</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int SetGroupAddRequest2(string requestReturn, CoolQAddGroupRequestType requestType, CoolQRequestResult returnType, string reason)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">requestReturn</span></td>
+        <td><p>请求事件收到的“反馈标识”参数</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Newbe.CQP.Framework.CoolQAddGroupRequestType.html">CoolQAddGroupRequestType</a></td>
+        <td><span class="parametername">requestType</span></td>
+        <td><p>根据请求事件的子类型区分 #请求_群添加 或 #请求_群邀请</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Newbe.CQP.Framework.CoolQRequestResult.html">CoolQRequestResult</a></td>
+        <td><span class="parametername">returnType</span></td>
+        <td><h1 id="请求通过-或-请求拒绝">请求_通过 或 #请求_拒绝</h1>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">reason</span></td>
-        <td><p>附言。</p>
+        <td><p>操作理由，仅 #请求_群添加 且 #请求_拒绝 时可用</p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="Newbe_CQP_Framework_ICoolQApi_QuitAndDismissTheGroup_" data-uid="Newbe.CQP.Framework.ICoolQApi.QuitAndDismissTheGroup*"></a>
-  <h4 id="Newbe_CQP_Framework_ICoolQApi_QuitAndDismissTheGroup_System_Int64_" data-uid="Newbe.CQP.Framework.ICoolQApi.QuitAndDismissTheGroup(System.Int64)">QuitAndDismissTheGroup(Int64)</h4>
-  <div class="markdown level1 summary"><p>退出并解散指定群。</p>
+  <a id="Newbe_CQP_Framework_ICoolQApi_SetGroupAdmin_" data-uid="Newbe.CQP.Framework.ICoolQApi.SetGroupAdmin*"></a>
+  <h4 id="Newbe_CQP_Framework_ICoolQApi_SetGroupAdmin_System_Int64_System_Int64_System_Boolean_" data-uid="Newbe.CQP.Framework.ICoolQApi.SetGroupAdmin(System.Int64,System.Int64,System.Boolean)">SetGroupAdmin(Int64, Int64, Boolean)</h4>
+  <div class="markdown level1 summary"><p>设置群管理员</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void QuitAndDismissTheGroup(long groupId)</code></pre>
+    <pre><code class="lang-csharp hljs">int SetGroupAdmin(long groupId, long qqId, bool manager)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -816,79 +1050,48 @@
       <tr>
         <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">groupId</span></td>
-        <td><p>要退出并解散的群的群号。</p>
+        <td><p>目标群</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">qqId</span></td>
+        <td><p>目标QQ</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">manager</span></td>
+        <td><p>true/设置管理员 false/取消管理员</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
-  <a id="Newbe_CQP_Framework_ICoolQApi_QuitTheDiscussGroup_" data-uid="Newbe.CQP.Framework.ICoolQApi.QuitTheDiscussGroup*"></a>
-  <h4 id="Newbe_CQP_Framework_ICoolQApi_QuitTheDiscussGroup_System_Int64_" data-uid="Newbe.CQP.Framework.ICoolQApi.QuitTheDiscussGroup(System.Int64)">QuitTheDiscussGroup(Int64)</h4>
-  <div class="markdown level1 summary"><p>退出指定的讨论组。</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void QuitTheDiscussGroup(long discussGroupId)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
-        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int64</span></td>
-        <td><span class="parametername">discussGroupId</span></td>
-        <td><p>要退出的讨论组的ID。</p>
-</td>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="Newbe_CQP_Framework_ICoolQApi_QuitTheGroup_" data-uid="Newbe.CQP.Framework.ICoolQApi.QuitTheGroup*"></a>
-  <h4 id="Newbe_CQP_Framework_ICoolQApi_QuitTheGroup_System_Int64_" data-uid="Newbe.CQP.Framework.ICoolQApi.QuitTheGroup(System.Int64)">QuitTheGroup(Int64)</h4>
-  <div class="markdown level1 summary"><p>退出指定群。</p>
+  <a id="Newbe_CQP_Framework_ICoolQApi_SetGroupAnonymous_" data-uid="Newbe.CQP.Framework.ICoolQApi.SetGroupAnonymous*"></a>
+  <h4 id="Newbe_CQP_Framework_ICoolQApi_SetGroupAnonymous_System_Int64_System_Boolean_" data-uid="Newbe.CQP.Framework.ICoolQApi.SetGroupAnonymous(System.Int64,System.Boolean)">SetGroupAnonymous(Int64, Boolean)</h4>
+  <div class="markdown level1 summary"><p>群匿名设置</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void QuitTheGroup(long groupId)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int64</span></td>
-        <td><span class="parametername">groupId</span></td>
-        <td><p>要退出的群的群号。</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Newbe_CQP_Framework_ICoolQApi_RemoveBanned_" data-uid="Newbe.CQP.Framework.ICoolQApi.RemoveBanned*"></a>
-  <h4 id="Newbe_CQP_Framework_ICoolQApi_RemoveBanned_System_Int64_System_Int64_" data-uid="Newbe.CQP.Framework.ICoolQApi.RemoveBanned(System.Int64,System.Int64)">RemoveBanned(Int64, Int64)</h4>
-  <div class="markdown level1 summary"><p>在指定群内对被禁言的QQ执行解除禁言操作。</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void RemoveBanned(long groupId, long qq)</code></pre>
+    <pre><code class="lang-csharp hljs">int SetGroupAnonymous(long groupId, bool anonymous)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -903,27 +1106,42 @@
       <tr>
         <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">groupId</span></td>
-        <td><p>要进行解除禁言操作的群。</p>
+        <td><p>目标群</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Int64</span></td>
-        <td><span class="parametername">qq</span></td>
-        <td><p>要解除禁言的QQ。</p>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">anonymous</span></td>
+        <td><p>true开启.false关闭</p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="Newbe_CQP_Framework_ICoolQApi_RemoveBannedAll_" data-uid="Newbe.CQP.Framework.ICoolQApi.RemoveBannedAll*"></a>
-  <h4 id="Newbe_CQP_Framework_ICoolQApi_RemoveBannedAll_System_Int64_" data-uid="Newbe.CQP.Framework.ICoolQApi.RemoveBannedAll(System.Int64)">RemoveBannedAll(Int64)</h4>
-  <div class="markdown level1 summary"><p>解除指定群的全体禁言状态。</p>
+  <a id="Newbe_CQP_Framework_ICoolQApi_SetGroupAnonymousBan_" data-uid="Newbe.CQP.Framework.ICoolQApi.SetGroupAnonymousBan*"></a>
+  <h4 id="Newbe_CQP_Framework_ICoolQApi_SetGroupAnonymousBan_System_Int64_System_String_System_Int64_" data-uid="Newbe.CQP.Framework.ICoolQApi.SetGroupAnonymousBan(System.Int64,System.String,System.Int64)">SetGroupAnonymousBan(Int64, String, Int64)</h4>
+  <div class="markdown level1 summary"><p>禁言匿名群员</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void RemoveBannedAll(long groupId)</code></pre>
+    <pre><code class="lang-csharp hljs">int SetGroupAnonymousBan(long groupId, string fromAnonymous, long time)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -938,190 +1156,48 @@
       <tr>
         <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">groupId</span></td>
-        <td><p>要解除全体禁言状态的群。</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Newbe_CQP_Framework_ICoolQApi_RevokeAdmin_" data-uid="Newbe.CQP.Framework.ICoolQApi.RevokeAdmin*"></a>
-  <h4 id="Newbe_CQP_Framework_ICoolQApi_RevokeAdmin_System_Int64_System_Int64_" data-uid="Newbe.CQP.Framework.ICoolQApi.RevokeAdmin(System.Int64,System.Int64)">RevokeAdmin(Int64, Int64)</h4>
-  <div class="markdown level1 summary"><p>把指定群指定QQ的群管理员身份取消。</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void RevokeAdmin(long groupId, long qq)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int64</span></td>
-        <td><span class="parametername">groupId</span></td>
-        <td><p>要执行操作的群。</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int64</span></td>
-        <td><span class="parametername">qq</span></td>
-        <td><p>要取消管理员的QQ。</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Newbe_CQP_Framework_ICoolQApi_SendDiscussGroupMessage_" data-uid="Newbe.CQP.Framework.ICoolQApi.SendDiscussGroupMessage*"></a>
-  <h4 id="Newbe_CQP_Framework_ICoolQApi_SendDiscussGroupMessage_System_Int64_System_String_" data-uid="Newbe.CQP.Framework.ICoolQApi.SendDiscussGroupMessage(System.Int64,System.String)">SendDiscussGroupMessage(Int64, String)</h4>
-  <div class="markdown level1 summary"><p>向指定的讨论组发送讨论组消息。</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void SendDiscussGroupMessage(long dicussGroupId, string message)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int64</span></td>
-        <td><span class="parametername">dicussGroupId</span></td>
-        <td><p>接收此消息的讨论组号。</p>
+        <td><p>目标群</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">message</span></td>
-        <td><p>消息内容。</p>
+        <td><span class="parametername">fromAnonymous</span></td>
+        <td><p>群消息事件收到的“fromAnonymous”参数</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">time</span></td>
+        <td><p>禁言的时间，单位为秒。不支持解禁</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
-  <a id="Newbe_CQP_Framework_ICoolQApi_SendGood_" data-uid="Newbe.CQP.Framework.ICoolQApi.SendGood*"></a>
-  <h4 id="Newbe_CQP_Framework_ICoolQApi_SendGood_System_Int64_" data-uid="Newbe.CQP.Framework.ICoolQApi.SendGood(System.Int64)">SendGood(Int64)</h4>
-  <div class="markdown level1 summary"><p>给指定QQ点赞。</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void SendGood(long qq)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
-        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int64</span></td>
-        <td><span class="parametername">qq</span></td>
-        <td><p>要点赞的QQ的号码。</p>
-</td>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="Newbe_CQP_Framework_ICoolQApi_SendGroupMessage_" data-uid="Newbe.CQP.Framework.ICoolQApi.SendGroupMessage*"></a>
-  <h4 id="Newbe_CQP_Framework_ICoolQApi_SendGroupMessage_System_Int64_System_String_" data-uid="Newbe.CQP.Framework.ICoolQApi.SendGroupMessage(System.Int64,System.String)">SendGroupMessage(Int64, String)</h4>
-  <div class="markdown level1 summary"><p>向指定的群发送群消息。</p>
+  <a id="Newbe_CQP_Framework_ICoolQApi_SetGroupBan_" data-uid="Newbe.CQP.Framework.ICoolQApi.SetGroupBan*"></a>
+  <h4 id="Newbe_CQP_Framework_ICoolQApi_SetGroupBan_System_Int64_System_Int64_System_Int64_" data-uid="Newbe.CQP.Framework.ICoolQApi.SetGroupBan(System.Int64,System.Int64,System.Int64)">SetGroupBan(Int64, Int64, Int64)</h4>
+  <div class="markdown level1 summary"><p>禁言群员</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void SendGroupMessage(long groupId, string message)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int64</span></td>
-        <td><span class="parametername">groupId</span></td>
-        <td><p>接收此消息的群号。</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">message</span></td>
-        <td><p>消息内容。</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Newbe_CQP_Framework_ICoolQApi_SendPrivateMessage_" data-uid="Newbe.CQP.Framework.ICoolQApi.SendPrivateMessage*"></a>
-  <h4 id="Newbe_CQP_Framework_ICoolQApi_SendPrivateMessage_System_Int64_System_String_" data-uid="Newbe.CQP.Framework.ICoolQApi.SendPrivateMessage(System.Int64,System.String)">SendPrivateMessage(Int64, String)</h4>
-  <div class="markdown level1 summary"><p>向指定的QQ发送私聊消息。</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void SendPrivateMessage(long qq, string message)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int64</span></td>
-        <td><span class="parametername">qq</span></td>
-        <td><p>接收此消息的QQ。</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">message</span></td>
-        <td><p>私聊消息内容。</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Newbe_CQP_Framework_ICoolQApi_SetAsAdmin_" data-uid="Newbe.CQP.Framework.ICoolQApi.SetAsAdmin*"></a>
-  <h4 id="Newbe_CQP_Framework_ICoolQApi_SetAsAdmin_System_Int64_System_Int64_" data-uid="Newbe.CQP.Framework.ICoolQApi.SetAsAdmin(System.Int64,System.Int64)">SetAsAdmin(Int64, Int64)</h4>
-  <div class="markdown level1 summary"><p>把指定QQ设定为指定群的管理员。</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void SetAsAdmin(long groupId, long qq)</code></pre>
+    <pre><code class="lang-csharp hljs">int SetGroupBan(long groupId, long qqId, long time)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1136,14 +1212,35 @@
       <tr>
         <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">groupId</span></td>
-        <td><p>要进行操作的群。</p>
+        <td><p>目标群</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.Int64</span></td>
-        <td><span class="parametername">qq</span></td>
-        <td><p>要被提升为管理员的QQ。</p>
+        <td><span class="parametername">qqId</span></td>
+        <td><p>目标QQ</p>
 </td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">time</span></td>
+        <td><p>禁言的时间，单位为秒。如果要解禁，这里填写0</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -1151,12 +1248,12 @@
   
   <a id="Newbe_CQP_Framework_ICoolQApi_SetGroupCard_" data-uid="Newbe.CQP.Framework.ICoolQApi.SetGroupCard*"></a>
   <h4 id="Newbe_CQP_Framework_ICoolQApi_SetGroupCard_System_Int64_System_Int64_System_String_" data-uid="Newbe.CQP.Framework.ICoolQApi.SetGroupCard(System.Int64,System.Int64,System.String)">SetGroupCard(Int64, Int64, String)</h4>
-  <div class="markdown level1 summary"><p>修改在指定群内指定QQ的群名片。</p>
+  <div class="markdown level1 summary"><p>设置群成员名片</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void SetGroupCard(long groupId, long qq, string newCard)</code></pre>
+    <pre><code class="lang-csharp hljs">int SetGroupCard(long groupId, long qqId, string newCard)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1171,33 +1268,48 @@
       <tr>
         <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">groupId</span></td>
-        <td><p>要执行操作的群。</p>
+        <td><p>目标群</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.Int64</span></td>
-        <td><span class="parametername">qq</span></td>
-        <td><p>要修改名片的QQ。</p>
+        <td><span class="parametername">qqId</span></td>
+        <td><p>目标QQ</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">newCard</span></td>
-        <td><p>新名片内容。</p>
+        <td><p>新名片</p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="Newbe_CQP_Framework_ICoolQApi_SetGroupTitle_" data-uid="Newbe.CQP.Framework.ICoolQApi.SetGroupTitle*"></a>
-  <h4 id="Newbe_CQP_Framework_ICoolQApi_SetGroupTitle_System_Int64_System_Int64_System_Int64_System_Int64_" data-uid="Newbe.CQP.Framework.ICoolQApi.SetGroupTitle(System.Int64,System.Int64,System.Int64,System.Int64)">SetGroupTitle(Int64, Int64, Int64, Int64)</h4>
-  <div class="markdown level1 summary"><p>赋予指定群内指定成员会过期的群成员专属头衔。</p>
+  <a id="Newbe_CQP_Framework_ICoolQApi_SetGroupKick_" data-uid="Newbe.CQP.Framework.ICoolQApi.SetGroupKick*"></a>
+  <h4 id="Newbe_CQP_Framework_ICoolQApi_SetGroupKick_System_Int64_System_Int64_System_Boolean_" data-uid="Newbe.CQP.Framework.ICoolQApi.SetGroupKick(System.Int64,System.Int64,System.Boolean)">SetGroupKick(Int64, Int64, Boolean)</h4>
+  <div class="markdown level1 summary"><p>踢出群员</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void SetGroupTitle(long groupId, long qq, long newTitle, long duration)</code></pre>
+    <pre><code class="lang-csharp hljs">int SetGroupKick(long groupId, long qqId, bool refused)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1212,39 +1324,48 @@
       <tr>
         <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">groupId</span></td>
-        <td><p>要执行操作的群。</p>
+        <td><p>目标群</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.Int64</span></td>
-        <td><span class="parametername">qq</span></td>
-        <td><p>要赋予头衔的QQ。</p>
+        <td><span class="parametername">qqId</span></td>
+        <td><p>目标QQ</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Int64</span></td>
-        <td><span class="parametername">newTitle</span></td>
-        <td><p>头衔内容。</p>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">refused</span></td>
+        <td><p>如果为真，则“不再接收此人加群申请”</p>
 </td>
       </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
       <tr>
-        <td><span class="xref">System.Int64</span></td>
-        <td><span class="parametername">duration</span></td>
-        <td><p>头衔生效时间。（单位：秒）</p>
-</td>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="Newbe_CQP_Framework_ICoolQApi_SetGroupTitle_" data-uid="Newbe.CQP.Framework.ICoolQApi.SetGroupTitle*"></a>
-  <h4 id="Newbe_CQP_Framework_ICoolQApi_SetGroupTitle_System_Int64_System_Int64_System_String_" data-uid="Newbe.CQP.Framework.ICoolQApi.SetGroupTitle(System.Int64,System.Int64,System.String)">SetGroupTitle(Int64, Int64, String)</h4>
-  <div class="markdown level1 summary"><p>赋予指定群内指定成员永久群成员专属头衔。</p>
+  <a id="Newbe_CQP_Framework_ICoolQApi_SetGroupLeave_" data-uid="Newbe.CQP.Framework.ICoolQApi.SetGroupLeave*"></a>
+  <h4 id="Newbe_CQP_Framework_ICoolQApi_SetGroupLeave_System_Int64_System_Boolean_" data-uid="Newbe.CQP.Framework.ICoolQApi.SetGroupLeave(System.Int64,System.Boolean)">SetGroupLeave(Int64, Boolean)</h4>
+  <div class="markdown level1 summary"><p>退出群</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void SetGroupTitle(long groupId, long qq, string newTitle)</code></pre>
+    <pre><code class="lang-csharp hljs">int SetGroupLeave(long groupId, bool disband)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1259,23 +1380,148 @@
       <tr>
         <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">groupId</span></td>
-        <td><p>要执行操作的群。</p>
+        <td><p>目标群</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">disband</span></td>
+        <td><p>true解散本群(群主),false退出本群(管理、群成员)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Newbe_CQP_Framework_ICoolQApi_SetGroupSpecialTitle_" data-uid="Newbe.CQP.Framework.ICoolQApi.SetGroupSpecialTitle*"></a>
+  <h4 id="Newbe_CQP_Framework_ICoolQApi_SetGroupSpecialTitle_System_Int64_System_Int64_System_String_System_Int64_" data-uid="Newbe.CQP.Framework.ICoolQApi.SetGroupSpecialTitle(System.Int64,System.Int64,System.String,System.Int64)">SetGroupSpecialTitle(Int64, Int64, String, Int64)</h4>
+  <div class="markdown level1 summary"><p>设置群成员专属头衔</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int SetGroupSpecialTitle(long groupId, long qqId, string specialTitle, long time)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">groupId</span></td>
+        <td><p>目标群</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.Int64</span></td>
-        <td><span class="parametername">qq</span></td>
-        <td><p>要赋予头衔的QQ。</p>
+        <td><span class="parametername">qqId</span></td>
+        <td><p>目标QQ</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">newTitle</span></td>
-        <td><p>头衔内容。</p>
+        <td><span class="parametername">specialTitle</span></td>
+        <td><p>专属头衔,如果要删除，这里填空</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">time</span></td>
+        <td><p>专属头衔有效期，单位为秒。如果永久有效，这里填写-1</p>
 </td>
       </tr>
     </tbody>
   </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Newbe_CQP_Framework_ICoolQApi_SetGroupWholeBan_" data-uid="Newbe.CQP.Framework.ICoolQApi.SetGroupWholeBan*"></a>
+  <h4 id="Newbe_CQP_Framework_ICoolQApi_SetGroupWholeBan_System_Int64_System_Boolean_" data-uid="Newbe.CQP.Framework.ICoolQApi.SetGroupWholeBan(System.Int64,System.Boolean)">SetGroupWholeBan(Int64, Boolean)</h4>
+  <div class="markdown level1 summary"><p>全群禁言</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int SetGroupWholeBan(long groupId, bool open)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">groupId</span></td>
+        <td><p>目标群</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">open</span></td>
+        <td><p>true开启,false关闭</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Newbe.CQP.Framework.CoolApiExtensions.html#Newbe_CQP_Framework_CoolApiExtensions_AddLog_Newbe_CQP_Framework_ICoolQApi_Newbe_CQP_Framework_CoolQLogLevel_System_String_">CoolApiExtensions.AddLog(ICoolQApi, CoolQLogLevel, String)</a>
+  </div>
 </article>
           </div>
           

@@ -7,6 +7,24 @@ references:
   commentId: N:Newbe.CQP.Framework
   fullName: Newbe.CQP.Framework
   nameWithType: Newbe.CQP.Framework
+- uid: Newbe.CQP.Framework.CoolApiExtensions
+  name: CoolApiExtensions
+  href: api/Newbe.CQP.Framework.CoolApiExtensions.html
+  commentId: T:Newbe.CQP.Framework.CoolApiExtensions
+  fullName: Newbe.CQP.Framework.CoolApiExtensions
+  nameWithType: CoolApiExtensions
+- uid: Newbe.CQP.Framework.CoolApiExtensions.AddLog(Newbe.CQP.Framework.ICoolQApi,Newbe.CQP.Framework.CoolQLogLevel,System.String)
+  name: AddLog(ICoolQApi, CoolQLogLevel, String)
+  href: api/Newbe.CQP.Framework.CoolApiExtensions.html#Newbe_CQP_Framework_CoolApiExtensions_AddLog_Newbe_CQP_Framework_ICoolQApi_Newbe_CQP_Framework_CoolQLogLevel_System_String_
+  commentId: M:Newbe.CQP.Framework.CoolApiExtensions.AddLog(Newbe.CQP.Framework.ICoolQApi,Newbe.CQP.Framework.CoolQLogLevel,System.String)
+  fullName: Newbe.CQP.Framework.CoolApiExtensions.AddLog(Newbe.CQP.Framework.ICoolQApi, Newbe.CQP.Framework.CoolQLogLevel, System.String)
+  nameWithType: CoolApiExtensions.AddLog(ICoolQApi, CoolQLogLevel, String)
+- uid: Newbe.CQP.Framework.CoolApiExtensions.AddLog*
+  name: AddLog
+  href: api/Newbe.CQP.Framework.CoolApiExtensions.html#Newbe_CQP_Framework_CoolApiExtensions_AddLog_
+  commentId: Overload:Newbe.CQP.Framework.CoolApiExtensions.AddLog
+  fullName: Newbe.CQP.Framework.CoolApiExtensions.AddLog
+  nameWithType: CoolApiExtensions.AddLog
 - uid: Newbe.CQP.Framework.CoolQAddGroupRequestType
   name: CoolQAddGroupRequestType
   href: api/Newbe.CQP.Framework.CoolQAddGroupRequestType.html
@@ -445,114 +463,54 @@ references:
   commentId: T:Newbe.CQP.Framework.ICoolQApi
   fullName: Newbe.CQP.Framework.ICoolQApi
   nameWithType: ICoolQApi
-- uid: Newbe.CQP.Framework.ICoolQApi.AppDirectory
-  name: AppDirectory
-  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_AppDirectory
-  commentId: P:Newbe.CQP.Framework.ICoolQApi.AppDirectory
-  fullName: Newbe.CQP.Framework.ICoolQApi.AppDirectory
-  nameWithType: ICoolQApi.AppDirectory
-- uid: Newbe.CQP.Framework.ICoolQApi.AppDirectory*
-  name: AppDirectory
-  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_AppDirectory_
-  commentId: Overload:Newbe.CQP.Framework.ICoolQApi.AppDirectory
-  fullName: Newbe.CQP.Framework.ICoolQApi.AppDirectory
-  nameWithType: ICoolQApi.AppDirectory
-- uid: Newbe.CQP.Framework.ICoolQApi.Ban(System.Int64,System.Int64,System.Int32)
-  name: Ban(Int64, Int64, Int32)
-  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_Ban_System_Int64_System_Int64_System_Int32_
-  commentId: M:Newbe.CQP.Framework.ICoolQApi.Ban(System.Int64,System.Int64,System.Int32)
-  fullName: Newbe.CQP.Framework.ICoolQApi.Ban(System.Int64, System.Int64, System.Int32)
-  nameWithType: ICoolQApi.Ban(Int64, Int64, Int32)
-- uid: Newbe.CQP.Framework.ICoolQApi.Ban(System.Int64,System.Int64,System.TimeSpan)
-  name: Ban(Int64, Int64, TimeSpan)
-  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_Ban_System_Int64_System_Int64_System_TimeSpan_
-  commentId: M:Newbe.CQP.Framework.ICoolQApi.Ban(System.Int64,System.Int64,System.TimeSpan)
-  fullName: Newbe.CQP.Framework.ICoolQApi.Ban(System.Int64, System.Int64, System.TimeSpan)
-  nameWithType: ICoolQApi.Ban(Int64, Int64, TimeSpan)
-- uid: Newbe.CQP.Framework.ICoolQApi.Ban*
-  name: Ban
-  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_Ban_
-  commentId: Overload:Newbe.CQP.Framework.ICoolQApi.Ban
-  fullName: Newbe.CQP.Framework.ICoolQApi.Ban
-  nameWithType: ICoolQApi.Ban
-- uid: Newbe.CQP.Framework.ICoolQApi.BanAll(System.Int64)
-  name: BanAll(Int64)
-  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_BanAll_System_Int64_
-  commentId: M:Newbe.CQP.Framework.ICoolQApi.BanAll(System.Int64)
-  fullName: Newbe.CQP.Framework.ICoolQApi.BanAll(System.Int64)
-  nameWithType: ICoolQApi.BanAll(Int64)
-- uid: Newbe.CQP.Framework.ICoolQApi.BanAll*
-  name: BanAll
-  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_BanAll_
-  commentId: Overload:Newbe.CQP.Framework.ICoolQApi.BanAll
-  fullName: Newbe.CQP.Framework.ICoolQApi.BanAll
-  nameWithType: ICoolQApi.BanAll
-- uid: Newbe.CQP.Framework.ICoolQApi.BanAnonymous(System.Int64,System.String,System.Int64)
-  name: BanAnonymous(Int64, String, Int64)
-  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_BanAnonymous_System_Int64_System_String_System_Int64_
-  commentId: M:Newbe.CQP.Framework.ICoolQApi.BanAnonymous(System.Int64,System.String,System.Int64)
-  fullName: Newbe.CQP.Framework.ICoolQApi.BanAnonymous(System.Int64, System.String, System.Int64)
-  nameWithType: ICoolQApi.BanAnonymous(Int64, String, Int64)
-- uid: Newbe.CQP.Framework.ICoolQApi.BanAnonymous(System.Int64,System.String,System.TimeSpan)
-  name: BanAnonymous(Int64, String, TimeSpan)
-  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_BanAnonymous_System_Int64_System_String_System_TimeSpan_
-  commentId: M:Newbe.CQP.Framework.ICoolQApi.BanAnonymous(System.Int64,System.String,System.TimeSpan)
-  fullName: Newbe.CQP.Framework.ICoolQApi.BanAnonymous(System.Int64, System.String, System.TimeSpan)
-  nameWithType: ICoolQApi.BanAnonymous(Int64, String, TimeSpan)
-- uid: Newbe.CQP.Framework.ICoolQApi.BanAnonymous*
-  name: BanAnonymous
-  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_BanAnonymous_
-  commentId: Overload:Newbe.CQP.Framework.ICoolQApi.BanAnonymous
-  fullName: Newbe.CQP.Framework.ICoolQApi.BanAnonymous
-  nameWithType: ICoolQApi.BanAnonymous
-- uid: Newbe.CQP.Framework.ICoolQApi.Cookies
-  name: Cookies
-  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_Cookies
-  commentId: P:Newbe.CQP.Framework.ICoolQApi.Cookies
-  fullName: Newbe.CQP.Framework.ICoolQApi.Cookies
-  nameWithType: ICoolQApi.Cookies
-- uid: Newbe.CQP.Framework.ICoolQApi.Cookies*
-  name: Cookies
-  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_Cookies_
-  commentId: Overload:Newbe.CQP.Framework.ICoolQApi.Cookies
-  fullName: Newbe.CQP.Framework.ICoolQApi.Cookies
-  nameWithType: ICoolQApi.Cookies
-- uid: Newbe.CQP.Framework.ICoolQApi.CsrfToken
-  name: CsrfToken
-  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_CsrfToken
-  commentId: P:Newbe.CQP.Framework.ICoolQApi.CsrfToken
-  fullName: Newbe.CQP.Framework.ICoolQApi.CsrfToken
-  nameWithType: ICoolQApi.CsrfToken
-- uid: Newbe.CQP.Framework.ICoolQApi.CsrfToken*
-  name: CsrfToken
-  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_CsrfToken_
-  commentId: Overload:Newbe.CQP.Framework.ICoolQApi.CsrfToken
-  fullName: Newbe.CQP.Framework.ICoolQApi.CsrfToken
-  nameWithType: ICoolQApi.CsrfToken
-- uid: Newbe.CQP.Framework.ICoolQApi.DisableAnonymousChat(System.Int64)
-  name: DisableAnonymousChat(Int64)
-  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_DisableAnonymousChat_System_Int64_
-  commentId: M:Newbe.CQP.Framework.ICoolQApi.DisableAnonymousChat(System.Int64)
-  fullName: Newbe.CQP.Framework.ICoolQApi.DisableAnonymousChat(System.Int64)
-  nameWithType: ICoolQApi.DisableAnonymousChat(Int64)
-- uid: Newbe.CQP.Framework.ICoolQApi.DisableAnonymousChat*
-  name: DisableAnonymousChat
-  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_DisableAnonymousChat_
-  commentId: Overload:Newbe.CQP.Framework.ICoolQApi.DisableAnonymousChat
-  fullName: Newbe.CQP.Framework.ICoolQApi.DisableAnonymousChat
-  nameWithType: ICoolQApi.DisableAnonymousChat
-- uid: Newbe.CQP.Framework.ICoolQApi.EnableAnonymousChat(System.Int64)
-  name: EnableAnonymousChat(Int64)
-  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_EnableAnonymousChat_System_Int64_
-  commentId: M:Newbe.CQP.Framework.ICoolQApi.EnableAnonymousChat(System.Int64)
-  fullName: Newbe.CQP.Framework.ICoolQApi.EnableAnonymousChat(System.Int64)
-  nameWithType: ICoolQApi.EnableAnonymousChat(Int64)
-- uid: Newbe.CQP.Framework.ICoolQApi.EnableAnonymousChat*
-  name: EnableAnonymousChat
-  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_EnableAnonymousChat_
-  commentId: Overload:Newbe.CQP.Framework.ICoolQApi.EnableAnonymousChat
-  fullName: Newbe.CQP.Framework.ICoolQApi.EnableAnonymousChat
-  nameWithType: ICoolQApi.EnableAnonymousChat
+- uid: Newbe.CQP.Framework.ICoolQApi.AddLog(System.Int32,Newbe.CQP.Framework.CoolQLogLevel,System.String)
+  name: AddLog(Int32, CoolQLogLevel, String)
+  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_AddLog_System_Int32_Newbe_CQP_Framework_CoolQLogLevel_System_String_
+  commentId: M:Newbe.CQP.Framework.ICoolQApi.AddLog(System.Int32,Newbe.CQP.Framework.CoolQLogLevel,System.String)
+  fullName: Newbe.CQP.Framework.ICoolQApi.AddLog(System.Int32, Newbe.CQP.Framework.CoolQLogLevel, System.String)
+  nameWithType: ICoolQApi.AddLog(Int32, CoolQLogLevel, String)
+- uid: Newbe.CQP.Framework.ICoolQApi.AddLog*
+  name: AddLog
+  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_AddLog_
+  commentId: Overload:Newbe.CQP.Framework.ICoolQApi.AddLog
+  fullName: Newbe.CQP.Framework.ICoolQApi.AddLog
+  nameWithType: ICoolQApi.AddLog
+- uid: Newbe.CQP.Framework.ICoolQApi.GetAppDirectory
+  name: GetAppDirectory()
+  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_GetAppDirectory
+  commentId: M:Newbe.CQP.Framework.ICoolQApi.GetAppDirectory
+  fullName: Newbe.CQP.Framework.ICoolQApi.GetAppDirectory()
+  nameWithType: ICoolQApi.GetAppDirectory()
+- uid: Newbe.CQP.Framework.ICoolQApi.GetAppDirectory*
+  name: GetAppDirectory
+  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_GetAppDirectory_
+  commentId: Overload:Newbe.CQP.Framework.ICoolQApi.GetAppDirectory
+  fullName: Newbe.CQP.Framework.ICoolQApi.GetAppDirectory
+  nameWithType: ICoolQApi.GetAppDirectory
+- uid: Newbe.CQP.Framework.ICoolQApi.GetCookies
+  name: GetCookies()
+  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_GetCookies
+  commentId: M:Newbe.CQP.Framework.ICoolQApi.GetCookies
+  fullName: Newbe.CQP.Framework.ICoolQApi.GetCookies()
+  nameWithType: ICoolQApi.GetCookies()
+- uid: Newbe.CQP.Framework.ICoolQApi.GetCookies*
+  name: GetCookies
+  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_GetCookies_
+  commentId: Overload:Newbe.CQP.Framework.ICoolQApi.GetCookies
+  fullName: Newbe.CQP.Framework.ICoolQApi.GetCookies
+  nameWithType: ICoolQApi.GetCookies
+- uid: Newbe.CQP.Framework.ICoolQApi.GetCsrfToken
+  name: GetCsrfToken()
+  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_GetCsrfToken
+  commentId: M:Newbe.CQP.Framework.ICoolQApi.GetCsrfToken
+  fullName: Newbe.CQP.Framework.ICoolQApi.GetCsrfToken()
+  nameWithType: ICoolQApi.GetCsrfToken()
+- uid: Newbe.CQP.Framework.ICoolQApi.GetCsrfToken*
+  name: GetCsrfToken
+  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_GetCsrfToken_
+  commentId: Overload:Newbe.CQP.Framework.ICoolQApi.GetCsrfToken
+  fullName: Newbe.CQP.Framework.ICoolQApi.GetCsrfToken
+  nameWithType: ICoolQApi.GetCsrfToken
 - uid: Newbe.CQP.Framework.ICoolQApi.GetGroupMemberInfo(System.Int64,System.Int64)
   name: GetGroupMemberInfo(Int64, Int64)
   href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_GetGroupMemberInfo_System_Int64_System_Int64_
@@ -565,234 +523,246 @@ references:
   commentId: Overload:Newbe.CQP.Framework.ICoolQApi.GetGroupMemberInfo
   fullName: Newbe.CQP.Framework.ICoolQApi.GetGroupMemberInfo
   nameWithType: ICoolQApi.GetGroupMemberInfo
-- uid: Newbe.CQP.Framework.ICoolQApi.KickFromGroup(System.Int64,System.Int64,System.Boolean)
-  name: KickFromGroup(Int64, Int64, Boolean)
-  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_KickFromGroup_System_Int64_System_Int64_System_Boolean_
-  commentId: M:Newbe.CQP.Framework.ICoolQApi.KickFromGroup(System.Int64,System.Int64,System.Boolean)
-  fullName: Newbe.CQP.Framework.ICoolQApi.KickFromGroup(System.Int64, System.Int64, System.Boolean)
-  nameWithType: ICoolQApi.KickFromGroup(Int64, Int64, Boolean)
-- uid: Newbe.CQP.Framework.ICoolQApi.KickFromGroup*
-  name: KickFromGroup
-  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_KickFromGroup_
-  commentId: Overload:Newbe.CQP.Framework.ICoolQApi.KickFromGroup
-  fullName: Newbe.CQP.Framework.ICoolQApi.KickFromGroup
-  nameWithType: ICoolQApi.KickFromGroup
-- uid: Newbe.CQP.Framework.ICoolQApi.Log(Newbe.CQP.Framework.CoolQLogLevel,System.String)
-  name: Log(CoolQLogLevel, String)
-  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_Log_Newbe_CQP_Framework_CoolQLogLevel_System_String_
-  commentId: M:Newbe.CQP.Framework.ICoolQApi.Log(Newbe.CQP.Framework.CoolQLogLevel,System.String)
-  fullName: Newbe.CQP.Framework.ICoolQApi.Log(Newbe.CQP.Framework.CoolQLogLevel, System.String)
-  nameWithType: ICoolQApi.Log(CoolQLogLevel, String)
-- uid: Newbe.CQP.Framework.ICoolQApi.Log(Newbe.CQP.Framework.CoolQLogLevel,System.String,System.String)
-  name: Log(CoolQLogLevel, String, String)
-  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_Log_Newbe_CQP_Framework_CoolQLogLevel_System_String_System_String_
-  commentId: M:Newbe.CQP.Framework.ICoolQApi.Log(Newbe.CQP.Framework.CoolQLogLevel,System.String,System.String)
-  fullName: Newbe.CQP.Framework.ICoolQApi.Log(Newbe.CQP.Framework.CoolQLogLevel, System.String, System.String)
-  nameWithType: ICoolQApi.Log(CoolQLogLevel, String, String)
-- uid: Newbe.CQP.Framework.ICoolQApi.Log*
-  name: Log
-  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_Log_
-  commentId: Overload:Newbe.CQP.Framework.ICoolQApi.Log
-  fullName: Newbe.CQP.Framework.ICoolQApi.Log
-  nameWithType: ICoolQApi.Log
-- uid: Newbe.CQP.Framework.ICoolQApi.NickName
-  name: NickName
-  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_NickName
-  commentId: P:Newbe.CQP.Framework.ICoolQApi.NickName
-  fullName: Newbe.CQP.Framework.ICoolQApi.NickName
-  nameWithType: ICoolQApi.NickName
-- uid: Newbe.CQP.Framework.ICoolQApi.NickName*
-  name: NickName
-  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_NickName_
-  commentId: Overload:Newbe.CQP.Framework.ICoolQApi.NickName
-  fullName: Newbe.CQP.Framework.ICoolQApi.NickName
-  nameWithType: ICoolQApi.NickName
-- uid: Newbe.CQP.Framework.ICoolQApi.Number
-  name: Number
-  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_Number
-  commentId: P:Newbe.CQP.Framework.ICoolQApi.Number
-  fullName: Newbe.CQP.Framework.ICoolQApi.Number
-  nameWithType: ICoolQApi.Number
-- uid: Newbe.CQP.Framework.ICoolQApi.Number*
-  name: Number
-  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_Number_
-  commentId: Overload:Newbe.CQP.Framework.ICoolQApi.Number
-  fullName: Newbe.CQP.Framework.ICoolQApi.Number
-  nameWithType: ICoolQApi.Number
-- uid: Newbe.CQP.Framework.ICoolQApi.ProcessAddFriendRequest(System.String,Newbe.CQP.Framework.CoolQRequestResult)
-  name: ProcessAddFriendRequest(String, CoolQRequestResult)
-  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_ProcessAddFriendRequest_System_String_Newbe_CQP_Framework_CoolQRequestResult_
-  commentId: M:Newbe.CQP.Framework.ICoolQApi.ProcessAddFriendRequest(System.String,Newbe.CQP.Framework.CoolQRequestResult)
-  fullName: Newbe.CQP.Framework.ICoolQApi.ProcessAddFriendRequest(System.String, Newbe.CQP.Framework.CoolQRequestResult)
-  nameWithType: ICoolQApi.ProcessAddFriendRequest(String, CoolQRequestResult)
-- uid: Newbe.CQP.Framework.ICoolQApi.ProcessAddFriendRequest(System.String,Newbe.CQP.Framework.CoolQRequestResult,System.String)
-  name: ProcessAddFriendRequest(String, CoolQRequestResult, String)
-  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_ProcessAddFriendRequest_System_String_Newbe_CQP_Framework_CoolQRequestResult_System_String_
-  commentId: M:Newbe.CQP.Framework.ICoolQApi.ProcessAddFriendRequest(System.String,Newbe.CQP.Framework.CoolQRequestResult,System.String)
-  fullName: Newbe.CQP.Framework.ICoolQApi.ProcessAddFriendRequest(System.String, Newbe.CQP.Framework.CoolQRequestResult, System.String)
-  nameWithType: ICoolQApi.ProcessAddFriendRequest(String, CoolQRequestResult, String)
-- uid: Newbe.CQP.Framework.ICoolQApi.ProcessAddFriendRequest*
-  name: ProcessAddFriendRequest
-  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_ProcessAddFriendRequest_
-  commentId: Overload:Newbe.CQP.Framework.ICoolQApi.ProcessAddFriendRequest
-  fullName: Newbe.CQP.Framework.ICoolQApi.ProcessAddFriendRequest
-  nameWithType: ICoolQApi.ProcessAddFriendRequest
-- uid: Newbe.CQP.Framework.ICoolQApi.ProcessAddGroupRequest(System.String,Newbe.CQP.Framework.CoolQAddGroupRequestType,Newbe.CQP.Framework.CoolQRequestResult,System.String)
-  name: ProcessAddGroupRequest(String, CoolQAddGroupRequestType, CoolQRequestResult, String)
-  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_ProcessAddGroupRequest_System_String_Newbe_CQP_Framework_CoolQAddGroupRequestType_Newbe_CQP_Framework_CoolQRequestResult_System_String_
-  commentId: M:Newbe.CQP.Framework.ICoolQApi.ProcessAddGroupRequest(System.String,Newbe.CQP.Framework.CoolQAddGroupRequestType,Newbe.CQP.Framework.CoolQRequestResult,System.String)
-  fullName: Newbe.CQP.Framework.ICoolQApi.ProcessAddGroupRequest(System.String, Newbe.CQP.Framework.CoolQAddGroupRequestType, Newbe.CQP.Framework.CoolQRequestResult, System.String)
-  nameWithType: ICoolQApi.ProcessAddGroupRequest(String, CoolQAddGroupRequestType, CoolQRequestResult, String)
-- uid: Newbe.CQP.Framework.ICoolQApi.ProcessAddGroupRequest*
-  name: ProcessAddGroupRequest
-  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_ProcessAddGroupRequest_
-  commentId: Overload:Newbe.CQP.Framework.ICoolQApi.ProcessAddGroupRequest
-  fullName: Newbe.CQP.Framework.ICoolQApi.ProcessAddGroupRequest
-  nameWithType: ICoolQApi.ProcessAddGroupRequest
-- uid: Newbe.CQP.Framework.ICoolQApi.QuitAndDismissTheGroup(System.Int64)
-  name: QuitAndDismissTheGroup(Int64)
-  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_QuitAndDismissTheGroup_System_Int64_
-  commentId: M:Newbe.CQP.Framework.ICoolQApi.QuitAndDismissTheGroup(System.Int64)
-  fullName: Newbe.CQP.Framework.ICoolQApi.QuitAndDismissTheGroup(System.Int64)
-  nameWithType: ICoolQApi.QuitAndDismissTheGroup(Int64)
-- uid: Newbe.CQP.Framework.ICoolQApi.QuitAndDismissTheGroup*
-  name: QuitAndDismissTheGroup
-  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_QuitAndDismissTheGroup_
-  commentId: Overload:Newbe.CQP.Framework.ICoolQApi.QuitAndDismissTheGroup
-  fullName: Newbe.CQP.Framework.ICoolQApi.QuitAndDismissTheGroup
-  nameWithType: ICoolQApi.QuitAndDismissTheGroup
-- uid: Newbe.CQP.Framework.ICoolQApi.QuitTheDiscussGroup(System.Int64)
-  name: QuitTheDiscussGroup(Int64)
-  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_QuitTheDiscussGroup_System_Int64_
-  commentId: M:Newbe.CQP.Framework.ICoolQApi.QuitTheDiscussGroup(System.Int64)
-  fullName: Newbe.CQP.Framework.ICoolQApi.QuitTheDiscussGroup(System.Int64)
-  nameWithType: ICoolQApi.QuitTheDiscussGroup(Int64)
-- uid: Newbe.CQP.Framework.ICoolQApi.QuitTheDiscussGroup*
-  name: QuitTheDiscussGroup
-  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_QuitTheDiscussGroup_
-  commentId: Overload:Newbe.CQP.Framework.ICoolQApi.QuitTheDiscussGroup
-  fullName: Newbe.CQP.Framework.ICoolQApi.QuitTheDiscussGroup
-  nameWithType: ICoolQApi.QuitTheDiscussGroup
-- uid: Newbe.CQP.Framework.ICoolQApi.QuitTheGroup(System.Int64)
-  name: QuitTheGroup(Int64)
-  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_QuitTheGroup_System_Int64_
-  commentId: M:Newbe.CQP.Framework.ICoolQApi.QuitTheGroup(System.Int64)
-  fullName: Newbe.CQP.Framework.ICoolQApi.QuitTheGroup(System.Int64)
-  nameWithType: ICoolQApi.QuitTheGroup(Int64)
-- uid: Newbe.CQP.Framework.ICoolQApi.QuitTheGroup*
-  name: QuitTheGroup
-  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_QuitTheGroup_
-  commentId: Overload:Newbe.CQP.Framework.ICoolQApi.QuitTheGroup
-  fullName: Newbe.CQP.Framework.ICoolQApi.QuitTheGroup
-  nameWithType: ICoolQApi.QuitTheGroup
-- uid: Newbe.CQP.Framework.ICoolQApi.RemoveBanned(System.Int64,System.Int64)
-  name: RemoveBanned(Int64, Int64)
-  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_RemoveBanned_System_Int64_System_Int64_
-  commentId: M:Newbe.CQP.Framework.ICoolQApi.RemoveBanned(System.Int64,System.Int64)
-  fullName: Newbe.CQP.Framework.ICoolQApi.RemoveBanned(System.Int64, System.Int64)
-  nameWithType: ICoolQApi.RemoveBanned(Int64, Int64)
-- uid: Newbe.CQP.Framework.ICoolQApi.RemoveBanned*
-  name: RemoveBanned
-  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_RemoveBanned_
-  commentId: Overload:Newbe.CQP.Framework.ICoolQApi.RemoveBanned
-  fullName: Newbe.CQP.Framework.ICoolQApi.RemoveBanned
-  nameWithType: ICoolQApi.RemoveBanned
-- uid: Newbe.CQP.Framework.ICoolQApi.RemoveBannedAll(System.Int64)
-  name: RemoveBannedAll(Int64)
-  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_RemoveBannedAll_System_Int64_
-  commentId: M:Newbe.CQP.Framework.ICoolQApi.RemoveBannedAll(System.Int64)
-  fullName: Newbe.CQP.Framework.ICoolQApi.RemoveBannedAll(System.Int64)
-  nameWithType: ICoolQApi.RemoveBannedAll(Int64)
-- uid: Newbe.CQP.Framework.ICoolQApi.RemoveBannedAll*
-  name: RemoveBannedAll
-  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_RemoveBannedAll_
-  commentId: Overload:Newbe.CQP.Framework.ICoolQApi.RemoveBannedAll
-  fullName: Newbe.CQP.Framework.ICoolQApi.RemoveBannedAll
-  nameWithType: ICoolQApi.RemoveBannedAll
-- uid: Newbe.CQP.Framework.ICoolQApi.RevokeAdmin(System.Int64,System.Int64)
-  name: RevokeAdmin(Int64, Int64)
-  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_RevokeAdmin_System_Int64_System_Int64_
-  commentId: M:Newbe.CQP.Framework.ICoolQApi.RevokeAdmin(System.Int64,System.Int64)
-  fullName: Newbe.CQP.Framework.ICoolQApi.RevokeAdmin(System.Int64, System.Int64)
-  nameWithType: ICoolQApi.RevokeAdmin(Int64, Int64)
-- uid: Newbe.CQP.Framework.ICoolQApi.RevokeAdmin*
-  name: RevokeAdmin
-  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_RevokeAdmin_
-  commentId: Overload:Newbe.CQP.Framework.ICoolQApi.RevokeAdmin
-  fullName: Newbe.CQP.Framework.ICoolQApi.RevokeAdmin
-  nameWithType: ICoolQApi.RevokeAdmin
-- uid: Newbe.CQP.Framework.ICoolQApi.SafelyCookies
-  name: SafelyCookies
-  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_SafelyCookies
-  commentId: P:Newbe.CQP.Framework.ICoolQApi.SafelyCookies
-  fullName: Newbe.CQP.Framework.ICoolQApi.SafelyCookies
-  nameWithType: ICoolQApi.SafelyCookies
-- uid: Newbe.CQP.Framework.ICoolQApi.SafelyCookies*
-  name: SafelyCookies
-  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_SafelyCookies_
-  commentId: Overload:Newbe.CQP.Framework.ICoolQApi.SafelyCookies
-  fullName: Newbe.CQP.Framework.ICoolQApi.SafelyCookies
-  nameWithType: ICoolQApi.SafelyCookies
-- uid: Newbe.CQP.Framework.ICoolQApi.SendDiscussGroupMessage(System.Int64,System.String)
-  name: SendDiscussGroupMessage(Int64, String)
-  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_SendDiscussGroupMessage_System_Int64_System_String_
-  commentId: M:Newbe.CQP.Framework.ICoolQApi.SendDiscussGroupMessage(System.Int64,System.String)
-  fullName: Newbe.CQP.Framework.ICoolQApi.SendDiscussGroupMessage(System.Int64, System.String)
-  nameWithType: ICoolQApi.SendDiscussGroupMessage(Int64, String)
-- uid: Newbe.CQP.Framework.ICoolQApi.SendDiscussGroupMessage*
-  name: SendDiscussGroupMessage
-  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_SendDiscussGroupMessage_
-  commentId: Overload:Newbe.CQP.Framework.ICoolQApi.SendDiscussGroupMessage
-  fullName: Newbe.CQP.Framework.ICoolQApi.SendDiscussGroupMessage
-  nameWithType: ICoolQApi.SendDiscussGroupMessage
-- uid: Newbe.CQP.Framework.ICoolQApi.SendGood(System.Int64)
-  name: SendGood(Int64)
-  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_SendGood_System_Int64_
-  commentId: M:Newbe.CQP.Framework.ICoolQApi.SendGood(System.Int64)
-  fullName: Newbe.CQP.Framework.ICoolQApi.SendGood(System.Int64)
-  nameWithType: ICoolQApi.SendGood(Int64)
-- uid: Newbe.CQP.Framework.ICoolQApi.SendGood*
-  name: SendGood
-  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_SendGood_
-  commentId: Overload:Newbe.CQP.Framework.ICoolQApi.SendGood
-  fullName: Newbe.CQP.Framework.ICoolQApi.SendGood
-  nameWithType: ICoolQApi.SendGood
-- uid: Newbe.CQP.Framework.ICoolQApi.SendGroupMessage(System.Int64,System.String)
-  name: SendGroupMessage(Int64, String)
-  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_SendGroupMessage_System_Int64_System_String_
-  commentId: M:Newbe.CQP.Framework.ICoolQApi.SendGroupMessage(System.Int64,System.String)
-  fullName: Newbe.CQP.Framework.ICoolQApi.SendGroupMessage(System.Int64, System.String)
-  nameWithType: ICoolQApi.SendGroupMessage(Int64, String)
-- uid: Newbe.CQP.Framework.ICoolQApi.SendGroupMessage*
-  name: SendGroupMessage
-  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_SendGroupMessage_
-  commentId: Overload:Newbe.CQP.Framework.ICoolQApi.SendGroupMessage
-  fullName: Newbe.CQP.Framework.ICoolQApi.SendGroupMessage
-  nameWithType: ICoolQApi.SendGroupMessage
-- uid: Newbe.CQP.Framework.ICoolQApi.SendPrivateMessage(System.Int64,System.String)
-  name: SendPrivateMessage(Int64, String)
-  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_SendPrivateMessage_System_Int64_System_String_
-  commentId: M:Newbe.CQP.Framework.ICoolQApi.SendPrivateMessage(System.Int64,System.String)
-  fullName: Newbe.CQP.Framework.ICoolQApi.SendPrivateMessage(System.Int64, System.String)
-  nameWithType: ICoolQApi.SendPrivateMessage(Int64, String)
-- uid: Newbe.CQP.Framework.ICoolQApi.SendPrivateMessage*
-  name: SendPrivateMessage
-  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_SendPrivateMessage_
-  commentId: Overload:Newbe.CQP.Framework.ICoolQApi.SendPrivateMessage
-  fullName: Newbe.CQP.Framework.ICoolQApi.SendPrivateMessage
-  nameWithType: ICoolQApi.SendPrivateMessage
-- uid: Newbe.CQP.Framework.ICoolQApi.SetAsAdmin(System.Int64,System.Int64)
-  name: SetAsAdmin(Int64, Int64)
-  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_SetAsAdmin_System_Int64_System_Int64_
-  commentId: M:Newbe.CQP.Framework.ICoolQApi.SetAsAdmin(System.Int64,System.Int64)
-  fullName: Newbe.CQP.Framework.ICoolQApi.SetAsAdmin(System.Int64, System.Int64)
-  nameWithType: ICoolQApi.SetAsAdmin(Int64, Int64)
-- uid: Newbe.CQP.Framework.ICoolQApi.SetAsAdmin*
-  name: SetAsAdmin
-  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_SetAsAdmin_
-  commentId: Overload:Newbe.CQP.Framework.ICoolQApi.SetAsAdmin
-  fullName: Newbe.CQP.Framework.ICoolQApi.SetAsAdmin
-  nameWithType: ICoolQApi.SetAsAdmin
+- uid: Newbe.CQP.Framework.ICoolQApi.GetGroupMemberInfoV2(System.Int64,System.Int64,System.Boolean)
+  name: GetGroupMemberInfoV2(Int64, Int64, Boolean)
+  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_GetGroupMemberInfoV2_System_Int64_System_Int64_System_Boolean_
+  commentId: M:Newbe.CQP.Framework.ICoolQApi.GetGroupMemberInfoV2(System.Int64,System.Int64,System.Boolean)
+  fullName: Newbe.CQP.Framework.ICoolQApi.GetGroupMemberInfoV2(System.Int64, System.Int64, System.Boolean)
+  nameWithType: ICoolQApi.GetGroupMemberInfoV2(Int64, Int64, Boolean)
+- uid: Newbe.CQP.Framework.ICoolQApi.GetGroupMemberInfoV2*
+  name: GetGroupMemberInfoV2
+  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_GetGroupMemberInfoV2_
+  commentId: Overload:Newbe.CQP.Framework.ICoolQApi.GetGroupMemberInfoV2
+  fullName: Newbe.CQP.Framework.ICoolQApi.GetGroupMemberInfoV2
+  nameWithType: ICoolQApi.GetGroupMemberInfoV2
+- uid: Newbe.CQP.Framework.ICoolQApi.GetGroupMemberList(System.Int64)
+  name: GetGroupMemberList(Int64)
+  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_GetGroupMemberList_System_Int64_
+  commentId: M:Newbe.CQP.Framework.ICoolQApi.GetGroupMemberList(System.Int64)
+  fullName: Newbe.CQP.Framework.ICoolQApi.GetGroupMemberList(System.Int64)
+  nameWithType: ICoolQApi.GetGroupMemberList(Int64)
+- uid: Newbe.CQP.Framework.ICoolQApi.GetGroupMemberList*
+  name: GetGroupMemberList
+  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_GetGroupMemberList_
+  commentId: Overload:Newbe.CQP.Framework.ICoolQApi.GetGroupMemberList
+  fullName: Newbe.CQP.Framework.ICoolQApi.GetGroupMemberList
+  nameWithType: ICoolQApi.GetGroupMemberList
+- uid: Newbe.CQP.Framework.ICoolQApi.GetLoginNick
+  name: GetLoginNick()
+  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_GetLoginNick
+  commentId: M:Newbe.CQP.Framework.ICoolQApi.GetLoginNick
+  fullName: Newbe.CQP.Framework.ICoolQApi.GetLoginNick()
+  nameWithType: ICoolQApi.GetLoginNick()
+- uid: Newbe.CQP.Framework.ICoolQApi.GetLoginNick*
+  name: GetLoginNick
+  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_GetLoginNick_
+  commentId: Overload:Newbe.CQP.Framework.ICoolQApi.GetLoginNick
+  fullName: Newbe.CQP.Framework.ICoolQApi.GetLoginNick
+  nameWithType: ICoolQApi.GetLoginNick
+- uid: Newbe.CQP.Framework.ICoolQApi.GetLoginQQ
+  name: GetLoginQQ()
+  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_GetLoginQQ
+  commentId: M:Newbe.CQP.Framework.ICoolQApi.GetLoginQQ
+  fullName: Newbe.CQP.Framework.ICoolQApi.GetLoginQQ()
+  nameWithType: ICoolQApi.GetLoginQQ()
+- uid: Newbe.CQP.Framework.ICoolQApi.GetLoginQQ*
+  name: GetLoginQQ
+  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_GetLoginQQ_
+  commentId: Overload:Newbe.CQP.Framework.ICoolQApi.GetLoginQQ
+  fullName: Newbe.CQP.Framework.ICoolQApi.GetLoginQQ
+  nameWithType: ICoolQApi.GetLoginQQ
+- uid: Newbe.CQP.Framework.ICoolQApi.GetRecord(System.String,System.String)
+  name: GetRecord(String, String)
+  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_GetRecord_System_String_System_String_
+  commentId: M:Newbe.CQP.Framework.ICoolQApi.GetRecord(System.String,System.String)
+  fullName: Newbe.CQP.Framework.ICoolQApi.GetRecord(System.String, System.String)
+  nameWithType: ICoolQApi.GetRecord(String, String)
+- uid: Newbe.CQP.Framework.ICoolQApi.GetRecord*
+  name: GetRecord
+  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_GetRecord_
+  commentId: Overload:Newbe.CQP.Framework.ICoolQApi.GetRecord
+  fullName: Newbe.CQP.Framework.ICoolQApi.GetRecord
+  nameWithType: ICoolQApi.GetRecord
+- uid: Newbe.CQP.Framework.ICoolQApi.GetStrangerInfo(System.Int64,System.Boolean)
+  name: GetStrangerInfo(Int64, Boolean)
+  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_GetStrangerInfo_System_Int64_System_Boolean_
+  commentId: M:Newbe.CQP.Framework.ICoolQApi.GetStrangerInfo(System.Int64,System.Boolean)
+  fullName: Newbe.CQP.Framework.ICoolQApi.GetStrangerInfo(System.Int64, System.Boolean)
+  nameWithType: ICoolQApi.GetStrangerInfo(Int64, Boolean)
+- uid: Newbe.CQP.Framework.ICoolQApi.GetStrangerInfo*
+  name: GetStrangerInfo
+  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_GetStrangerInfo_
+  commentId: Overload:Newbe.CQP.Framework.ICoolQApi.GetStrangerInfo
+  fullName: Newbe.CQP.Framework.ICoolQApi.GetStrangerInfo
+  nameWithType: ICoolQApi.GetStrangerInfo
+- uid: Newbe.CQP.Framework.ICoolQApi.SendDiscussMsg(System.Int64,System.String)
+  name: SendDiscussMsg(Int64, String)
+  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_SendDiscussMsg_System_Int64_System_String_
+  commentId: M:Newbe.CQP.Framework.ICoolQApi.SendDiscussMsg(System.Int64,System.String)
+  fullName: Newbe.CQP.Framework.ICoolQApi.SendDiscussMsg(System.Int64, System.String)
+  nameWithType: ICoolQApi.SendDiscussMsg(Int64, String)
+- uid: Newbe.CQP.Framework.ICoolQApi.SendDiscussMsg*
+  name: SendDiscussMsg
+  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_SendDiscussMsg_
+  commentId: Overload:Newbe.CQP.Framework.ICoolQApi.SendDiscussMsg
+  fullName: Newbe.CQP.Framework.ICoolQApi.SendDiscussMsg
+  nameWithType: ICoolQApi.SendDiscussMsg
+- uid: Newbe.CQP.Framework.ICoolQApi.SendGroupMsg(System.Int64,System.String)
+  name: SendGroupMsg(Int64, String)
+  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_SendGroupMsg_System_Int64_System_String_
+  commentId: M:Newbe.CQP.Framework.ICoolQApi.SendGroupMsg(System.Int64,System.String)
+  fullName: Newbe.CQP.Framework.ICoolQApi.SendGroupMsg(System.Int64, System.String)
+  nameWithType: ICoolQApi.SendGroupMsg(Int64, String)
+- uid: Newbe.CQP.Framework.ICoolQApi.SendGroupMsg*
+  name: SendGroupMsg
+  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_SendGroupMsg_
+  commentId: Overload:Newbe.CQP.Framework.ICoolQApi.SendGroupMsg
+  fullName: Newbe.CQP.Framework.ICoolQApi.SendGroupMsg
+  nameWithType: ICoolQApi.SendGroupMsg
+- uid: Newbe.CQP.Framework.ICoolQApi.SendLike(System.Int64)
+  name: SendLike(Int64)
+  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_SendLike_System_Int64_
+  commentId: M:Newbe.CQP.Framework.ICoolQApi.SendLike(System.Int64)
+  fullName: Newbe.CQP.Framework.ICoolQApi.SendLike(System.Int64)
+  nameWithType: ICoolQApi.SendLike(Int64)
+- uid: Newbe.CQP.Framework.ICoolQApi.SendLike*
+  name: SendLike
+  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_SendLike_
+  commentId: Overload:Newbe.CQP.Framework.ICoolQApi.SendLike
+  fullName: Newbe.CQP.Framework.ICoolQApi.SendLike
+  nameWithType: ICoolQApi.SendLike
+- uid: Newbe.CQP.Framework.ICoolQApi.SendLike2(System.Int64,System.Int32)
+  name: SendLike2(Int64, Int32)
+  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_SendLike2_System_Int64_System_Int32_
+  commentId: M:Newbe.CQP.Framework.ICoolQApi.SendLike2(System.Int64,System.Int32)
+  fullName: Newbe.CQP.Framework.ICoolQApi.SendLike2(System.Int64, System.Int32)
+  nameWithType: ICoolQApi.SendLike2(Int64, Int32)
+- uid: Newbe.CQP.Framework.ICoolQApi.SendLike2*
+  name: SendLike2
+  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_SendLike2_
+  commentId: Overload:Newbe.CQP.Framework.ICoolQApi.SendLike2
+  fullName: Newbe.CQP.Framework.ICoolQApi.SendLike2
+  nameWithType: ICoolQApi.SendLike2
+- uid: Newbe.CQP.Framework.ICoolQApi.SendPrivateMsg(System.Int64,System.String)
+  name: SendPrivateMsg(Int64, String)
+  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_SendPrivateMsg_System_Int64_System_String_
+  commentId: M:Newbe.CQP.Framework.ICoolQApi.SendPrivateMsg(System.Int64,System.String)
+  fullName: Newbe.CQP.Framework.ICoolQApi.SendPrivateMsg(System.Int64, System.String)
+  nameWithType: ICoolQApi.SendPrivateMsg(Int64, String)
+- uid: Newbe.CQP.Framework.ICoolQApi.SendPrivateMsg*
+  name: SendPrivateMsg
+  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_SendPrivateMsg_
+  commentId: Overload:Newbe.CQP.Framework.ICoolQApi.SendPrivateMsg
+  fullName: Newbe.CQP.Framework.ICoolQApi.SendPrivateMsg
+  nameWithType: ICoolQApi.SendPrivateMsg
+- uid: Newbe.CQP.Framework.ICoolQApi.SetDiscussLeave(System.Int64)
+  name: SetDiscussLeave(Int64)
+  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_SetDiscussLeave_System_Int64_
+  commentId: M:Newbe.CQP.Framework.ICoolQApi.SetDiscussLeave(System.Int64)
+  fullName: Newbe.CQP.Framework.ICoolQApi.SetDiscussLeave(System.Int64)
+  nameWithType: ICoolQApi.SetDiscussLeave(Int64)
+- uid: Newbe.CQP.Framework.ICoolQApi.SetDiscussLeave*
+  name: SetDiscussLeave
+  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_SetDiscussLeave_
+  commentId: Overload:Newbe.CQP.Framework.ICoolQApi.SetDiscussLeave
+  fullName: Newbe.CQP.Framework.ICoolQApi.SetDiscussLeave
+  nameWithType: ICoolQApi.SetDiscussLeave
+- uid: Newbe.CQP.Framework.ICoolQApi.SetFatal(System.String)
+  name: SetFatal(String)
+  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_SetFatal_System_String_
+  commentId: M:Newbe.CQP.Framework.ICoolQApi.SetFatal(System.String)
+  fullName: Newbe.CQP.Framework.ICoolQApi.SetFatal(System.String)
+  nameWithType: ICoolQApi.SetFatal(String)
+- uid: Newbe.CQP.Framework.ICoolQApi.SetFatal*
+  name: SetFatal
+  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_SetFatal_
+  commentId: Overload:Newbe.CQP.Framework.ICoolQApi.SetFatal
+  fullName: Newbe.CQP.Framework.ICoolQApi.SetFatal
+  nameWithType: ICoolQApi.SetFatal
+- uid: Newbe.CQP.Framework.ICoolQApi.SetFriendAddRequest(System.String,System.Int32,System.String)
+  name: SetFriendAddRequest(String, Int32, String)
+  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_SetFriendAddRequest_System_String_System_Int32_System_String_
+  commentId: M:Newbe.CQP.Framework.ICoolQApi.SetFriendAddRequest(System.String,System.Int32,System.String)
+  fullName: Newbe.CQP.Framework.ICoolQApi.SetFriendAddRequest(System.String, System.Int32, System.String)
+  nameWithType: ICoolQApi.SetFriendAddRequest(String, Int32, String)
+- uid: Newbe.CQP.Framework.ICoolQApi.SetFriendAddRequest*
+  name: SetFriendAddRequest
+  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_SetFriendAddRequest_
+  commentId: Overload:Newbe.CQP.Framework.ICoolQApi.SetFriendAddRequest
+  fullName: Newbe.CQP.Framework.ICoolQApi.SetFriendAddRequest
+  nameWithType: ICoolQApi.SetFriendAddRequest
+- uid: Newbe.CQP.Framework.ICoolQApi.SetGroupAddRequest(System.String,Newbe.CQP.Framework.CoolQAddGroupRequestType,Newbe.CQP.Framework.CoolQRequestResult)
+  name: SetGroupAddRequest(String, CoolQAddGroupRequestType, CoolQRequestResult)
+  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_SetGroupAddRequest_System_String_Newbe_CQP_Framework_CoolQAddGroupRequestType_Newbe_CQP_Framework_CoolQRequestResult_
+  commentId: M:Newbe.CQP.Framework.ICoolQApi.SetGroupAddRequest(System.String,Newbe.CQP.Framework.CoolQAddGroupRequestType,Newbe.CQP.Framework.CoolQRequestResult)
+  fullName: Newbe.CQP.Framework.ICoolQApi.SetGroupAddRequest(System.String, Newbe.CQP.Framework.CoolQAddGroupRequestType, Newbe.CQP.Framework.CoolQRequestResult)
+  nameWithType: ICoolQApi.SetGroupAddRequest(String, CoolQAddGroupRequestType, CoolQRequestResult)
+- uid: Newbe.CQP.Framework.ICoolQApi.SetGroupAddRequest*
+  name: SetGroupAddRequest
+  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_SetGroupAddRequest_
+  commentId: Overload:Newbe.CQP.Framework.ICoolQApi.SetGroupAddRequest
+  fullName: Newbe.CQP.Framework.ICoolQApi.SetGroupAddRequest
+  nameWithType: ICoolQApi.SetGroupAddRequest
+- uid: Newbe.CQP.Framework.ICoolQApi.SetGroupAddRequest2(System.String,Newbe.CQP.Framework.CoolQAddGroupRequestType,Newbe.CQP.Framework.CoolQRequestResult,System.String)
+  name: SetGroupAddRequest2(String, CoolQAddGroupRequestType, CoolQRequestResult, String)
+  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_SetGroupAddRequest2_System_String_Newbe_CQP_Framework_CoolQAddGroupRequestType_Newbe_CQP_Framework_CoolQRequestResult_System_String_
+  commentId: M:Newbe.CQP.Framework.ICoolQApi.SetGroupAddRequest2(System.String,Newbe.CQP.Framework.CoolQAddGroupRequestType,Newbe.CQP.Framework.CoolQRequestResult,System.String)
+  fullName: Newbe.CQP.Framework.ICoolQApi.SetGroupAddRequest2(System.String, Newbe.CQP.Framework.CoolQAddGroupRequestType, Newbe.CQP.Framework.CoolQRequestResult, System.String)
+  nameWithType: ICoolQApi.SetGroupAddRequest2(String, CoolQAddGroupRequestType, CoolQRequestResult, String)
+- uid: Newbe.CQP.Framework.ICoolQApi.SetGroupAddRequest2*
+  name: SetGroupAddRequest2
+  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_SetGroupAddRequest2_
+  commentId: Overload:Newbe.CQP.Framework.ICoolQApi.SetGroupAddRequest2
+  fullName: Newbe.CQP.Framework.ICoolQApi.SetGroupAddRequest2
+  nameWithType: ICoolQApi.SetGroupAddRequest2
+- uid: Newbe.CQP.Framework.ICoolQApi.SetGroupAdmin(System.Int64,System.Int64,System.Boolean)
+  name: SetGroupAdmin(Int64, Int64, Boolean)
+  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_SetGroupAdmin_System_Int64_System_Int64_System_Boolean_
+  commentId: M:Newbe.CQP.Framework.ICoolQApi.SetGroupAdmin(System.Int64,System.Int64,System.Boolean)
+  fullName: Newbe.CQP.Framework.ICoolQApi.SetGroupAdmin(System.Int64, System.Int64, System.Boolean)
+  nameWithType: ICoolQApi.SetGroupAdmin(Int64, Int64, Boolean)
+- uid: Newbe.CQP.Framework.ICoolQApi.SetGroupAdmin*
+  name: SetGroupAdmin
+  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_SetGroupAdmin_
+  commentId: Overload:Newbe.CQP.Framework.ICoolQApi.SetGroupAdmin
+  fullName: Newbe.CQP.Framework.ICoolQApi.SetGroupAdmin
+  nameWithType: ICoolQApi.SetGroupAdmin
+- uid: Newbe.CQP.Framework.ICoolQApi.SetGroupAnonymous(System.Int64,System.Boolean)
+  name: SetGroupAnonymous(Int64, Boolean)
+  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_SetGroupAnonymous_System_Int64_System_Boolean_
+  commentId: M:Newbe.CQP.Framework.ICoolQApi.SetGroupAnonymous(System.Int64,System.Boolean)
+  fullName: Newbe.CQP.Framework.ICoolQApi.SetGroupAnonymous(System.Int64, System.Boolean)
+  nameWithType: ICoolQApi.SetGroupAnonymous(Int64, Boolean)
+- uid: Newbe.CQP.Framework.ICoolQApi.SetGroupAnonymous*
+  name: SetGroupAnonymous
+  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_SetGroupAnonymous_
+  commentId: Overload:Newbe.CQP.Framework.ICoolQApi.SetGroupAnonymous
+  fullName: Newbe.CQP.Framework.ICoolQApi.SetGroupAnonymous
+  nameWithType: ICoolQApi.SetGroupAnonymous
+- uid: Newbe.CQP.Framework.ICoolQApi.SetGroupAnonymousBan(System.Int64,System.String,System.Int64)
+  name: SetGroupAnonymousBan(Int64, String, Int64)
+  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_SetGroupAnonymousBan_System_Int64_System_String_System_Int64_
+  commentId: M:Newbe.CQP.Framework.ICoolQApi.SetGroupAnonymousBan(System.Int64,System.String,System.Int64)
+  fullName: Newbe.CQP.Framework.ICoolQApi.SetGroupAnonymousBan(System.Int64, System.String, System.Int64)
+  nameWithType: ICoolQApi.SetGroupAnonymousBan(Int64, String, Int64)
+- uid: Newbe.CQP.Framework.ICoolQApi.SetGroupAnonymousBan*
+  name: SetGroupAnonymousBan
+  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_SetGroupAnonymousBan_
+  commentId: Overload:Newbe.CQP.Framework.ICoolQApi.SetGroupAnonymousBan
+  fullName: Newbe.CQP.Framework.ICoolQApi.SetGroupAnonymousBan
+  nameWithType: ICoolQApi.SetGroupAnonymousBan
+- uid: Newbe.CQP.Framework.ICoolQApi.SetGroupBan(System.Int64,System.Int64,System.Int64)
+  name: SetGroupBan(Int64, Int64, Int64)
+  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_SetGroupBan_System_Int64_System_Int64_System_Int64_
+  commentId: M:Newbe.CQP.Framework.ICoolQApi.SetGroupBan(System.Int64,System.Int64,System.Int64)
+  fullName: Newbe.CQP.Framework.ICoolQApi.SetGroupBan(System.Int64, System.Int64, System.Int64)
+  nameWithType: ICoolQApi.SetGroupBan(Int64, Int64, Int64)
+- uid: Newbe.CQP.Framework.ICoolQApi.SetGroupBan*
+  name: SetGroupBan
+  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_SetGroupBan_
+  commentId: Overload:Newbe.CQP.Framework.ICoolQApi.SetGroupBan
+  fullName: Newbe.CQP.Framework.ICoolQApi.SetGroupBan
+  nameWithType: ICoolQApi.SetGroupBan
 - uid: Newbe.CQP.Framework.ICoolQApi.SetGroupCard(System.Int64,System.Int64,System.String)
   name: SetGroupCard(Int64, Int64, String)
   href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_SetGroupCard_System_Int64_System_Int64_System_String_
@@ -805,24 +775,54 @@ references:
   commentId: Overload:Newbe.CQP.Framework.ICoolQApi.SetGroupCard
   fullName: Newbe.CQP.Framework.ICoolQApi.SetGroupCard
   nameWithType: ICoolQApi.SetGroupCard
-- uid: Newbe.CQP.Framework.ICoolQApi.SetGroupTitle(System.Int64,System.Int64,System.Int64,System.Int64)
-  name: SetGroupTitle(Int64, Int64, Int64, Int64)
-  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_SetGroupTitle_System_Int64_System_Int64_System_Int64_System_Int64_
-  commentId: M:Newbe.CQP.Framework.ICoolQApi.SetGroupTitle(System.Int64,System.Int64,System.Int64,System.Int64)
-  fullName: Newbe.CQP.Framework.ICoolQApi.SetGroupTitle(System.Int64, System.Int64, System.Int64, System.Int64)
-  nameWithType: ICoolQApi.SetGroupTitle(Int64, Int64, Int64, Int64)
-- uid: Newbe.CQP.Framework.ICoolQApi.SetGroupTitle(System.Int64,System.Int64,System.String)
-  name: SetGroupTitle(Int64, Int64, String)
-  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_SetGroupTitle_System_Int64_System_Int64_System_String_
-  commentId: M:Newbe.CQP.Framework.ICoolQApi.SetGroupTitle(System.Int64,System.Int64,System.String)
-  fullName: Newbe.CQP.Framework.ICoolQApi.SetGroupTitle(System.Int64, System.Int64, System.String)
-  nameWithType: ICoolQApi.SetGroupTitle(Int64, Int64, String)
-- uid: Newbe.CQP.Framework.ICoolQApi.SetGroupTitle*
-  name: SetGroupTitle
-  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_SetGroupTitle_
-  commentId: Overload:Newbe.CQP.Framework.ICoolQApi.SetGroupTitle
-  fullName: Newbe.CQP.Framework.ICoolQApi.SetGroupTitle
-  nameWithType: ICoolQApi.SetGroupTitle
+- uid: Newbe.CQP.Framework.ICoolQApi.SetGroupKick(System.Int64,System.Int64,System.Boolean)
+  name: SetGroupKick(Int64, Int64, Boolean)
+  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_SetGroupKick_System_Int64_System_Int64_System_Boolean_
+  commentId: M:Newbe.CQP.Framework.ICoolQApi.SetGroupKick(System.Int64,System.Int64,System.Boolean)
+  fullName: Newbe.CQP.Framework.ICoolQApi.SetGroupKick(System.Int64, System.Int64, System.Boolean)
+  nameWithType: ICoolQApi.SetGroupKick(Int64, Int64, Boolean)
+- uid: Newbe.CQP.Framework.ICoolQApi.SetGroupKick*
+  name: SetGroupKick
+  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_SetGroupKick_
+  commentId: Overload:Newbe.CQP.Framework.ICoolQApi.SetGroupKick
+  fullName: Newbe.CQP.Framework.ICoolQApi.SetGroupKick
+  nameWithType: ICoolQApi.SetGroupKick
+- uid: Newbe.CQP.Framework.ICoolQApi.SetGroupLeave(System.Int64,System.Boolean)
+  name: SetGroupLeave(Int64, Boolean)
+  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_SetGroupLeave_System_Int64_System_Boolean_
+  commentId: M:Newbe.CQP.Framework.ICoolQApi.SetGroupLeave(System.Int64,System.Boolean)
+  fullName: Newbe.CQP.Framework.ICoolQApi.SetGroupLeave(System.Int64, System.Boolean)
+  nameWithType: ICoolQApi.SetGroupLeave(Int64, Boolean)
+- uid: Newbe.CQP.Framework.ICoolQApi.SetGroupLeave*
+  name: SetGroupLeave
+  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_SetGroupLeave_
+  commentId: Overload:Newbe.CQP.Framework.ICoolQApi.SetGroupLeave
+  fullName: Newbe.CQP.Framework.ICoolQApi.SetGroupLeave
+  nameWithType: ICoolQApi.SetGroupLeave
+- uid: Newbe.CQP.Framework.ICoolQApi.SetGroupSpecialTitle(System.Int64,System.Int64,System.String,System.Int64)
+  name: SetGroupSpecialTitle(Int64, Int64, String, Int64)
+  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_SetGroupSpecialTitle_System_Int64_System_Int64_System_String_System_Int64_
+  commentId: M:Newbe.CQP.Framework.ICoolQApi.SetGroupSpecialTitle(System.Int64,System.Int64,System.String,System.Int64)
+  fullName: Newbe.CQP.Framework.ICoolQApi.SetGroupSpecialTitle(System.Int64, System.Int64, System.String, System.Int64)
+  nameWithType: ICoolQApi.SetGroupSpecialTitle(Int64, Int64, String, Int64)
+- uid: Newbe.CQP.Framework.ICoolQApi.SetGroupSpecialTitle*
+  name: SetGroupSpecialTitle
+  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_SetGroupSpecialTitle_
+  commentId: Overload:Newbe.CQP.Framework.ICoolQApi.SetGroupSpecialTitle
+  fullName: Newbe.CQP.Framework.ICoolQApi.SetGroupSpecialTitle
+  nameWithType: ICoolQApi.SetGroupSpecialTitle
+- uid: Newbe.CQP.Framework.ICoolQApi.SetGroupWholeBan(System.Int64,System.Boolean)
+  name: SetGroupWholeBan(Int64, Boolean)
+  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_SetGroupWholeBan_System_Int64_System_Boolean_
+  commentId: M:Newbe.CQP.Framework.ICoolQApi.SetGroupWholeBan(System.Int64,System.Boolean)
+  fullName: Newbe.CQP.Framework.ICoolQApi.SetGroupWholeBan(System.Int64, System.Boolean)
+  nameWithType: ICoolQApi.SetGroupWholeBan(Int64, Boolean)
+- uid: Newbe.CQP.Framework.ICoolQApi.SetGroupWholeBan*
+  name: SetGroupWholeBan
+  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_SetGroupWholeBan_
+  commentId: Overload:Newbe.CQP.Framework.ICoolQApi.SetGroupWholeBan
+  fullName: Newbe.CQP.Framework.ICoolQApi.SetGroupWholeBan
+  nameWithType: ICoolQApi.SetGroupWholeBan
 - uid: Newbe.CQP.Framework.IPluginBase
   name: IPluginBase
   href: api/Newbe.CQP.Framework.IPluginBase.html
@@ -1141,6 +1141,47 @@ references:
   commentId: Overload:Newbe.CQP.Framework.IPluginBase.ProcessPrivateMessage
   fullName: Newbe.CQP.Framework.IPluginBase.ProcessPrivateMessage
   nameWithType: IPluginBase.ProcessPrivateMessage
+- uid: Newbe.CQP.Framework.ModelWithSourceString`1
+  name: ModelWithSourceString<T>
+  href: api/Newbe.CQP.Framework.ModelWithSourceString-1.html
+  commentId: T:Newbe.CQP.Framework.ModelWithSourceString`1
+  name.vb: ModelWithSourceString(Of T)
+  fullName: Newbe.CQP.Framework.ModelWithSourceString<T>
+  fullName.vb: Newbe.CQP.Framework.ModelWithSourceString(Of T)
+  nameWithType: ModelWithSourceString<T>
+  nameWithType.vb: ModelWithSourceString(Of T)
+- uid: Newbe.CQP.Framework.ModelWithSourceString`1.Model
+  name: Model
+  href: api/Newbe.CQP.Framework.ModelWithSourceString-1.html#Newbe_CQP_Framework_ModelWithSourceString_1_Model
+  commentId: P:Newbe.CQP.Framework.ModelWithSourceString`1.Model
+  fullName: Newbe.CQP.Framework.ModelWithSourceString<T>.Model
+  fullName.vb: Newbe.CQP.Framework.ModelWithSourceString(Of T).Model
+  nameWithType: ModelWithSourceString<T>.Model
+  nameWithType.vb: ModelWithSourceString(Of T).Model
+- uid: Newbe.CQP.Framework.ModelWithSourceString`1.Model*
+  name: Model
+  href: api/Newbe.CQP.Framework.ModelWithSourceString-1.html#Newbe_CQP_Framework_ModelWithSourceString_1_Model_
+  commentId: Overload:Newbe.CQP.Framework.ModelWithSourceString`1.Model
+  fullName: Newbe.CQP.Framework.ModelWithSourceString<T>.Model
+  fullName.vb: Newbe.CQP.Framework.ModelWithSourceString(Of T).Model
+  nameWithType: ModelWithSourceString<T>.Model
+  nameWithType.vb: ModelWithSourceString(Of T).Model
+- uid: Newbe.CQP.Framework.ModelWithSourceString`1.SourceString
+  name: SourceString
+  href: api/Newbe.CQP.Framework.ModelWithSourceString-1.html#Newbe_CQP_Framework_ModelWithSourceString_1_SourceString
+  commentId: P:Newbe.CQP.Framework.ModelWithSourceString`1.SourceString
+  fullName: Newbe.CQP.Framework.ModelWithSourceString<T>.SourceString
+  fullName.vb: Newbe.CQP.Framework.ModelWithSourceString(Of T).SourceString
+  nameWithType: ModelWithSourceString<T>.SourceString
+  nameWithType.vb: ModelWithSourceString(Of T).SourceString
+- uid: Newbe.CQP.Framework.ModelWithSourceString`1.SourceString*
+  name: SourceString
+  href: api/Newbe.CQP.Framework.ModelWithSourceString-1.html#Newbe_CQP_Framework_ModelWithSourceString_1_SourceString_
+  commentId: Overload:Newbe.CQP.Framework.ModelWithSourceString`1.SourceString
+  fullName: Newbe.CQP.Framework.ModelWithSourceString<T>.SourceString
+  fullName.vb: Newbe.CQP.Framework.ModelWithSourceString(Of T).SourceString
+  nameWithType: ModelWithSourceString<T>.SourceString
+  nameWithType.vb: ModelWithSourceString(Of T).SourceString
 - uid: Newbe.CQP.Framework.NewbeInstanceManager
   name: NewbeInstanceManager
   href: api/Newbe.CQP.Framework.NewbeInstanceManager.html

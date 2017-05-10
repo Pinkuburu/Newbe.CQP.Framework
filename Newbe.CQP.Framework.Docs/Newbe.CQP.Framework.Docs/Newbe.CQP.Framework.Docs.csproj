@@ -24,8 +24,8 @@
     <InstallUrl>http://yks.oschina.io/newbe.cqp.framework/clickonce/</InstallUrl>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
-    <ApplicationRevision>3</ApplicationRevision>
-    <ApplicationVersion>1.1.0.3</ApplicationVersion>
+    <ApplicationRevision>4</ApplicationRevision>
+    <ApplicationVersion>1.1.0.4</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
@@ -115,9 +115,9 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <Content Include="Content\api\index.html" />
+    <Content Include="Content\api\Newbe.CQP.Framework.CoolApiExtensions.html" />
     <Content Include="Content\api\Newbe.CQP.Framework.CoolQAddGroupRequestType.html" />
     <Content Include="Content\api\Newbe.CQP.Framework.CoolQCode.html" />
     <Content Include="Content\api\Newbe.CQP.Framework.CoolQLogLevel.html" />
@@ -127,6 +127,7 @@
     <Content Include="Content\api\Newbe.CQP.Framework.IAutofacContainerBuilder.html" />
     <Content Include="Content\api\Newbe.CQP.Framework.ICoolQApi.html" />
     <Content Include="Content\api\Newbe.CQP.Framework.IPluginBase.html" />
+    <Content Include="Content\api\Newbe.CQP.Framework.ModelWithSourceString-1.html" />
     <Content Include="Content\api\Newbe.CQP.Framework.NewbeInstanceManager.html" />
     <Content Include="Content\api\Newbe.CQP.Framework.NewbePluginDirectoryNotFoundException.html" />
     <Content Include="Content\api\Newbe.CQP.Framework.PluginBase.html" />
