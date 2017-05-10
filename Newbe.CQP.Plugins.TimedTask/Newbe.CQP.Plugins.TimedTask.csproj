@@ -69,7 +69,6 @@
     <Content Include="Newbe.CQP.Framework\ForMain\Newbe.CQP.Framework.dll" />
     <Content Include="Newbe.CQP.Framework\ForMain\Newbe.CQP.Framework.PluginLoader.dll" />
     <Content Include="Newbe.CQP.Framework\ForMain\readme.txt" />
-    <Content Include="Newbe.CQP.Framework\ForPlugin\Newbe.CQP.Framework.ApiExporter.dll" />
     <Content Include="Newbe.CQP.Framework\ForPlugin\Newbe.CQP.Plugins.TimedTask.dll" />
     <Content Include="Newbe.CQP.Framework\ForPlugin\readme.txt" />
   </ItemGroup>
@@ -78,7 +77,6 @@
     <None Include="job_scheduling_data_2_0.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Newbe.CQP.Framework\ForPlugin\Newbe.CQP.Framework.json" />
     <None Include="Newbe.CQP.Framework\ForPlugin\Newbe.CQP.Plugins.TimedTask.json" />
     <None Include="packages.config" />
     <None Include="README.md" />

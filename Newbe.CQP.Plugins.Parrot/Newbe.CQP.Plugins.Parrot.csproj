@@ -54,7 +54,6 @@
     <Content Include="Newbe.CQP.Framework\ForMain\Newbe.CQP.Framework.dll" />
     <Content Include="Newbe.CQP.Framework\ForMain\Newbe.CQP.Framework.PluginLoader.dll" />
     <Content Include="Newbe.CQP.Framework\ForMain\readme.txt" />
-    <Content Include="Newbe.CQP.Framework\ForPlugin\Newbe.CQP.Framework.ApiExporter.dll" />
     <Content Include="Newbe.CQP.Framework\ForPlugin\Newbe.CQP.Plugins.Parrot.dll" />
     <Content Include="Newbe.CQP.Framework\ForPlugin\readme.txt" />
   </ItemGroup>
@@ -62,7 +61,6 @@
     <Content Include="Newbe.CQP.Framework\ForPlugin\Newbe.CQP.Plugins.Parrot.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <None Include="Newbe.CQP.Framework\ForPlugin\Newbe.CQP.Framework.json" />
     <None Include="packages.config" />
     <None Include="README.md" />
   </ItemGroup>
