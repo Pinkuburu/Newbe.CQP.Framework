@@ -46,20 +46,20 @@ namespace Newbe.CQP.Framework
         string GetGroupMemberInfo(long groupId, long qqId);
 
         /// <summary>
-        ///     取群成员信息(支持缓存)
+        /// 取群成员信息(支持缓存)
         /// </summary>
         /// <param name="groupId">目标群</param>
         /// <param name="qqId">目标QQ</param>
         /// <param name="cache">是否缓存</param>
         /// <returns></returns>
-        ModelWithSourceString<GroupMemberInfo> GetGroupMemberInfoV2(long groupId, long qqId, bool cache);
+        string GetGroupMemberInfoV2AsString(long groupId, long qqId, bool cache);
 
         /// <summary>
-        ///     取群成员列表
+        /// 取群成员列表
         /// </summary>
         /// <param name="groupId">目标群</param>
         /// <returns></returns>
-        ModelWithSourceString<IEnumerable<GroupMemberInfo>> GetGroupMemberList(long groupId);
+        string GetGroupMemberListAsString(long groupId);
 
         /// <summary>
         ///     取登录昵称

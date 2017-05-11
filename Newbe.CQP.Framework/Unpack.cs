@@ -1,6 +1,6 @@
 using System.Text;
 
-namespace Newbe.CQP.Framework.PluginLoader
+namespace Newbe.CQP.Framework
 {
     internal class Unpack
     {
