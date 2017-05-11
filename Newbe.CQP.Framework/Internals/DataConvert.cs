@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Text;
 
-namespace Newbe.CQP.Framework
+namespace Newbe.CQP.Framework.Internals
 {
     /// <summary>
     /// Base64编码解码

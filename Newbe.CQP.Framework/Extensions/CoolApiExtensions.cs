@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Newbe.CQP.Framework.Internals;
 
-namespace Newbe.CQP.Framework
+namespace Newbe.CQP.Framework.Extensions
 {
     /// <summary>
     /// 对ICoolApi的额外扩展
