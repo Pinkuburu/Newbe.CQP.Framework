@@ -52,6 +52,7 @@
   <ItemGroup>
     <None Include="Newbe.CQP.Framework\ForPlugin\Newbe.CQP.Framework.json" />
     <None Include="packages.config" />
+    <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Newbe.CQP.Framework\ForMain\Autofac.dll" />
