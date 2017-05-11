@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Newbe.CQP.Framework.Extras</id>
+    <version>1.1.0-alpha01</version>
+    <title>Newbe.CQP.Framework.Extras</title>
+    <authors>Newbe</authors>
+    <owners>Newbe</owners>
+    <licenseUrl>http://git.oschina.net/yks/Newbe.CQP.Framework/raw/dev/LICENSE.md</licenseUrl>
+    <projectUrl>http://git.oschina.net/yks/Newbe.CQP.Framework</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>对Newbe.CQP.Framework中ICoolApi的扩展</description>
+    <summary>对Newbe.CQP.Framework中ICoolApi的扩展</summary>
+    <releaseNotes>对Newbe.CQP.Framework中ICoolApi的扩展</releaseNotes>
+    <copyright>Copyright Newbe2017</copyright>
+  </metadata>
+  <files>
+      <file src="tools\*.ps1" target="tools" />
+    </files>
+</package>
