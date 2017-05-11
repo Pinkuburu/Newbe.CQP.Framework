@@ -46,10 +46,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <DependentUpon>T4NuSpec.tt</DependentUpon>
+    </Compile>
     <Compile Include="Class1.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="T4NuSpec.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>T4NuSpec.tt</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include=".t4\MultipleOutput.ttinclude" />
+    <None Include="Newbe.CQP.Framework.nuspec">
+      <DependentUpon>T4NuSpec.tt</DependentUpon>
+    </None>
     <None Include="Newbe.CQP.Framework\ForPlugin\Newbe.CQP.Framework.json" />
     <None Include="packages.config" />
   </ItemGroup>
@@ -60,6 +71,18 @@
     <None Include="Newbe.CQP.Framework\ForMain\readme.txt" />
     <None Include="Newbe.CQP.Framework\ForPlugin\Newbe.CQP.Framework.ApiExporter.dll" />
     <None Include="Newbe.CQP.Framework\ForPlugin\readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="T4NuSpec.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>T4NuSpec.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

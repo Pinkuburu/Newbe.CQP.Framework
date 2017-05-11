@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Newbe.CQP.Framework.Extras
+﻿namespace Newbe.CQP.Framework.Extensions
 {
-    public class Class1
+    public static class ExtrasCoolApiExtensions
     {
     }
 }
