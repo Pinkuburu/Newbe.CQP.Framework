@@ -13,7 +13,7 @@
     string author = "Newbe";
 
     // ============ NuSpec
-    string nugetPackageId = "Newbe.CQP.Framework";
+    string nugetPackageId = "Newbe.CQP.Framework.Extras";
     string nugetLicenseUrl = "http://git.oschina.net/yks/Newbe.CQP.Framework/raw/dev/LICENSE.md";
     string nugetProjectUrl = "http://git.oschina.net/yks/Newbe.CQP.Framework";
     string nugetRequireLicenseAcceptance = "false";
@@ -33,7 +33,7 @@
 
     // ============ NuSpec Contents
     IList<KeyValuePair<String,String>> nugetFiles = new List<KeyValuePair<String,String>>();
-
+	nugetFiles.Add(new KeyValuePair<string,string>(@"tools\*.ps1","tools"));
 
     // ============ Assembly info
     string assemblyTitle = projectTitle;
