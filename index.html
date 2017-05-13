@@ -43,7 +43,7 @@
                         <use xlink:href="#icon:search"></use>
                     </svg>
                 </div>
-                <nav class="menubar scroller" id="menuBar">
+                <nav class="menubar scroller" id="menuBar" data-x-rolling="true">
                     <div class="scroller-inner">
                         <div class="scroller-content"></div>
                     </div>
@@ -51,7 +51,19 @@
             </div>
             <div class="main scroller" id="main">
                 <div class="main-inner scroller-inner">
+                    <!-- 正文 -->
                     <article class="markdown-body scroller-content" id="view"></article>
+                    <script id="template:footnote" type="text/html">
+                        <sup><a href="#fn:foot{{index}}" name="fn:note{{index}}" title="{{title}}">[{{index}}]</a></sup>
+                        <ol class="footnote"><i>[参考资料]：</i>{{list}}</ol>
+                        <li id="fn:foot{{index}}">{{content}} {{back}}</li>
+                        <li class="footnote-none" data-msg="匹配缺失">{{content}}</li>
+                        <a href="#fn:note{{index}}">
+                            <svg>
+                                <use xlink:href="#icon:footnoteBack"></use>
+                            </svg>
+                        </a>
+                    </script>
                     <!-- 上下翻页 -->
                     <div class="main-sibling scroller-content" id="mainSibling">
                         <p><span>上一篇：</span>
@@ -97,7 +109,7 @@
                         </div>
                     </div>
                     <!-- 接口测试 -->
-                    
+
                 </div>
             </div>
         </div>
@@ -145,7 +157,7 @@
             <script type="text/javascript" src="amWiki/js/amWiki.storage.js"></script>
             <script type="text/javascript" src="amWiki/js/amWiki.search.js"></script>
             <script type="text/javascript" src="amWiki/js/amWiki.docs.js"></script>
-            
+
             <script type="text/javascript" src="amWiki/js/amWiki.scrollbar.js"></script>
             <script type="text/javascript" src="amWiki/js/amWiki.js"></script>
         </div>
