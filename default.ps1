@@ -13,6 +13,7 @@ Task Clean {
 
 Task CopySrc -depends Clean{
     Copy-Item "Newbe.CQP.Framework" "docfx_project\src" -Recurse -Force  
+    Copy-Item "Newbe.CQP.Framework.Extras" "docfx_project\src" -Recurse -Force  
 }
 
 Task DocFx -depends CopySrc{

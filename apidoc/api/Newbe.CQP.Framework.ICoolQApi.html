@@ -270,14 +270,14 @@ string GetGroupMemberInfo(long groupId, long qqId)</code></pre>
   </table>
   
   
-  <a id="Newbe_CQP_Framework_ICoolQApi_GetGroupMemberInfoV2_" data-uid="Newbe.CQP.Framework.ICoolQApi.GetGroupMemberInfoV2*"></a>
-  <h4 id="Newbe_CQP_Framework_ICoolQApi_GetGroupMemberInfoV2_System_Int64_System_Int64_System_Boolean_" data-uid="Newbe.CQP.Framework.ICoolQApi.GetGroupMemberInfoV2(System.Int64,System.Int64,System.Boolean)">GetGroupMemberInfoV2(Int64, Int64, Boolean)</h4>
+  <a id="Newbe_CQP_Framework_ICoolQApi_GetGroupMemberInfoV2AsString_" data-uid="Newbe.CQP.Framework.ICoolQApi.GetGroupMemberInfoV2AsString*"></a>
+  <h4 id="Newbe_CQP_Framework_ICoolQApi_GetGroupMemberInfoV2AsString_System_Int64_System_Int64_System_Boolean_" data-uid="Newbe.CQP.Framework.ICoolQApi.GetGroupMemberInfoV2AsString(System.Int64,System.Int64,System.Boolean)">GetGroupMemberInfoV2AsString(Int64, Int64, Boolean)</h4>
   <div class="markdown level1 summary"><p>取群成员信息(支持缓存)</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">ModelWithSourceString&lt;GroupMemberInfo&gt; GetGroupMemberInfoV2(long groupId, long qqId, bool cache)</code></pre>
+    <pre><code class="lang-csharp hljs">string GetGroupMemberInfoV2AsString(long groupId, long qqId, bool cache)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -319,21 +319,21 @@ string GetGroupMemberInfo(long groupId, long qqId)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Newbe.CQP.Framework.ModelWithSourceString-1.html">ModelWithSourceString</a>&lt;<a class="xref" href="Newbe.CQP.Framework.GroupMemberInfo.html">GroupMemberInfo</a>&gt;</td>
+        <td><span class="xref">System.String</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="Newbe_CQP_Framework_ICoolQApi_GetGroupMemberList_" data-uid="Newbe.CQP.Framework.ICoolQApi.GetGroupMemberList*"></a>
-  <h4 id="Newbe_CQP_Framework_ICoolQApi_GetGroupMemberList_System_Int64_" data-uid="Newbe.CQP.Framework.ICoolQApi.GetGroupMemberList(System.Int64)">GetGroupMemberList(Int64)</h4>
+  <a id="Newbe_CQP_Framework_ICoolQApi_GetGroupMemberListAsString_" data-uid="Newbe.CQP.Framework.ICoolQApi.GetGroupMemberListAsString*"></a>
+  <h4 id="Newbe_CQP_Framework_ICoolQApi_GetGroupMemberListAsString_System_Int64_" data-uid="Newbe.CQP.Framework.ICoolQApi.GetGroupMemberListAsString(System.Int64)">GetGroupMemberListAsString(Int64)</h4>
   <div class="markdown level1 summary"><p>取群成员列表</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">ModelWithSourceString&lt;IEnumerable&lt;GroupMemberInfo&gt;&gt; GetGroupMemberList(long groupId)</code></pre>
+    <pre><code class="lang-csharp hljs">string GetGroupMemberListAsString(long groupId)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -363,7 +363,7 @@ string GetGroupMemberInfo(long groupId, long qqId)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Newbe.CQP.Framework.ModelWithSourceString-1.html">ModelWithSourceString</a>&lt;<span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Newbe.CQP.Framework.GroupMemberInfo.html">GroupMemberInfo</a>&gt;&gt;</td>
+        <td><span class="xref">System.String</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -1520,7 +1520,13 @@ string GetGroupMemberInfo(long groupId, long qqId)</code></pre>
   </table>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="Newbe.CQP.Framework.CoolApiExtensions.html#Newbe_CQP_Framework_CoolApiExtensions_AddLog_Newbe_CQP_Framework_ICoolQApi_Newbe_CQP_Framework_CoolQLogLevel_System_String_">CoolApiExtensions.AddLog(ICoolQApi, CoolQLogLevel, String)</a>
+      <a class="xref" href="Newbe.CQP.Framework.Extensions.CoolApiExtensions.html#Newbe_CQP_Framework_Extensions_CoolApiExtensions_AddLog_Newbe_CQP_Framework_ICoolQApi_Newbe_CQP_Framework_CoolQLogLevel_System_String_">CoolApiExtensions.AddLog(ICoolQApi, CoolQLogLevel, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Newbe.CQP.Framework.Extensions.CoolApiExtensions.html#Newbe_CQP_Framework_Extensions_CoolApiExtensions_GetGroupMemberInfoV2_Newbe_CQP_Framework_ICoolQApi_System_Int64_System_Int64_System_Boolean_">CoolApiExtensions.GetGroupMemberInfoV2(ICoolQApi, Int64, Int64, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="Newbe.CQP.Framework.Extensions.CoolApiExtensions.html#Newbe_CQP_Framework_Extensions_CoolApiExtensions_GetGroupMemberList_Newbe_CQP_Framework_ICoolQApi_System_Int64_">CoolApiExtensions.GetGroupMemberList(ICoolQApi, Int64)</a>
   </div>
 </article>
           </div>

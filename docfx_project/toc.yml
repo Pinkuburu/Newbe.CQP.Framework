@@ -1,5 +1,9 @@
-- name: Articles
-  href: articles/
-- name: Api Documentation
+- name: Api文档
   href: api/
   homepage: api/index.md
+- name: 开源中国源码
+  href: http://git.oschina.net/yks/Newbe.CQP.Framework
+- name: Github
+  href: https://github.com/pianzide1117/Newbe.CQP.Framework
+- name: 综合文库
+  href: http://yks.oschina.io/newbe.cqp.framework/

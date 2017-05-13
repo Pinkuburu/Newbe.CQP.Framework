@@ -7,24 +7,6 @@ references:
   commentId: N:Newbe.CQP.Framework
   fullName: Newbe.CQP.Framework
   nameWithType: Newbe.CQP.Framework
-- uid: Newbe.CQP.Framework.CoolApiExtensions
-  name: CoolApiExtensions
-  href: api/Newbe.CQP.Framework.CoolApiExtensions.html
-  commentId: T:Newbe.CQP.Framework.CoolApiExtensions
-  fullName: Newbe.CQP.Framework.CoolApiExtensions
-  nameWithType: CoolApiExtensions
-- uid: Newbe.CQP.Framework.CoolApiExtensions.AddLog(Newbe.CQP.Framework.ICoolQApi,Newbe.CQP.Framework.CoolQLogLevel,System.String)
-  name: AddLog(ICoolQApi, CoolQLogLevel, String)
-  href: api/Newbe.CQP.Framework.CoolApiExtensions.html#Newbe_CQP_Framework_CoolApiExtensions_AddLog_Newbe_CQP_Framework_ICoolQApi_Newbe_CQP_Framework_CoolQLogLevel_System_String_
-  commentId: M:Newbe.CQP.Framework.CoolApiExtensions.AddLog(Newbe.CQP.Framework.ICoolQApi,Newbe.CQP.Framework.CoolQLogLevel,System.String)
-  fullName: Newbe.CQP.Framework.CoolApiExtensions.AddLog(Newbe.CQP.Framework.ICoolQApi, Newbe.CQP.Framework.CoolQLogLevel, System.String)
-  nameWithType: CoolApiExtensions.AddLog(ICoolQApi, CoolQLogLevel, String)
-- uid: Newbe.CQP.Framework.CoolApiExtensions.AddLog*
-  name: AddLog
-  href: api/Newbe.CQP.Framework.CoolApiExtensions.html#Newbe_CQP_Framework_CoolApiExtensions_AddLog_
-  commentId: Overload:Newbe.CQP.Framework.CoolApiExtensions.AddLog
-  fullName: Newbe.CQP.Framework.CoolApiExtensions.AddLog
-  nameWithType: CoolApiExtensions.AddLog
 - uid: Newbe.CQP.Framework.CoolQAddGroupRequestType
   name: CoolQAddGroupRequestType
   href: api/Newbe.CQP.Framework.CoolQAddGroupRequestType.html
@@ -253,6 +235,114 @@ references:
   commentId: F:Newbe.CQP.Framework.CoolQRequestResult.None
   fullName: Newbe.CQP.Framework.CoolQRequestResult.None
   nameWithType: CoolQRequestResult.None
+- uid: Newbe.CQP.Framework.Extensions
+  name: Newbe.CQP.Framework.Extensions
+  href: api/Newbe.CQP.Framework.Extensions.html
+  commentId: N:Newbe.CQP.Framework.Extensions
+  fullName: Newbe.CQP.Framework.Extensions
+  nameWithType: Newbe.CQP.Framework.Extensions
+- uid: Newbe.CQP.Framework.Extensions.CoolApiExtensions
+  name: CoolApiExtensions
+  href: api/Newbe.CQP.Framework.Extensions.CoolApiExtensions.html
+  commentId: T:Newbe.CQP.Framework.Extensions.CoolApiExtensions
+  fullName: Newbe.CQP.Framework.Extensions.CoolApiExtensions
+  nameWithType: CoolApiExtensions
+- uid: Newbe.CQP.Framework.Extensions.CoolApiExtensions.AddLog(Newbe.CQP.Framework.ICoolQApi,Newbe.CQP.Framework.CoolQLogLevel,System.String)
+  name: AddLog(ICoolQApi, CoolQLogLevel, String)
+  href: api/Newbe.CQP.Framework.Extensions.CoolApiExtensions.html#Newbe_CQP_Framework_Extensions_CoolApiExtensions_AddLog_Newbe_CQP_Framework_ICoolQApi_Newbe_CQP_Framework_CoolQLogLevel_System_String_
+  commentId: M:Newbe.CQP.Framework.Extensions.CoolApiExtensions.AddLog(Newbe.CQP.Framework.ICoolQApi,Newbe.CQP.Framework.CoolQLogLevel,System.String)
+  fullName: Newbe.CQP.Framework.Extensions.CoolApiExtensions.AddLog(Newbe.CQP.Framework.ICoolQApi, Newbe.CQP.Framework.CoolQLogLevel, System.String)
+  nameWithType: CoolApiExtensions.AddLog(ICoolQApi, CoolQLogLevel, String)
+- uid: Newbe.CQP.Framework.Extensions.CoolApiExtensions.AddLog*
+  name: AddLog
+  href: api/Newbe.CQP.Framework.Extensions.CoolApiExtensions.html#Newbe_CQP_Framework_Extensions_CoolApiExtensions_AddLog_
+  commentId: Overload:Newbe.CQP.Framework.Extensions.CoolApiExtensions.AddLog
+  fullName: Newbe.CQP.Framework.Extensions.CoolApiExtensions.AddLog
+  nameWithType: CoolApiExtensions.AddLog
+- uid: Newbe.CQP.Framework.Extensions.CoolApiExtensions.GetGroupMemberInfoV2(Newbe.CQP.Framework.ICoolQApi,System.Int64,System.Int64,System.Boolean)
+  name: GetGroupMemberInfoV2(ICoolQApi, Int64, Int64, Boolean)
+  href: api/Newbe.CQP.Framework.Extensions.CoolApiExtensions.html#Newbe_CQP_Framework_Extensions_CoolApiExtensions_GetGroupMemberInfoV2_Newbe_CQP_Framework_ICoolQApi_System_Int64_System_Int64_System_Boolean_
+  commentId: M:Newbe.CQP.Framework.Extensions.CoolApiExtensions.GetGroupMemberInfoV2(Newbe.CQP.Framework.ICoolQApi,System.Int64,System.Int64,System.Boolean)
+  fullName: Newbe.CQP.Framework.Extensions.CoolApiExtensions.GetGroupMemberInfoV2(Newbe.CQP.Framework.ICoolQApi, System.Int64, System.Int64, System.Boolean)
+  nameWithType: CoolApiExtensions.GetGroupMemberInfoV2(ICoolQApi, Int64, Int64, Boolean)
+- uid: Newbe.CQP.Framework.Extensions.CoolApiExtensions.GetGroupMemberInfoV2*
+  name: GetGroupMemberInfoV2
+  href: api/Newbe.CQP.Framework.Extensions.CoolApiExtensions.html#Newbe_CQP_Framework_Extensions_CoolApiExtensions_GetGroupMemberInfoV2_
+  commentId: Overload:Newbe.CQP.Framework.Extensions.CoolApiExtensions.GetGroupMemberInfoV2
+  fullName: Newbe.CQP.Framework.Extensions.CoolApiExtensions.GetGroupMemberInfoV2
+  nameWithType: CoolApiExtensions.GetGroupMemberInfoV2
+- uid: Newbe.CQP.Framework.Extensions.CoolApiExtensions.GetGroupMemberList(Newbe.CQP.Framework.ICoolQApi,System.Int64)
+  name: GetGroupMemberList(ICoolQApi, Int64)
+  href: api/Newbe.CQP.Framework.Extensions.CoolApiExtensions.html#Newbe_CQP_Framework_Extensions_CoolApiExtensions_GetGroupMemberList_Newbe_CQP_Framework_ICoolQApi_System_Int64_
+  commentId: M:Newbe.CQP.Framework.Extensions.CoolApiExtensions.GetGroupMemberList(Newbe.CQP.Framework.ICoolQApi,System.Int64)
+  fullName: Newbe.CQP.Framework.Extensions.CoolApiExtensions.GetGroupMemberList(Newbe.CQP.Framework.ICoolQApi, System.Int64)
+  nameWithType: CoolApiExtensions.GetGroupMemberList(ICoolQApi, Int64)
+- uid: Newbe.CQP.Framework.Extensions.CoolApiExtensions.GetGroupMemberList*
+  name: GetGroupMemberList
+  href: api/Newbe.CQP.Framework.Extensions.CoolApiExtensions.html#Newbe_CQP_Framework_Extensions_CoolApiExtensions_GetGroupMemberList_
+  commentId: Overload:Newbe.CQP.Framework.Extensions.CoolApiExtensions.GetGroupMemberList
+  fullName: Newbe.CQP.Framework.Extensions.CoolApiExtensions.GetGroupMemberList
+  nameWithType: CoolApiExtensions.GetGroupMemberList
+- uid: Newbe.CQP.Framework.Extensions.ExtrasCoolApiExtensions
+  name: ExtrasCoolApiExtensions
+  href: api/Newbe.CQP.Framework.Extensions.ExtrasCoolApiExtensions.html
+  commentId: T:Newbe.CQP.Framework.Extensions.ExtrasCoolApiExtensions
+  fullName: Newbe.CQP.Framework.Extensions.ExtrasCoolApiExtensions
+  nameWithType: ExtrasCoolApiExtensions
+- uid: Newbe.CQP.Framework.Extensions.ExtrasCoolApiExtensions.GetGroupList(ICoolQApi)
+  name: GetGroupList(ICoolQApi)
+  href: api/Newbe.CQP.Framework.Extensions.ExtrasCoolApiExtensions.html#Newbe_CQP_Framework_Extensions_ExtrasCoolApiExtensions_GetGroupList_ICoolQApi_
+  commentId: M:Newbe.CQP.Framework.Extensions.ExtrasCoolApiExtensions.GetGroupList(ICoolQApi)
+  fullName: Newbe.CQP.Framework.Extensions.ExtrasCoolApiExtensions.GetGroupList(ICoolQApi)
+  nameWithType: ExtrasCoolApiExtensions.GetGroupList(ICoolQApi)
+- uid: Newbe.CQP.Framework.Extensions.ExtrasCoolApiExtensions.GetGroupList*
+  name: GetGroupList
+  href: api/Newbe.CQP.Framework.Extensions.ExtrasCoolApiExtensions.html#Newbe_CQP_Framework_Extensions_ExtrasCoolApiExtensions_GetGroupList_
+  commentId: Overload:Newbe.CQP.Framework.Extensions.ExtrasCoolApiExtensions.GetGroupList
+  fullName: Newbe.CQP.Framework.Extensions.ExtrasCoolApiExtensions.GetGroupList
+  nameWithType: ExtrasCoolApiExtensions.GetGroupList
+- uid: Newbe.CQP.Framework.Extensions.GroupInfo
+  name: GroupInfo
+  href: api/Newbe.CQP.Framework.Extensions.GroupInfo.html
+  commentId: T:Newbe.CQP.Framework.Extensions.GroupInfo
+  fullName: Newbe.CQP.Framework.Extensions.GroupInfo
+  nameWithType: GroupInfo
+- uid: Newbe.CQP.Framework.Extensions.GroupInfo.GroupName
+  name: GroupName
+  href: api/Newbe.CQP.Framework.Extensions.GroupInfo.html#Newbe_CQP_Framework_Extensions_GroupInfo_GroupName
+  commentId: P:Newbe.CQP.Framework.Extensions.GroupInfo.GroupName
+  fullName: Newbe.CQP.Framework.Extensions.GroupInfo.GroupName
+  nameWithType: GroupInfo.GroupName
+- uid: Newbe.CQP.Framework.Extensions.GroupInfo.GroupName*
+  name: GroupName
+  href: api/Newbe.CQP.Framework.Extensions.GroupInfo.html#Newbe_CQP_Framework_Extensions_GroupInfo_GroupName_
+  commentId: Overload:Newbe.CQP.Framework.Extensions.GroupInfo.GroupName
+  fullName: Newbe.CQP.Framework.Extensions.GroupInfo.GroupName
+  nameWithType: GroupInfo.GroupName
+- uid: Newbe.CQP.Framework.Extensions.GroupInfo.GroupNumber
+  name: GroupNumber
+  href: api/Newbe.CQP.Framework.Extensions.GroupInfo.html#Newbe_CQP_Framework_Extensions_GroupInfo_GroupNumber
+  commentId: P:Newbe.CQP.Framework.Extensions.GroupInfo.GroupNumber
+  fullName: Newbe.CQP.Framework.Extensions.GroupInfo.GroupNumber
+  nameWithType: GroupInfo.GroupNumber
+- uid: Newbe.CQP.Framework.Extensions.GroupInfo.GroupNumber*
+  name: GroupNumber
+  href: api/Newbe.CQP.Framework.Extensions.GroupInfo.html#Newbe_CQP_Framework_Extensions_GroupInfo_GroupNumber_
+  commentId: Overload:Newbe.CQP.Framework.Extensions.GroupInfo.GroupNumber
+  fullName: Newbe.CQP.Framework.Extensions.GroupInfo.GroupNumber
+  nameWithType: GroupInfo.GroupNumber
+- uid: Newbe.CQP.Framework.Extensions.GroupInfo.OwnerNumber
+  name: OwnerNumber
+  href: api/Newbe.CQP.Framework.Extensions.GroupInfo.html#Newbe_CQP_Framework_Extensions_GroupInfo_OwnerNumber
+  commentId: P:Newbe.CQP.Framework.Extensions.GroupInfo.OwnerNumber
+  fullName: Newbe.CQP.Framework.Extensions.GroupInfo.OwnerNumber
+  nameWithType: GroupInfo.OwnerNumber
+- uid: Newbe.CQP.Framework.Extensions.GroupInfo.OwnerNumber*
+  name: OwnerNumber
+  href: api/Newbe.CQP.Framework.Extensions.GroupInfo.html#Newbe_CQP_Framework_Extensions_GroupInfo_OwnerNumber_
+  commentId: Overload:Newbe.CQP.Framework.Extensions.GroupInfo.OwnerNumber
+  fullName: Newbe.CQP.Framework.Extensions.GroupInfo.OwnerNumber
+  nameWithType: GroupInfo.OwnerNumber
 - uid: Newbe.CQP.Framework.GroupMemberInfo
   name: GroupMemberInfo
   href: api/Newbe.CQP.Framework.GroupMemberInfo.html
@@ -523,30 +613,30 @@ references:
   commentId: Overload:Newbe.CQP.Framework.ICoolQApi.GetGroupMemberInfo
   fullName: Newbe.CQP.Framework.ICoolQApi.GetGroupMemberInfo
   nameWithType: ICoolQApi.GetGroupMemberInfo
-- uid: Newbe.CQP.Framework.ICoolQApi.GetGroupMemberInfoV2(System.Int64,System.Int64,System.Boolean)
-  name: GetGroupMemberInfoV2(Int64, Int64, Boolean)
-  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_GetGroupMemberInfoV2_System_Int64_System_Int64_System_Boolean_
-  commentId: M:Newbe.CQP.Framework.ICoolQApi.GetGroupMemberInfoV2(System.Int64,System.Int64,System.Boolean)
-  fullName: Newbe.CQP.Framework.ICoolQApi.GetGroupMemberInfoV2(System.Int64, System.Int64, System.Boolean)
-  nameWithType: ICoolQApi.GetGroupMemberInfoV2(Int64, Int64, Boolean)
-- uid: Newbe.CQP.Framework.ICoolQApi.GetGroupMemberInfoV2*
-  name: GetGroupMemberInfoV2
-  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_GetGroupMemberInfoV2_
-  commentId: Overload:Newbe.CQP.Framework.ICoolQApi.GetGroupMemberInfoV2
-  fullName: Newbe.CQP.Framework.ICoolQApi.GetGroupMemberInfoV2
-  nameWithType: ICoolQApi.GetGroupMemberInfoV2
-- uid: Newbe.CQP.Framework.ICoolQApi.GetGroupMemberList(System.Int64)
-  name: GetGroupMemberList(Int64)
-  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_GetGroupMemberList_System_Int64_
-  commentId: M:Newbe.CQP.Framework.ICoolQApi.GetGroupMemberList(System.Int64)
-  fullName: Newbe.CQP.Framework.ICoolQApi.GetGroupMemberList(System.Int64)
-  nameWithType: ICoolQApi.GetGroupMemberList(Int64)
-- uid: Newbe.CQP.Framework.ICoolQApi.GetGroupMemberList*
-  name: GetGroupMemberList
-  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_GetGroupMemberList_
-  commentId: Overload:Newbe.CQP.Framework.ICoolQApi.GetGroupMemberList
-  fullName: Newbe.CQP.Framework.ICoolQApi.GetGroupMemberList
-  nameWithType: ICoolQApi.GetGroupMemberList
+- uid: Newbe.CQP.Framework.ICoolQApi.GetGroupMemberInfoV2AsString(System.Int64,System.Int64,System.Boolean)
+  name: GetGroupMemberInfoV2AsString(Int64, Int64, Boolean)
+  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_GetGroupMemberInfoV2AsString_System_Int64_System_Int64_System_Boolean_
+  commentId: M:Newbe.CQP.Framework.ICoolQApi.GetGroupMemberInfoV2AsString(System.Int64,System.Int64,System.Boolean)
+  fullName: Newbe.CQP.Framework.ICoolQApi.GetGroupMemberInfoV2AsString(System.Int64, System.Int64, System.Boolean)
+  nameWithType: ICoolQApi.GetGroupMemberInfoV2AsString(Int64, Int64, Boolean)
+- uid: Newbe.CQP.Framework.ICoolQApi.GetGroupMemberInfoV2AsString*
+  name: GetGroupMemberInfoV2AsString
+  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_GetGroupMemberInfoV2AsString_
+  commentId: Overload:Newbe.CQP.Framework.ICoolQApi.GetGroupMemberInfoV2AsString
+  fullName: Newbe.CQP.Framework.ICoolQApi.GetGroupMemberInfoV2AsString
+  nameWithType: ICoolQApi.GetGroupMemberInfoV2AsString
+- uid: Newbe.CQP.Framework.ICoolQApi.GetGroupMemberListAsString(System.Int64)
+  name: GetGroupMemberListAsString(Int64)
+  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_GetGroupMemberListAsString_System_Int64_
+  commentId: M:Newbe.CQP.Framework.ICoolQApi.GetGroupMemberListAsString(System.Int64)
+  fullName: Newbe.CQP.Framework.ICoolQApi.GetGroupMemberListAsString(System.Int64)
+  nameWithType: ICoolQApi.GetGroupMemberListAsString(Int64)
+- uid: Newbe.CQP.Framework.ICoolQApi.GetGroupMemberListAsString*
+  name: GetGroupMemberListAsString
+  href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_GetGroupMemberListAsString_
+  commentId: Overload:Newbe.CQP.Framework.ICoolQApi.GetGroupMemberListAsString
+  fullName: Newbe.CQP.Framework.ICoolQApi.GetGroupMemberListAsString
+  nameWithType: ICoolQApi.GetGroupMemberListAsString
 - uid: Newbe.CQP.Framework.ICoolQApi.GetLoginNick
   name: GetLoginNick()
   href: api/Newbe.CQP.Framework.ICoolQApi.html#Newbe_CQP_Framework_ICoolQApi_GetLoginNick
