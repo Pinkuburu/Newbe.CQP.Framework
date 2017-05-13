@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{344A228B-0761-4B25-92B8-B4EBF5F19481}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Newbe.CQP.Framework.Tools.MSBuildTask</RootNamespace>
+    <AssemblyName>Newbe.CQP.Framework.Tools.MSBuildTask</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>tools\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>tools\Newbe.CQP.Framework.Tools.MSBuildTask.xml</DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>tools\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>tools\Newbe.CQP.Framework.Tools.MSBuildTask.xml</DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Build.Framework" />
+    <Reference Include="Microsoft.Build.Utilities.v4.0" />
+    <Reference Include="Newbe.CQP.Framework, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newbe.CQP.Framework.1.1.0\lib\net452\Newbe.CQP.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <DependentUpon>T4NuSpec.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NewbePackTask.cs" />
+    <Compile Include="T4NuSpec.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>T4NuSpec.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".t4\MultipleOutput.ttinclude" />
+    <None Include="build\Newbe.CQP.Framework.Tools.MSBuildTask.props" />
+    <None Include="build\Newbe.CQP.Framework.Tools.MSBuildTask.targets">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="content\Newbe.CQP.Framework.props">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Newbe.CQP.Framework.Tools.MSBuildTask.nuspec">
+      <DependentUpon>T4NuSpec.tt</DependentUpon>
+    </None>
+    <None Include="Newbe.CQP.Framework\ForPlugin\Newbe.CQP.Framework.json" />
+    <None Include="nuspec.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="pack.cmd" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="T4NuSpec.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>T4NuSpec.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+    <Folder Include="tools\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Newbe.CQP.Framework\ForMain\Autofac.dll" />
+    <None Include="Newbe.CQP.Framework\ForMain\Newbe.CQP.Framework.dll" />
+    <None Include="Newbe.CQP.Framework\ForMain\Newbe.CQP.Framework.PluginLoader.dll" />
+    <None Include="Newbe.CQP.Framework\ForMain\readme.txt" />
+    <None Include="Newbe.CQP.Framework\ForPlugin\Newbe.CQP.Framework.ApiExporter.dll" />
+    <None Include="Newbe.CQP.Framework\ForPlugin\readme.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

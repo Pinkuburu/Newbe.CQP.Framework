@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>Newbe.CQP.Framework.Tools.MSBuildTask</id>
+    <version>1.1.0</version>
+    <title>Newbe.CQP.Framework.Tools.MSBuildTask</title>
+    <authors>Newbe</authors>
+    <owners>Newbe</owners>
+    <licenseUrl>http://git.oschina.net/yks/Newbe.CQP.Framework/raw/dev/LICENSE.md</licenseUrl>
+    <projectUrl>http://git.oschina.net/yks/Newbe.CQP.Framework</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Newbe.CQP.Framework快速打包MSBuild扩展</description>
+    <summary>Newbe.CQP.Framework快速打包MSBuild扩展</summary>
+    <releaseNotes>Newbe.CQP.Framework快速打包MSBuild扩展</releaseNotes>
+	<tags>Newbe,cqp,cqa,framework,sdk,二次开发,酷Q,CoolQ,MSBuild</tags>
+    <copyright>Copyright Newbe2017</copyright>
+	<dependencies>
+		<dependency id="Newbe.CQP.Framework" version="[1.1,2)" />
+	</dependencies>
+  </metadata>
+  <files>
+      <file src="tools\*" target="tools" />
+      <file src="build\*" target="build" />
+      <file src="content\*" target="content" />
+    </files>
+
+</package>
