@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Runtime.InteropServices;
-using System.Text;
 
 namespace Newbe.CQP.Framework.PluginLoader
 {
@@ -13,65 +10,6 @@ namespace Newbe.CQP.Framework.PluginLoader
         public void SetAuthCode(int authCode)
         {
             _cqauthcode = authCode;
-        }
-
-        /// <summary>
-        /// 转换_ansihex到群成员信息
-        /// </summary>
-        /// <param name="source">源字节集</param>
-        /// <param name="gm">群成员</param>
-        /// <returns></returns>
-        private bool ConvertAnsiHexToGroupMemberInfo(byte[] source, ref GroupMemberInfo gm)
-        {
-            if (source == null || source.Length < 40)
-                return false;
-            var u = new Unpack(source);
-            gm.GroupId = (long) u.GetLong();
-            gm.Number = (long) u.GetLong();
-            gm.NickName = u.GetLenStr();
-            gm.InGroupName = u.GetLenStr();
-            gm.Gender = (int) u.GetInt() == 0 ? "男" : " 女";
-            gm.Age = (int) u.GetInt();
-            gm.Area = u.GetLenStr();
-            gm.JoinTime = new DateTime(1970, 1, 1, 0, 0, 0).ToLocalTime()
-                .AddSeconds((int) u.GetInt());
-            gm.LastSpeakingTime = new DateTime(1970, 1, 1, 0, 0, 0).ToLocalTime()
-                .AddSeconds((int) u.GetInt());
-            gm.Level = u.GetLenStr();
-            var manager = (int) u.GetInt();
-            gm.Authority = manager == 3 ? "群主" : (manager == 2 ? "管理员" : "成员");
-            gm.HasBadRecord = (u.GetInt() == 1);
-            gm.Title = u.GetLenStr();
-            gm.TitleExpirationTime = (int) u.GetInt();
-            gm.CanModifyInGroupName = (u.GetInt() == 1);
-            return true;
-        }
-
-        /// <summary>
-        /// 转换_文本到群成员列表信息
-        /// </summary>
-        /// <param name="source">源</param>
-        /// <param name="lsGm">群成员列表</param>
-        /// <returns></returns>
-        private bool ConvertStrToGroupMemberInfos(string source, ref List<GroupMemberInfo> lsGm)
-        {
-            if (source == string.Empty)
-                return false;
-            var data = source.DeBase64();
-            if (data == null || data.Length < 10)
-                return false;
-            var u = new Unpack(data);
-            var count = u.GetInt();
-            for (int i = 0; i < count; i++)
-            {
-                if (u.Len() <= 0)
-                    return false;
-                var gm = new GroupMemberInfo();
-                if (!ConvertAnsiHexToGroupMemberInfo(u.GetToken(), ref gm))
-                    return false;
-                lsGm.Add(gm);
-            }
-            return true;
         }
 
         #region Impl
@@ -119,20 +57,9 @@ namespace Newbe.CQP.Framework.PluginLoader
             return NativeMethods.CQ_getCsrfToken(_cqauthcode);
         }
 
-        public ModelWithSourceString<GroupMemberInfo> GetGroupMemberInfoV2(long groupId, long qqId, bool cache)
+        public string GetGroupMemberInfoV2AsString(long groupId, long qqId, bool cache)
         {
-            var data = NativeMethods.CQ_getGroupMemberInfoV2(_cqauthcode, groupId, qqId, cache);
-            var source = Convert.FromBase64String(data);
-            var re = new ModelWithSourceString<GroupMemberInfo>
-            {
-                SourceString = data
-            };
-            GroupMemberInfo gm = new GroupMemberInfo();
-            if (ConvertAnsiHexToGroupMemberInfo(source, ref gm))
-            {
-                re.Model = gm;
-            }
-            return re;
+            return NativeMethods.CQ_getGroupMemberInfoV2(_cqauthcode, groupId, qqId, cache);
         }
 
         public string GetGroupMemberInfo(long groupId, long qqId)
@@ -141,20 +68,9 @@ namespace Newbe.CQP.Framework.PluginLoader
         }
 
 
-        public ModelWithSourceString<IEnumerable<GroupMemberInfo>> GetGroupMemberList(long groupId)
+        public string GetGroupMemberListAsString(long groupId)
         {
-            var source = NativeMethods.CQ_getGroupMemberList(_cqauthcode, groupId);
-            var list = new List<GroupMemberInfo>();
-            var re = new ModelWithSourceString<IEnumerable<GroupMemberInfo>>
-            {
-                SourceString = source,
-                Model = Enumerable.Empty<GroupMemberInfo>()
-            };
-            if (ConvertStrToGroupMemberInfos(source, ref list))
-            {
-                re.Model = list;
-            }
-            return re;
+            return NativeMethods.CQ_getGroupMemberList(_cqauthcode, groupId);
         }
 
         public string GetLoginNick()
