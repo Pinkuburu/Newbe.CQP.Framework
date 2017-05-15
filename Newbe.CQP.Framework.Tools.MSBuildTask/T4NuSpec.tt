@@ -14,7 +14,7 @@
 
     // ============ NuSpec
     string nugetPackageId = "Newbe.CQP.Framework.Tools.MSBuildTask";
-    string nugetLicenseUrl = "http://git.oschina.net/yks/Newbe.CQP.Framework/raw/dev/LICENSE.md";
+    string nugetLicenseUrl = "http://git.oschina.net/yks/Newbe.CQP.Framework/raw/master/LICENSE.md";
     string nugetProjectUrl = "http://git.oschina.net/yks/Newbe.CQP.Framework";
     string nugetRequireLicenseAcceptance = "false";
     string nugetReleaseInfo = "Newbe.CQP.Framework快速打包MSBuild扩展";

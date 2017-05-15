@@ -6,7 +6,7 @@
     <title>Newbe.CQP.Framework.Tools.MSBuildTask</title>
     <authors>Newbe</authors>
     <owners>Newbe</owners>
-    <licenseUrl>http://git.oschina.net/yks/Newbe.CQP.Framework/raw/dev/LICENSE.md</licenseUrl>
+    <licenseUrl>http://git.oschina.net/yks/Newbe.CQP.Framework/raw/master/LICENSE.md</licenseUrl>
     <projectUrl>http://git.oschina.net/yks/Newbe.CQP.Framework</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Newbe.CQP.Framework快速打包MSBuild扩展</description>

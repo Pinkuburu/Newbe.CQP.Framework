@@ -14,7 +14,7 @@
 
     // ============ NuSpec
     string nugetPackageId = "Newbe.CQP.Framework.Extras";
-    string nugetLicenseUrl = "http://git.oschina.net/yks/Newbe.CQP.Framework/raw/dev/LICENSE.md";
+    string nugetLicenseUrl = "http://git.oschina.net/yks/Newbe.CQP.Framework/raw/master/LICENSE.md";
     string nugetProjectUrl = "http://git.oschina.net/yks/Newbe.CQP.Framework";
     string nugetRequireLicenseAcceptance = "false";
     string nugetReleaseInfo = "对Newbe.CQP.Framework中ICoolApi的扩展";
