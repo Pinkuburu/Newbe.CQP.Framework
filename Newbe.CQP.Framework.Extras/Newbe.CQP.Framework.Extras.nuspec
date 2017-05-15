@@ -14,8 +14,9 @@
     <releaseNotes>对Newbe.CQP.Framework中ICoolApi的扩展</releaseNotes>
     <copyright>Copyright Newbe2017</copyright>
 	<tags>Newbe,cqp,cqa,framework,sdk,二次开发,酷Q,CoolQ</tags>
+	<iconUrl>https://raw.githubusercontent.com/pianzide1117/Newbe.CQP.Framework/master/logo.png</iconUrl>
   </metadata>
   <files>
-      <file src="tools\*.ps1" target="tools" />
+      <file src="tools\*" target="tools" />
     </files>
 </package>

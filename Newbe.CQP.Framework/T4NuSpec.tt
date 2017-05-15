@@ -114,6 +114,7 @@ using System.Runtime.InteropServices;
     <releaseNotes><#= nugetReleaseInfo #></releaseNotes>
 	<tags>Newbe,cqp,cqa,framework,sdk,二次开发,酷Q,CoolQ</tags>
     <copyright><#= assemblyCopyright #></copyright>
+	<iconUrl>https://raw.githubusercontent.com/pianzide1117/Newbe.CQP.Framework/master/logo.png</iconUrl>
   </metadata>
   <files>
   <#
