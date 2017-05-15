@@ -14,7 +14,7 @@
 
     // ============ NuSpec
     string nugetPackageId = "Newbe.CQP.Framework.Tools.MSBuildTask";
-    string nugetLicenseUrl = "http://git.oschina.net/yks/Newbe.CQP.Framework/raw/dev/LICENSE.md";
+    string nugetLicenseUrl = "http://git.oschina.net/yks/Newbe.CQP.Framework/raw/master/LICENSE.md";
     string nugetProjectUrl = "http://git.oschina.net/yks/Newbe.CQP.Framework";
     string nugetRequireLicenseAcceptance = "false";
     string nugetReleaseInfo = "Newbe.CQP.Framework快速打包MSBuild扩展";
@@ -114,6 +114,7 @@ using System.Runtime.InteropServices;
     <releaseNotes><#= nugetReleaseInfo #></releaseNotes>
 	<tags>Newbe,cqp,cqa,framework,sdk,二次开发,酷Q,CoolQ,MSBuild</tags>
     <copyright><#= assemblyCopyright #></copyright>
+	<iconUrl>https://raw.githubusercontent.com/pianzide1117/Newbe.CQP.Framework/master/logo.png</iconUrl>
 	<dependencies>
 		<dependency id="Newbe.CQP.Framework" version="[1.1,2)" />
 	</dependencies>

@@ -14,7 +14,7 @@
 
     // ============ NuSpec
     string nugetPackageId = "Newbe.CQP.Framework";
-    string nugetLicenseUrl = "http://git.oschina.net/yks/Newbe.CQP.Framework/raw/dev/LICENSE.md";
+    string nugetLicenseUrl = "http://git.oschina.net/yks/Newbe.CQP.Framework/raw/master/LICENSE.md";
     string nugetProjectUrl = "http://git.oschina.net/yks/Newbe.CQP.Framework";
     string nugetRequireLicenseAcceptance = "false";
     string nugetReleaseInfo = "1.1.0，支持酷Q全面API，支持依赖注入、方便操作，绝对棒！";
@@ -114,6 +114,7 @@ using System.Runtime.InteropServices;
     <releaseNotes><#= nugetReleaseInfo #></releaseNotes>
 	<tags>Newbe,cqp,cqa,framework,sdk,二次开发,酷Q,CoolQ</tags>
     <copyright><#= assemblyCopyright #></copyright>
+	<iconUrl>https://raw.githubusercontent.com/pianzide1117/Newbe.CQP.Framework/master/logo.png</iconUrl>
   </metadata>
   <files>
   <#

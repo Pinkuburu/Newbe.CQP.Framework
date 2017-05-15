@@ -14,7 +14,7 @@
 
     // ============ NuSpec
     string nugetPackageId = "Newbe.CQP.Framework.Extras";
-    string nugetLicenseUrl = "http://git.oschina.net/yks/Newbe.CQP.Framework/raw/dev/LICENSE.md";
+    string nugetLicenseUrl = "http://git.oschina.net/yks/Newbe.CQP.Framework/raw/master/LICENSE.md";
     string nugetProjectUrl = "http://git.oschina.net/yks/Newbe.CQP.Framework";
     string nugetRequireLicenseAcceptance = "false";
     string nugetReleaseInfo = "对Newbe.CQP.Framework中ICoolApi的扩展";
@@ -33,7 +33,7 @@
 
     // ============ NuSpec Contents
     IList<KeyValuePair<String,String>> nugetFiles = new List<KeyValuePair<String,String>>();
-	nugetFiles.Add(new KeyValuePair<string,string>(@"tools\*.ps1","tools"));
+	nugetFiles.Add(new KeyValuePair<string,string>(@"tools\*","tools"));
 
     // ============ Assembly info
     string assemblyTitle = projectTitle;
@@ -112,6 +112,7 @@ using System.Runtime.InteropServices;
     <releaseNotes><#= nugetReleaseInfo #></releaseNotes>
     <copyright><#= assemblyCopyright #></copyright>
 	<tags>Newbe,cqp,cqa,framework,sdk,二次开发,酷Q,CoolQ</tags>
+	<iconUrl>https://raw.githubusercontent.com/pianzide1117/Newbe.CQP.Framework/master/logo.png</iconUrl>
   </metadata>
   <files>
   <#
